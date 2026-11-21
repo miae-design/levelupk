@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Level Up K with MiAe Ssem｜韓国語教室・オンライン・オリジナル教材</title>
+<meta name="description" content="福島県郡山市の韓国語教室「セボメ韓国語教室」とオンラインレッスン、Amazon KDPのオリジナル教材・音声を紹介する Level Up K with MiAe Ssem の公式サイトです。">
+<meta name="theme-color" content="#0E2B52">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Level Up K with MiAe Ssem">
+<meta property="og:description" content="韓国語が、もっと楽しくなる。教室・オンライン・オリジナル教材&動画">
+<meta property="og:image" content="assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preload" as="image" href="assets/splash-bg.jpg" fetchpriority="high">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.splash{display:none!important} body.splash-lock{overflow:auto!important}</style></noscript>
+<script>
+/* スプラッシュの表示判定（描画前に決めて、ちらつきを防ぐ） */
+(function () {
+  try {
+    var hash = (location.hash || "").replace("#", "");
+    var page = new URLSearchParams(location.search).get("page");
+    var skip = hash === "audio" || page === "audio" ||
+      sessionStorage.getItem("levelupk_splash_seen") === "1";
+    if (skip) document.documentElement.className += " splash-skip";
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">メインコンテンツへ</a>
+
+<!-- ============ Splash ============ -->
+<div id="splash" class="splash" role="presentation">
+  <picture class="splash__media">
+    <source media="(max-width: 700px)" srcset="assets/splash-bg-mobile.jpg">
+    <img class="splash__img" src="assets/splash-bg.jpg" alt="" width="1536" height="1024" fetchpriority="high">
+  </picture>
+  <div class="splash__shade" aria-hidden="true"></div>
+  <div class="splash__inner">
+    <div class="splash__card">
+      <img src="assets/logo.png" alt="Level Up K with MiAe Ssem" width="700" height="700">
+    </div>
+    <p class="splash__title" data-i18n="splash.headline">韓国語が、もっと楽しくなる。</p>
+    <p class="splash__sub" data-i18n="splash.sub">Level Up Your Korean ・ オンライン・教室・オリジナル教材</p>
+  </div>
+  <div class="splash__bottom">
+    <div class="splash__bar" aria-hidden="true"><span></span></div>
+    <p class="splash__loading" data-i18n="splash.loading">まもなくメイン画面へ移動します</p>
+    <button class="splash__skip" id="splash-skip" type="button" data-i18n="splash.skip">タップして入る →</button>
+  </div>
+</div>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#home" aria-label="Level Up K with MiAe Ssem">
+      <img class="brand__icon" src="assets/icon.png" alt="" width="256" height="256">
+      <span class="brand__text">Level Up K <em>with MiAe Ssem</em></span>
+    </a>
+    <nav class="lang" aria-label="Language / 言語 / 언어">
+      <button type="button" class="lang__btn is-active" data-lang="ja" aria-pressed="true">JP</button>
+      <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" class="lang__btn" data-lang="ko" aria-pressed="false">KR</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Notice (Coming soon) ============ -->
+  <aside class="notice-bar" aria-labelledby="notice-title">
+    <div class="wrap notice-bar__inner">
+      <span class="notice-bar__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11.2v5.4M12 7.6h.01"/></svg>
+      </span>
+      <div class="notice-bar__body">
+        <p class="notice-bar__label" data-i18n="notice.label">お知らせ</p>
+        <p class="notice-bar__title" id="notice-title" data-i18n="notice.title">ただいまホームページ準備中です</p>
+        <p class="notice-bar__sub" data-i18n="notice.sub">2027年4月 開講予定 ／ 教室案内・教材・音声を少しずつ公開していきます。</p>
+      </div>
+      <a class="notice-bar__cta" href="verse.html">
+        <span data-i18n="notice.cta">今月の聖句を聞く</span>
+        <svg class="btn__ico" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ============ Home ============ -->
+  <section class="view is-active" id="home" data-view="home">
+    <div class="wrap">
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__badge">
+          <img src="assets/logo.png" alt="Level Up K with MiAe Ssem ロゴ" width="700" height="700">
+        </div>
+        <div class="hero__text">
+          <h1 id="hero-title" class="hero__title" data-i18n="home.heroTitle">韓国語が、もっと楽しくなる。</h1>
+          <p class="hero__sub" data-i18n="home.heroSub">教室・オンライン・オリジナル教材&amp;動画</p>
+          <p class="hero__note" data-i18n="common.brandNote">Ssem（쌤）は、韓国語で「先生（ソンセンニム）」を縮めた言葉。親しみを感じる先生に対して、生徒たちがよく使う愛称です。</p>
+          <div class="hero__cta">
+            <a class="btn btn--coral" href="#audio">
+              <span data-i18n="home.ctaAudio">KDP 音声を聴く</span><svg class="btn__ico" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.2v13.6c0 .8.9 1.3 1.6.9l10.2-6.8c.6-.4.6-1.3 0-1.7L9.6 4.3C8.9 3.9 8 4.4 8 5.2z"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#profile">
+              <span data-i18n="home.ctaContact">体験・お問合せ</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="sr-only" data-i18n="home.cardsLabel">メニュー</h2>
+      <div class="cards">
+
+        <a class="card card--coral" href="#books">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="6" width="36" height="36" rx="8"/><path d="M20 16.5l12 7.5-12 7.5z" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="card__body">
+            <span class="card__title" data-i18n="home.card1.title">教材・音声・動画</span>
+            <span class="card__tags">
+              <span data-i18n="home.card1.tag1">KDP書籍</span><span data-i18n="home.card1.tag2">音声QR</span><span data-i18n="home.card1.tag3">録画セット</span>
+            </span>
+            <span class="card__cta" data-i18n="home.card1.cta">見てみる</span>
+          </span>
+        </a>
+
+        <a class="card card--green" href="#sebome">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="12.5" r="5.4" fill="currentColor" stroke="none"/>
+              <circle cx="34.8" cy="20.4" r="5.4" fill="currentColor" stroke="none"/>
+              <circle cx="30.7" cy="33.2" r="5.4" fill="currentColor" stroke="none"/>
+              <circle cx="17.3" cy="33.2" r="5.4" fill="currentColor" stroke="none"/>
+              <circle cx="13.2" cy="20.4" r="5.4" fill="currentColor" stroke="none"/>
+              <circle cx="24" cy="24" r="4" fill="#fff" stroke="none"/>
+            </svg>
+          </span>
+          <span class="card__body">
+            <span class="card__title" data-i18n="home.card2.title">セボメ韓国語教室</span>
+            <span class="card__tags">
+              <span data-i18n="home.card2.tag1">2027.4 郡山開講</span><span data-i18n="home.card2.tag2">月3回</span><span data-i18n="home.card2.tag3">少人数クラス</span>
+            </span>
+            <span class="card__cta" data-i18n="home.card2.cta">教室案内</span>
+          </span>
+        </a>
+
+        <a class="card card--navy" href="#online">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7" y="11" width="34" height="22" rx="4"/><path d="M17 39h14M24 33v6"/>
+            </svg>
+          </span>
+          <span class="card__body">
+            <span class="card__title" data-i18n="home.card3.title">オンラインレッスン</span>
+            <span class="card__tags">
+              <span data-i18n="home.card3.tag1">個人</span><span data-i18n="home.card3.tag2">グループ</span><span data-i18n="home.card3.tag3">TOPIK対策</span>
+            </span>
+            <span class="card__cta" data-i18n="home.card3.cta">コース一覧</span>
+          </span>
+        </a>
+
+        <a class="card card--gold card--photo" href="#profile">
+          <img class="card__photo" src="assets/teacher.jpg" alt="李 美愛（イ・ミエ）" width="300" height="300" loading="lazy">
+          <span class="card__body">
+            <span class="card__title" data-i18n="home.card4.title">李 美愛 先生</span>
+            <span class="card__tags">
+              <span data-i18n="home.card4.tag1">韓国語教員資格2級</span><span data-i18n="home.card4.tag2">指導歴10年+</span>
+            </span>
+            <span class="card__cta" data-i18n="home.card4.cta">プロフィール</span>
+          </span>
+        </a>
+
+      </div>
+
+      <a class="vstrip" href="verse.html">
+        <span class="vstrip__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 016.5 3H11v16H6.5A2.5 2.5 0 004 21.5z"/><path d="M20 5.5A2.5 2.5 0 0017.5 3H13v16h4.5a2.5 2.5 0 012.5 2.5z"/></svg>
+        </span>
+        <span class="vstrip__body">
+          <span class="vstrip__kicker" data-i18n="vstrip.kicker">聖句・音声</span>
+          <span class="vstrip__title" data-i18n="vstrip.title">1月〜12月 聖句の韓国語</span>
+          <span class="vstrip__text" data-i18n="vstrip.text">月替わりのみ言葉を、韓国語と日本語で聞けます。</span>
+        </span>
+        <span class="vstrip__cta"><span data-i18n="vstrip.cta">聞いてみる</span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ Books ============ -->
+  <section class="view" id="books" data-view="books">
+    <div class="wrap">
+      <header class="dhero dhero--coral">
+        <a class="back back--on" href="#home"><svg class="back__ico" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg> <span data-i18n="common.back">トップへ戻る</span></a>
+        <div class="dhero__content">
+          <span class="dhero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 016.5 3H11v16H6.5A2.5 2.5 0 004 21.5z"/><path d="M20 5.5A2.5 2.5 0 0017.5 3H13v16h4.5a2.5 2.5 0 012.5 2.5z"/></svg>
+          </span>
+          <div class="dhero__text">
+            <p class="dhero__kicker" data-i18n="books.kicker">教材</p>
+            <h2 class="dhero__title" tabindex="-1" data-i18n="books.title">教材・音声・動画</h2>
+            <p class="dhero__lead" data-i18n="books.heroLead">本・音声・録画の3つで、ひとりでも続けられる教材です。</p>
+            <ul class="dhero__chips">
+              <li data-i18n="books.b1Tag1">5シリーズ・レベル別</li>
+              <li data-i18n="books.b1Tag2">年間36回カリキュラム</li>
+              <li data-i18n="books.b1Tag3">第1学期（9回分）制作済み</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dhero__actions">
+          <a class="btn btn--white" href="#audio"><span data-i18n="books.b2Cta">KDP 音声を聴く</span><svg class="btn__ico" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.2v13.6c0 .8.9 1.3 1.6.9l10.2-6.8c.6-.4.6-1.3 0-1.7L9.6 4.3C8.9 3.9 8 4.4 8 5.2z"/></svg></a>
+          <a class="btn btn--outline" href="mailto:miae71250@gmail.com?subject=Level%20Up%20K%20%E9%8C%B2%E7%94%BB%E3%83%AC%E3%83%83%E3%82%B9%E3%83%B3%E3%82%BB%E3%83%83%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span data-i18n="books.b3Cta">発売のお知らせを受け取る</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg></a>
+        </div>
+      </header>
+
+      <div class="detail detail--tight">
+        <div class="feature-grid">
+          <article class="fcard">
+            <span class="fcard__icon fcard__icon--coral" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 016.5 3H11v16H6.5A2.5 2.5 0 004 21.5z"/><path d="M20 5.5A2.5 2.5 0 0017.5 3H13v16h4.5a2.5 2.5 0 012.5 2.5z"/></svg>
+            </span>
+            <h3 data-i18n="books.b1Title">Amazon KDP のワークブック</h3>
+            <p data-i18n="books.b1Text">幼児から大人まで、レベル別に5つのシリーズ。日本語の説明と発音の表記つきで、ひとりでも進められます。</p>
+            <ul class="chips chips--soft">
+              <li data-i18n="books.b1Tag1">5シリーズ・レベル別</li>
+              <li data-i18n="books.b1Tag2">年間36回カリキュラム</li>
+              <li data-i18n="books.b1Tag3">第1学期（9回分）制作済み</li>
+            </ul>
+          </article>
+
+          <article class="fcard">
+            <span class="fcard__icon fcard__icon--coral" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 14h3v3h-3zM20 20h1M17.5 20.5v.5"/></svg>
+            </span>
+            <h3 data-i18n="books.b2Title">ページのQRコードで、すぐ音声</h3>
+            <p data-i18n="books.b2Text">本の各課のQRコードを読み取るだけ。アプリも会員登録もいりません。</p>
+            <a class="btn btn--coral" href="#audio"><span data-i18n="books.b2Cta">KDP 音声を聴く</span><svg class="btn__ico" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.2v13.6c0 .8.9 1.3 1.6.9l10.2-6.8c.6-.4.6-1.3 0-1.7L9.6 4.3C8.9 3.9 8 4.4 8 5.2z"/></svg></a>
+          </article>
+
+          <article class="fcard">
+            <span class="fcard__icon fcard__icon--gold" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="M15.5 10.5l6-3v9l-6-3z"/></svg>
+            </span>
+            <h3><span data-i18n="books.b3Title">録画レッスン＋PDFセット（準備中）</span></h3>
+            <p data-i18n="books.b3Text">第1学期・全9回を、先生の解説つきで。本で学んだことを何度でも復習できます。</p>
+            <a class="btn btn--coral" href="mailto:miae71250@gmail.com?subject=Level%20Up%20K%20%E9%8C%B2%E7%94%BB%E3%83%AC%E3%83%83%E3%82%B9%E3%83%B3%E3%82%BB%E3%83%83%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span data-i18n="books.b3Cta">発売のお知らせを受け取る</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg></a>
+            <p class="small" data-i18n="books.b3Note">※ 価格・販売方法は調整中です。</p>
+          </article>
+        </div>
+
+
+        <section class="pay-section" aria-labelledby="pay-title">
+          <div class="pay-head">
+            <p class="pay-head__kicker" data-i18n="pay.kicker">お支払い</p>
+            <h3 id="pay-title" data-i18n="pay.title">お支払い方法</h3>
+            <p data-i18n="pay.lead">教材・録画セットのお支払いに使えます。</p>
+          </div>
+          <div class="pay-grid">
+            <article class="pay-card">
+              <div class="pay-card__head">
+                <span class="pay-card__icon pay-card__icon--coral" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></svg>
+                </span>
+                <div>
+                  <h4 data-i18n="pay.onlineTitle">オンライン決済</h4>
+                  <p class="pay-tags"><span>PayPay</span><span data-i18n="pay.cardTag">クレジットカード</span></p>
+                </div>
+              </div>
+              <p data-i18n="pay.onlineText">スマートフォンから、その場でお支払いいただけます。</p>
+              <div class="pay-online">
+                <div class="pay-qr" data-qr-box>
+                  <span class="pay-qr__mark" aria-hidden="true">QR</span>
+                  <span class="pay-qr__text" data-i18n="pay.qrShort">準備中</span>
+                </div>
+                <div class="pay-online__cta">
+                  <a class="btn btn--coral" id="checkout-link" href="#"><span data-i18n="pay.checkout">決済ページへ</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+                  <p class="small" data-i18n="pay.checkoutNote">※ 決済リンクは準備中です。お急ぎの場合はメールでご連絡ください。</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="pay-card">
+              <div class="pay-card__head">
+                <span class="pay-card__icon pay-card__icon--green" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5L12 4l8.5 5.5"/><path d="M5.5 10v8M10 10v8M14 10v8M18.5 10v8M3 20.5h18"/></svg>
+                </span>
+                <div>
+                  <h4 data-i18n="pay.bankTitle">ゆうちょ銀行 振込</h4>
+                  <p class="pay-tags"><span data-i18n="pay.bankTag">お振込</span></p>
+                </div>
+              </div>
+              <p data-i18n="pay.bankText">お申し込み後、振込先をお送りします。</p>
+              <ol class="steps">
+                <li><span class="step__no">1</span><p data-i18n="pay.step1">メールでお申し込み</p></li>
+                <li><span class="step__no">2</span><p data-i18n="pay.step2">振込先をお送りします</p></li>
+                <li><span class="step__no">3</span><p data-i18n="pay.step3">入金確認後、視聴をご案内</p></li>
+              </ol>
+              <p class="small" data-i18n="pay.bankNote">口座番号はこのページには掲載していません。</p>
+              <a class="btn btn--green" href="mailto:miae71250@gmail.com"><span data-i18n="pay.applyMail">メールで申し込む</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            </article>
+          </div>
+        </section>
+
+        <aside class="note">
+          <h3 data-i18n="books.noteTitle">KDPのルールに合わせて</h3>
+          <p data-i18n="books.noteText">KDPの本には音声・映像ファイルを直接入れられません。だから音声はQRコードでこのサイトの音声ページにつないでいます。個人情報の入力フォームは使っていません。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Audio ============ -->
+  <section class="view" id="audio" data-view="audio">
+    <div class="wrap">
+      <header class="dhero dhero--coral dhero--compact">
+        <a class="back back--on" href="#home"><svg class="back__ico" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg> <span data-i18n="common.back">トップへ戻る</span></a>
+        <div class="dhero__content">
+          <span class="dhero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 018 0V10"/><circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <div class="dhero__text">
+            <p class="dhero__kicker" data-i18n="audio.kicker">音声ポータル</p>
+            <h2 class="dhero__title" tabindex="-1" data-i18n="audio.title">KDP 音声ポータル</h2>
+            <p class="dhero__lead" data-i18n="audio.lead">書籍に記載のパスワードを入れると、各課の音声が聴けます。</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="detail detail--tight detail--narrow">
+        <form class="gate gate--overlap" id="audio-gate" novalidate>
+          <label class="gate__label" for="audio-pass" data-i18n="audio.label">パスワード</label>
+          <div class="gate__row">
+            <input class="gate__input" id="audio-pass" type="password" name="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="パスワードを入力" data-i18n-placeholder="audio.placeholder" required>
+            <button class="btn btn--coral" type="submit" data-i18n="audio.button">開く</button>
+          </div>
+          <p class="gate__error" id="audio-error" role="alert" hidden data-i18n="audio.error">パスワードが違います。書籍の記載をご確認ください。</p>
+        </form>
+
+        <div class="hint">
+          <p><span data-i18n="audio.hintLabel">サンプル用パスワード</span>：<code data-i18n="audio.hint">sebome2027</code></p>
+          <p class="small" data-i18n="audio.hintNote">※ これはサンプルです。公開前に GUIDE_KO.md の手順で必ず変更してください。</p>
+        </div>
+
+        <section class="panel player" id="audio-player" hidden>
+          <h3 data-i18n="audio.unlockedTitle">音声を選んでください</h3>
+          <p data-i18n="audio.unlockedLead">書籍の課番号に合わせて、聴きたい音声を選んでください。</p>
+          <ul class="tracks" id="track-list"></ul>
+          <p class="small" data-i18n="audio.audioNote">音声ファイルは audio フォルダに入っています。ファイルを置くと、この画面ですぐ再生できます。</p>
+        </section>
+
+        <p class="privacy"><span class="privacy__lock"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10" width="15" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 018 0V10"/></svg></span> <span data-i18n="audio.privacy">このページでは、氏名・メールアドレスなどの個人情報を入力・収集しません。</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Sebome ============ -->
+  <section class="view" id="sebome" data-view="sebome">
+    <div class="wrap">
+      <header class="dhero dhero--green">
+        <a class="back back--on" href="#home"><svg class="back__ico" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg> <span data-i18n="common.back">トップへ戻る</span></a>
+        <div class="dhero__content">
+          <span class="dhero__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="34" height="34" fill="currentColor"><circle cx="24" cy="12.5" r="5.4"/><circle cx="34.8" cy="20.4" r="5.4"/><circle cx="30.7" cy="33.2" r="5.4"/><circle cx="17.3" cy="33.2" r="5.4"/><circle cx="13.2" cy="20.4" r="5.4"/><circle cx="24" cy="24" r="4" fill="#fff"/></svg>
+          </span>
+          <div class="dhero__text">
+            <p class="dhero__kicker" data-i18n="sebome.kicker">教室</p>
+            <h2 class="dhero__title" tabindex="-1" data-i18n="sebome.title">セボメ韓国語教室</h2>
+            <p class="dhero__sub" data-i18n="sebome.sub">새봄에 한국어 교실 ／ Sebome Korean Class</p>
+            <p class="dhero__lead" data-i18n="sebome.lead">2027年4月、福島県郡山市に開きます。月3回・1クラス5〜6名の少人数制です。</p>
+            <ul class="dhero__chips">
+              <li data-i18n="sebome.chip1">2027.4 開講</li>
+              <li data-i18n="sebome.chip2">月3回</li>
+              <li data-i18n="sebome.chip3">1クラス5〜6名</li>
+              <li data-i18n="sebome.chip4">郡山市</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dhero__actions">
+          <a class="btn btn--white" href="https://line.me/R/ti/p/@155sxowo" target="_blank" rel="noopener"><span data-i18n="sebome.lineCta">LINEで友だち追加</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </header>
+
+      <div class="detail detail--tight">
+        <div class="fact-grid">
+          <div class="fact"><span class="fact__label" data-i18n="sebome.i1Label">開講</span><strong class="fact__value" data-i18n="sebome.i1Value">2027年4月</strong></div>
+          <div class="fact"><span class="fact__label" data-i18n="sebome.i3Label">回数</span><strong class="fact__value" data-i18n="sebome.i3Value">月3回</strong></div>
+          <div class="fact"><span class="fact__label" data-i18n="sebome.i4Label">定員</span><strong class="fact__value" data-i18n="sebome.i4Value">1クラス5〜6名</strong></div>
+          <div class="fact"><span class="fact__label" data-i18n="sebome.i5Label">対象</span><strong class="fact__value" data-i18n="sebome.i5Value">幼児・小学生／中高生／大人</strong></div>
+        </div>
+
+        <article class="venue">
+          <span class="venue__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+          <div>
+            <span class="venue__label" data-i18n="sebome.i2Label">会場</span>
+            <strong data-i18n="sebome.i2Value">郡山グレースガーデンチャペル（福島県郡山市）</strong>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h3 data-i18n="sebome.classesTitle">3つのクラス</h3>
+          <div class="classes">
+            <div class="class-card class-card--kids">
+              <span class="class-card__dot" aria-hidden="true"></span>
+              <h4 data-i18n="sebome.c1Name">アイジョア キッズクラス</h4>
+              <p class="class-card__kr" data-i18n="sebome.c1Kr">아이좋아 키즈 클래스</p>
+              <p class="class-card__target" data-i18n="sebome.c1Target">幼児・小学生</p>
+              <p data-i18n="sebome.c1Text">歌や絵本、からだを動かす遊びを交えながら、ハングルの文字と音に親しみます。</p>
+              <p class="class-card__support" data-i18n="sebome.c1Support">歌やダンス・ゲームは、日韓バイリンガルの中学生アシスタントもサポートします。</p>
+            </div>
+            <div class="class-card class-card--junior">
+              <span class="class-card__dot" aria-hidden="true"></span>
+              <h4 data-i18n="sebome.c2Name">キウミ ジュニアクラス</h4>
+              <p class="class-card__kr" data-i18n="sebome.c2Kr">키우미 주니어 클래스</p>
+              <p class="class-card__target" data-i18n="sebome.c2Target">中高生</p>
+              <p data-i18n="sebome.c2Text">学校や将来につながる力を、文法と会話の両方から育てます。</p>
+            </div>
+            <div class="class-card class-card--adult">
+              <span class="class-card__dot" aria-hidden="true"></span>
+              <h4 data-i18n="sebome.c3Name">ヘオン クラス</h4>
+              <p class="class-card__kr" data-i18n="sebome.c3Kr">해온 클래스</p>
+              <p class="class-card__target" data-i18n="sebome.c3Target">大人</p>
+              <p data-i18n="sebome.c3Text">旅行、K-POP、ドラマなど、好きなことから始める韓国語。自分のペースで続けられます。</p>
+            </div>
+          </div>
+          <p class="small" data-i18n="sebome.note">時間割・受講料などの詳細は、LINE公式アカウントまたはメールでお問い合わせください。</p>
+        </article>
+
+        <article class="line-card">
+          <div class="line-card__body">
+            <h3 data-i18n="sebome.lineTitle">LINE公式アカウント</h3>
+            <p data-i18n="sebome.lineText">友だち追加して、体験レッスンや教室のことをお気軽にご質問ください。</p>
+            <p class="line-card__id" data-i18n="sebome.lineId">@155sxowo</p>
+            <a class="btn btn--line" href="https://line.me/R/ti/p/@155sxowo" target="_blank" rel="noopener"><span data-i18n="sebome.lineCta">LINEで友だち追加</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <a class="line-card__qr" href="https://line.me/R/ti/p/@155sxowo" target="_blank" rel="noopener">
+            <img src="assets/line-qr.png" alt="LINE公式アカウント @155sxowo のQRコード" width="360" height="360" loading="lazy">
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Online ============ -->
+  <section class="view" id="online" data-view="online">
+    <div class="wrap">
+      <header class="dhero dhero--navy">
+        <a class="back back--on" href="#home"><svg class="back__ico" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg> <span data-i18n="common.back">トップへ戻る</span></a>
+        <div class="dhero__content">
+          <span class="dhero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2.5"/><path d="M8.5 20h7M12 16.5V20"/></svg>
+          </span>
+          <div class="dhero__text">
+            <p class="dhero__kicker" data-i18n="online.kicker">オンライン</p>
+            <h2 class="dhero__title" tabindex="-1" data-i18n="online.title">オンラインレッスン</h2>
+            <p class="dhero__lead" data-i18n="online.lead">ビデオ通話で、どこからでも。日本時間（JST）を基準に時間を決めます。</p>
+            <ul class="dhero__chips">
+              <li data-i18n="home.card3.tag1">個人</li>
+              <li data-i18n="home.card3.tag2">グループ</li>
+              <li data-i18n="home.card3.tag3">TOPIK対策</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dhero__actions">
+          <a class="btn btn--white" href="mailto:miae71250@gmail.com?subject=Level%20Up%20K%20%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%AC%E3%83%83%E3%82%B9%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span data-i18n="online.cta">メールで相談する</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </header>
+
+      <div class="detail detail--tight">
+
+        <!-- -------- Price table -------- -->
+        <section class="price-section" aria-labelledby="price-title">
+          <div class="price-head">
+            <p class="price-head__kicker" data-i18n="online.priceKicker">料金</p>
+            <h3 id="price-title" data-i18n="online.priceTitle">レッスン料金</h3>
+            <p data-i18n="online.priceLead">オンライン（Zoom・LINE）も対面も、内容と先生は同じです。</p>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card__head">
+              <span class="price-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="12.5" rx="2.5"/><path d="M8.5 21h7M12 17.5V21"/></svg>
+              </span>
+              <div>
+                <h4 data-i18n="online.priceOnlineTitle">オンラインレッスン</h4>
+                <p class="price-card__tags"><span>Zoom</span><span>LINE</span></p>
+              </div>
+            </div>
+
+            <div class="price-rows">
+              <div class="price-row">
+                <p class="price-row__name" data-i18n="online.p1Name">個人レッスン</p>
+                <div class="price-row__opts">
+                  <span class="price-opt"><span class="price-opt__label" data-i18n="online.p1aLabel">30分・1回</span><span class="price-opt__value" data-i18n="online.p1aPrice">2,000円</span></span>
+                  <span class="price-opt"><span class="price-opt__label" data-i18n="online.p1bLabel">60分・1回</span><span class="price-opt__value" data-i18n="online.p1bPrice">3,000円</span></span>
+                </div>
+              </div>
+
+              <div class="price-row">
+                <p class="price-row__name" data-i18n="online.p2Name">友達割レッスン（60分）</p>
+                <div class="price-row__opts">
+                  <span class="price-opt"><span class="price-opt__label" data-i18n="online.p2aLabel">3名まで・1回</span><span class="price-opt__value" data-i18n="online.p2aPrice">2,500円</span><span class="price-opt__unit" data-i18n="online.perPerson">1人あたり</span></span>
+                  <span class="price-opt"><span class="price-opt__label" data-i18n="online.p2bLabel">4名以上・1回</span><span class="price-opt__value" data-i18n="online.p2bPrice">2,000円</span><span class="price-opt__unit" data-i18n="online.perPerson">1人あたり</span></span>
+                </div>
+              </div>
+
+              <div class="price-row">
+                <p class="price-row__name" data-i18n="online.p3Name">5名以上グループレッスン（1コマ70分）</p>
+                <div class="price-row__opts">
+                  <span class="price-opt"><span class="price-opt__label" data-i18n="online.p3aLabel">月4回</span><span class="price-opt__value" data-i18n="online.p3aPrice">8,000円</span><span class="price-opt__unit" data-i18n="online.perPerson">1人あたり</span></span>
+                  <span class="price-opt"><span class="price-opt__label" data-i18n="online.p3bLabel">月5回</span><span class="price-opt__value" data-i18n="online.p3bPrice">10,000円</span><span class="price-opt__unit" data-i18n="online.perPerson">1人あたり</span></span>
+                </div>
+                <p class="price-row__note" data-i18n="online.p3Note">回数は月によって4回・5回と変わります。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card price-card--face">
+            <div class="price-card__head">
+              <span class="price-card__icon price-card__icon--green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              </span>
+              <div>
+                <h4 data-i18n="online.faceTitle">対面レッスン</h4>
+                <p class="price-card__tags"><span data-i18n="online.faceArea">郡山近郊など</span></p>
+              </div>
+            </div>
+            <div class="price-face">
+              <span class="price-face__main" data-i18n="online.faceMain">オンラインレッスンの各料金 ＋500円</span>
+            </div>
+            <p class="price-face__note" data-i18n="online.faceNote">場所により、お茶代などの実費を別途いただく場合があります。</p>
+          </div>
+        </section>
+
+        <div class="course-grid">
+          <article class="course">
+            <span class="course__no">01</span>
+            <h3 data-i18n="online.cr1Title">1:1 個人レッスン</h3>
+            <p data-i18n="online.cr1Text">目的とレベルに合わせて、内容と進み方を組みます。</p>
+          </article>
+          <article class="course">
+            <span class="course__no">02</span>
+            <h3 data-i18n="online.cr2Title">少人数グループ</h3>
+            <p data-i18n="online.cr2Text">家族や友だちと一緒に。会話の練習をたっぷりと。</p>
+          </article>
+          <article class="course">
+            <span class="course__no">03</span>
+            <h3 data-i18n="online.cr3Title">TOPIK・ハングル能力検定対策</h3>
+            <p data-i18n="online.cr3Text">試験の形式に沿って、過去問と弱点の補強を中心に進めます。</p>
+          </article>
+          <article class="course">
+            <span class="course__no">04</span>
+            <h3 data-i18n="online.cr4Title">キッズ・中高生</h3>
+            <p data-i18n="online.cr4Text">子どものペースに合わせて、短い時間から始められます。</p>
+          </article>
+        </div>
+        <p class="small center" data-i18n="online.note">※ 時間・回数・内容は、ご希望に合わせてご相談のうえ決めます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Profile ============ -->
+  <section class="view" id="profile" data-view="profile">
+    <div class="wrap">
+      <header class="dhero dhero--gold">
+        <a class="back back--on" href="#home"><svg class="back__ico" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg> <span data-i18n="common.back">トップへ戻る</span></a>
+        <div class="dhero__content">
+          <img class="dhero__photo" src="assets/teacher.jpg" alt="李 美愛（イ・ミエ）" width="300" height="300">
+          <div class="dhero__text">
+            <p class="dhero__kicker" data-i18n="profile.kicker">講師</p>
+            <h2 class="dhero__title" tabindex="-1" data-i18n="profile.title">李 美愛</h2>
+            <p class="dhero__sub" data-i18n="profile.reading">イ・ミエ ／ 이미애 ／ Lee Miae</p>
+            <p class="dhero__lead" data-i18n="profile.lead">韓国・ソウル出身。2008年に来日し、福島県に住んでいます。</p>
+            <ul class="dhero__chips">
+              <li data-i18n="profile.chip1">韓国語教員資格2級</li>
+              <li data-i18n="profile.chip2">指導歴10年+</li>
+              <li data-i18n="profile.chip3">ソウル出身</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dhero__actions">
+          <a class="btn btn--white" href="mailto:miae71250@gmail.com"><span data-i18n="profile.ctaMail">メールで連絡</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg></a>
+          <a class="btn btn--outline" href="#sebome"><span data-i18n="profile.ctaSebome">セボメ教室案内</span><svg class="btn__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </header>
+
+      <div class="detail detail--tight">
+        <div class="bio-grid">
+          <div class="bio-card"><span class="bio-card__num">01</span><p data-i18n="profile.bio1">韓国・ソウル出身</p></div>
+          <div class="bio-card"><span class="bio-card__num">02</span><p data-i18n="profile.bio2">2008年 来日・福島県在住</p></div>
+          <div class="bio-card"><span class="bio-card__num">03</span><p data-i18n="profile.bio3">サイバー韓国外国語大学 日本語学部 卒業</p></div>
+          <div class="bio-card"><span class="bio-card__num">04</span><p data-i18n="profile.bio4">韓国語教員資格 2級</p></div>
+          <div class="bio-card"><span class="bio-card__num">05</span><p data-i18n="profile.bio5">2015年〜 福島民団・オンライン講座などで指導（郡山日韓友好会での指導実績あり）</p></div>
+          <div class="bio-card"><span class="bio-card__num">06</span><p data-i18n="profile.bio6">2027年4月 セボメ韓国語教室 開講予定</p></div>
+        </div>
+
+        <article class="now-card" aria-labelledby="now-title">
+          <div class="now-card__head">
+            <span class="now-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5L12 4l8.5 5.5"/><path d="M5.5 10v8M10 10v8M14 10v8M18.5 10v8M3 20.5h18"/></svg>
+            </span>
+            <div>
+              <p class="now-card__kicker" data-i18n="profile.nowKicker">現在の指導</p>
+              <h3 id="now-title" data-i18n="profile.nowTitle">いま、韓国語を教えている場所</h3>
+            </div>
+          </div>
+          <ul class="now-list">
+            <li class="now-item">
+              <span class="now-item__dot" aria-hidden="true"></span>
+              <span class="now-item__name" data-i18n="profile.nowName1">funSTEP 韓国語</span>
+              <span class="now-item__tag" data-i18n="profile.nowTag">韓国語を指導中</span>
+            </li>
+            <li class="now-item">
+              <span class="now-item__dot" aria-hidden="true"></span>
+              <span class="now-item__name" data-i18n="profile.nowName2">福島民団</span>
+              <span class="now-item__tag" data-i18n="profile.nowTag">韓国語を指導中</span>
+            </li>
+          </ul>
+          <p class="now-card__note" data-i18n="profile.nowNote">福島民団やオンライン講座での指導とあわせて、現在は funSTEP 韓国語でも韓国語を教えています。</p>
+        </article>
+
+        <article class="contact-panel">
+          <div class="contact-panel__head">
+            <h3 data-i18n="profile.contactTitle">お問合せ</h3>
+            <p data-i18n="profile.contactText">オンラインレッスンや教材についてのご質問は、メールでお送りください。（郡山教室はセボメ教室ページへ）</p>
+          </div>
+          <div class="contact-grid">
+            <a class="contact" href="mailto:miae71250@gmail.com">
+              <span class="contact__label" data-i18n="profile.emailLabel">メール</span>
+              <span class="contact__value">miae71250@gmail.com</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="assets/icon.png" alt="" width="256" height="256" loading="lazy">
+      <p><strong>Level Up K</strong> with MiAe Ssem<br><span data-i18n="footer.brandLine">教室・オンライン・オリジナル教材</span></p>
+    </div>
+    <div class="site-footer__links">
+      <a href="verse.html" data-i18n="footer.verse">聖句（1〜12月）</a>
+      <a href="mailto:miae71250@gmail.com">miae71250@gmail.com</a>
+    </div>
+    <p class="site-footer__rights" data-i18n="footer.rights">© 2026 Level Up K with MiAe Ssem</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Level Up K with MiAe Ssem",
+  "alternateName": "새봄에 한국어 교실 (セボメ韓国語教室)",
+  "description": "福島県郡山市の韓国語教室「セボメ韓国語教室」とオンラインレッスン、Amazon KDPのオリジナル教材を提供しています。",
+  "email": "miae71250@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "郡山市",
+    "addressRegion": "福島県",
+    "addressCountry": "JP"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "李 美愛",
+    "alternateName": "이미애"
+  }
+}
+</script>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
