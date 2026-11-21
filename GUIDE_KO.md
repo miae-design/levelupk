@@ -249,12 +249,24 @@ ko: { ... }   ← 한국어
 3. 프로젝트 이름(예: `levelupk`)을 정하고 `levelupk-website` 폴더를 업로드합니다.
 4. `https://levelupk.pages.dev` 주소가 생깁니다.
 
-### ③ GitHub Pages — 나중에 계속 관리하기 좋음
+### ③ GitHub Pages — 지금 이 사이트가 공개된 방법 ✅
 
-1. GitHub 계정을 만들고 새 저장소(Public)를 만듭니다.
-2. `levelupk-website` 폴더 안의 파일을 모두 업로드합니다.
-3. **Settings → Pages** 에서 Branch를 `main`, 폴더를 `/ (root)` 로 저장합니다.
-4. 몇 분 뒤 `https://아이디.github.io/저장소이름/` 에서 열립니다.
+지금은 `miae-design/levelupk` 저장소의 **`gh-pages` 브랜치**로 공개되고 있습니다.
+
+- 사이트: https://miae-design.github.io/levelupk/
+- 성구 페이지: https://miae-design.github.io/levelupk/verse.html?m=1 (QR 전용, 사이트에는 링크 없음)
+
+**수정한 내용을 반영하려면** `main`(원본)과 `gh-pages`(공개용) 두 곳에 올립니다.
+
+```bash
+git add -A && git commit -m "수정 내용"
+git push origin main
+git push -f origin main:gh-pages
+```
+
+- 1~2분 뒤 사이트에 반영됩니다. (브라우저는 최대 10분까지 예전 화면을 보여 줄 수 있습니다.)
+- 저장소 **Settings → Pages** 에서 Branch를 `main` 으로 바꾸면, 그다음부터는 `git push origin main` 만 하면 됩니다(선택).
+- GitHub Pages는 무료이고, 공개 주소는 누구나 볼 수 있습니다.
 
 ### 내 도메인 연결하기 (선택)
 

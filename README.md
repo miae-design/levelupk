@@ -37,6 +37,19 @@ audio/verse_12.mp3  → 12月
 
 ## 公開について
 
-このリポジトリは GitHub Pages（`main` ブランチのルート）で公開しています。`index.html` を更新したら、変更をコミットして push すると数十秒で反映されます。
+このリポジトリは GitHub Pages で公開しています（公開ブランチは `gh-pages`、ルート）。
+
+- サイト: https://miae-design.github.io/levelupk/
+- 聖句ページ: https://miae-design.github.io/levelupk/verse.html?m=1 （出席カードのQR専用。サイト内にリンクを置かず、`noindex` を設定）
+
+`main` が原稿、`gh-pages` が公開用です。更新したら両方に push します。
+
+```bash
+git add -A && git commit -m "update"
+git push origin main
+git push -f origin main:gh-pages
+```
+
+（リポジトリの Settings → Pages で公開ブランチを `main` に変更すれば、以後は `git push origin main` だけで公開できます。）
 
 © 2026 Level Up K with MiAe Ssem
