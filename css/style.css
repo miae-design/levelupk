@@ -800,6 +800,52 @@ button, input { font-family: inherit; }
   color: #5A6B80;
 }
 
+/* ---------- Sebome visual (spring hanok photo) ---------- */
+.sebome-visual {
+  position: relative;
+  margin: 20px 0 0;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #E7E4DC;
+  box-shadow: 0 18px 44px rgba(14, 43, 82, .16);
+}
+.sebome-visual__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.sebome-visual::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 62%;
+  background: linear-gradient(to top, rgba(7, 26, 52, .74) 0%, rgba(7, 26, 52, .38) 46%, rgba(7, 26, 52, 0) 100%);
+  pointer-events: none;
+}
+.sebome-visual__cap {
+  position: absolute;
+  left: clamp(18px, 3vw, 30px);
+  right: clamp(18px, 3vw, 30px);
+  bottom: clamp(14px, 2.4vw, 24px);
+  z-index: 1;
+}
+.sebome-visual__text {
+  display: block;
+  font-size: clamp(13px, 1.35vw, 15px);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: .02em;
+  color: #fff;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, .38);
+}
+
 /* ---------- Facts & venue ---------- */
 .fact-grid {
   display: grid;
@@ -2016,6 +2062,8 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
   .dhero__lead { font-size: 14px; }
   .dhero__actions .btn { flex: 1 1 100%; }
   .dhero::after { display: none; }
+  .sebome-visual { margin-top: 16px; border-radius: 22px; }
+  .sebome-visual__img { aspect-ratio: 3 / 2; object-position: center 55%; }
   .bio-grid { grid-template-columns: 1fr; }
   .line-card { gap: 16px; }
   .line-card__qr img { width: 116px; height: 116px; }

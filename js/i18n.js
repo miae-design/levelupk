@@ -125,7 +125,9 @@ window.I18N = {
       lineText: "友だち追加して、体験レッスンや教室のことをお気軽にご質問ください。",
       lineId: "@155sxowo",
       lineCta: "LINEで友だち追加",
-      note: "時間割・受講料などの詳細は、LINE公式アカウントまたはメールでお問い合わせください。"
+      note: "時間割・受講料などの詳細は、LINE公式アカウントまたはメールでお問い合わせください。",
+      visualAlt: "白い梅の花が咲く韓屋（ハノク）の瓦屋根",
+      visualCaption: "梅の花と瓦屋根 — 韓国・春の風景"
     },
     online: {
       kicker: "オンライン",
@@ -314,7 +316,9 @@ window.I18N = {
       lineText: "Add us on LINE and ask anything about trial lessons or the class.",
       lineId: "@155sxowo",
       lineCta: "Add us on LINE",
-      note: "For the timetable, fees and other details, please contact us on LINE or by email."
+      note: "For the timetable, fees and other details, please contact us on LINE or by email.",
+      visualAlt: "White plum blossoms against the tiled roof of a traditional Korean hanok",
+      visualCaption: "Plum blossoms and tiled eaves — spring in Korea"
     },
     online: {
       kicker: "Online",
@@ -503,7 +507,9 @@ window.I18N = {
       lineText: "친구 추가하고 체험 레슨이나 교실에 대해 편하게 물어보세요.",
       lineId: "@155sxowo",
       lineCta: "LINE 친구 추가",
-      note: "시간표·수강료 등 자세한 내용은 LINE 공식계정이나 이메일로 문의해 주세요."
+      note: "시간표·수강료 등 자세한 내용은 LINE 공식계정이나 이메일로 문의해 주세요.",
+      visualAlt: "흰 매화꽃이 핀 한옥 기와지붕",
+      visualCaption: "매화꽃과 기와지붕 — 한국의 봄 풍경"
     },
     online: {
       kicker: "온라인",

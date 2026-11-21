@@ -77,6 +77,11 @@
       if (typeof value === "string") el.setAttribute("placeholder", value);
     });
 
+    $$("[data-i18n-alt]").forEach(function (el) {
+      var value = t(el.getAttribute("data-i18n-alt"));
+      if (typeof value === "string") el.setAttribute("alt", value);
+    });
+
     if (dict.meta) {
       document.title = dict.meta.title;
       var desc = $('meta[name="description"]');

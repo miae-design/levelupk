@@ -17,6 +17,7 @@ css/verse.css         聖句ページ用の追加デザイン
 js/i18n.js            日本語／英語／韓国語の文章
 js/app.js             画面切り替え・音声プレーヤー・パスワード
 assets/               ロゴ・写真・LINE QR
+images/               教室ページの写真（Crowdpic・出典は images/CREDITS.md）
 audio/                音声ファイル
 ```
 
