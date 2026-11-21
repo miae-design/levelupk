@@ -1677,97 +1677,6 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
   color: #8A6A24;
   line-height: 1.6;
 }
-.notice-bar__cta {
-  flex: 0 0 auto;
-  margin-left: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 9px 16px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #fff;
-  font-size: 12.5px;
-  font-weight: 800;
-  text-decoration: none;
-  white-space: nowrap;
-  box-shadow: 0 8px 18px rgba(14, 43, 82, .22);
-  transition: background .18s ease, transform .18s ease;
-}
-.notice-bar__cta:hover { background: #143c72; transform: translateY(-1px); }
-
-/* =========================================================
-   Verse strip (home)
-   ========================================================= */
-.vstrip {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin: 2px 0 34px;
-  padding: 20px 22px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #123A6B 0%, #0E2B52 52%, #0A1E3B 100%);
-  color: #fff;
-  text-decoration: none;
-  box-shadow: 0 16px 34px rgba(14, 43, 82, .22);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-.vstrip:hover { transform: translateY(-3px); box-shadow: 0 22px 44px rgba(14, 43, 82, .3); }
-.vstrip__icon {
-  width: 52px;
-  height: 52px;
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, .12);
-  border: 1px solid rgba(255, 255, 255, .16);
-  color: #F7D79B;
-}
-.vstrip__body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-.vstrip__kicker {
-  font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: .18em;
-  color: #F7D79B;
-}
-.vstrip__title {
-  font-size: clamp(1.04rem, 2.4vw, 1.26rem);
-  font-weight: 900;
-  line-height: 1.35;
-  color: #fff;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
-.vstrip__text {
-  font-size: 12.8px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, .78);
-  line-height: 1.6;
-}
-.vstrip__cta {
-  flex: 0 0 auto;
-  margin-left: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: #fff;
-  color: var(--navy);
-  font-size: 13px;
-  font-weight: 800;
-  white-space: nowrap;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
-}
-.vstrip__cta::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  transform: rotate(45deg);
-}
 
 /* =========================================================
    Footer
@@ -2081,11 +1990,6 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
   .notice-bar__label { display: none; }
   .notice-bar__title { font-size: 13.5px; }
   .notice-bar__sub { font-size: 11.8px; }
-  .notice-bar__cta { margin-left: 0; margin-top: 2px; width: 100%; justify-content: center; }
-
-  .vstrip { flex-wrap: wrap; gap: 12px; padding: 18px; border-radius: 20px; margin-bottom: 26px; }
-  .vstrip__icon { width: 44px; height: 44px; border-radius: 14px; }
-  .vstrip__cta { margin-left: 0; width: 100%; justify-content: center; }
 }
 
 @media (max-width: 420px) {

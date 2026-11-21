@@ -3,7 +3,7 @@
 福島県郡山市の韓国語教室「セボメ韓国語教室（새봄에 한국어 교실）」と、オンラインレッスン、Amazon KDP のオリジナル教材・音声を紹介する公式サイトです。
 
 - サイト: https://miae-design.github.io/levelupk/
-- 聖句ページ（1〜12月・音声つき）: https://miae-design.github.io/levelupk/verse.html
+- 聖句ページ（1〜12月・音声つき）: https://miae-design.github.io/levelupk/verse.html ／ 礼拝出席カードのQRコードからのみ案内（サイト内にリンクなし・検索非公開）
 - LINE 公式アカウント: [@155sxowo](https://line.me/R/ti/p/@155sxowo)
 - お問い合わせ: miae71250@gmail.com
 

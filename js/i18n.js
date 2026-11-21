@@ -19,14 +19,7 @@ window.I18N = {
     notice: {
       title: "ただいまホームページ準備中です",
       sub: "2027年4月 開講予定 ／ 教室案内・教材・音声を少しずつ公開していきます。",
-      cta: "今月の聖句を聞く",
       label: "お知らせ"
-    },
-    vstrip: {
-      kicker: "聖句・音声",
-      title: "1月〜12月 聖句の韓国語",
-      text: "月替わりのみ言葉を、韓国語と日本語で聞けます。",
-      cta: "聞いてみる"
     },
     home: {
       heroTitle: "韓国語が、もっと楽しくなる。",
@@ -196,7 +189,6 @@ window.I18N = {
     },
     footer: {
       brandLine: "教室・オンライン・オリジナル教材",
-      verse: "聖句（1〜12月）",
       rights: "© 2026 Level Up K with MiAe Ssem"
     }
   },
@@ -219,14 +211,7 @@ window.I18N = {
     notice: {
       title: "Website Coming Soon",
       sub: "Opening April 2027 ／ Class info, books and audio are being prepared step by step.",
-      cta: "Hear this month’s verse",
       label: "Notice"
-    },
-    vstrip: {
-      kicker: "Bible verse · Audio",
-      title: "Monthly Verse in Korean (Jan–Dec)",
-      text: "One verse for each month, in Korean and Japanese, with audio.",
-      cta: "Listen"
     },
     home: {
       heroTitle: "Level Up Your Korean",
@@ -393,7 +378,6 @@ window.I18N = {
     },
     footer: {
       brandLine: "Classes · Online · Original materials",
-      verse: "Monthly verses (Jan–Dec)",
       rights: "© 2026 Level Up K with MiAe Ssem"
     }
   },
@@ -416,14 +400,7 @@ window.I18N = {
     notice: {
       title: "홈페이지 준비 중입니다",
       sub: "2027년 4월 개강 예정 ／ 교실 안내와 교재, 음성을 차례로 공개합니다.",
-      cta: "이 달의 말씀 듣기",
       label: "안내"
-    },
-    vstrip: {
-      kicker: "성경 구절 · 음성",
-      title: "1월~12월 말씀 한국어",
-      text: "달마다 한 구절, 한국어와 일본어로 듣습니다.",
-      cta: "들어 보기"
     },
     home: {
       heroTitle: "한국어가 더 즐거워집니다",
@@ -590,7 +567,6 @@ window.I18N = {
     },
     footer: {
       brandLine: "교실 · 온라인 · 오리지널 교재",
-      verse: "성경 구절 (1~12월)",
       rights: "© 2026 Level Up K with MiAe Ssem"
     }
   }
