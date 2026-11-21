@@ -5,7 +5,7 @@
 - サイト: https://miae-design.github.io/levelupk/
 - 聖句ページ（1〜12月・音声つき）: https://miae-design.github.io/levelupk/verse.html ／ 礼拝出席カードのQRコードからのみ案内（サイト内にリンクなし・検索非公開）
 - LINE 公式アカウント: [@155sxowo](https://line.me/R/ti/p/@155sxowo)
-- お問い合わせ: miae71250@gmail.com
+- お問い合わせ: levelupk.ssem@gmail.com
 
 ## ファイル構成
 

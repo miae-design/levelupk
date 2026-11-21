@@ -189,7 +189,7 @@ ko: { ... }   ← 한국어
 | 결제 안내 문구 | `pay.*` |
 | 연락처 | `profile.*` / `index.html` 의 이메일 부분 |
 
-이메일 주소(`miae71250@gmail.com`)는 `index.html` 안에 여러 번 나옵니다. 바꾸실 때는 **전부** 바꿔 주세요. (Ctrl+H 로 한꺼번에 바꾸면 편합니다.)
+이메일 주소(`levelupk.ssem@gmail.com`)는 `index.html` 안에 여러 번 나옵니다. 바꾸실 때는 **전부** 바꿔 주세요. (Ctrl+H 로 한꺼번에 바꾸면 편합니다.)
 
 ---
 
@@ -282,7 +282,7 @@ git push -f origin main:gh-pages
 - [ ] **화면의 "샘플용 비밀번호" 안내를 지웠다** (`index.html` 의 `.hint`)
 - [ ] 실제 MP3를 `audio/` 에 넣었다 (또는 아직이면 "준비 중" 표시 그대로 두기)
 - [ ] `audio/sample.wav` 와 목록의 sample 항목을 정리했다
-- [ ] 이메일 주소가 `miae71250@gmail.com` 으로 맞다
+- [ ] 이메일 주소가 `levelupk.ssem@gmail.com` 으로 맞다
 - [ ] LINE QR이 `@155sxowo` 로 연결된다
 - [ ] 강사 소개·교실 정보에 틀린 내용이 없다
 - [ ] 스마트폰에서 열어 첫 화면과 4개 카드가 잘 보인다
