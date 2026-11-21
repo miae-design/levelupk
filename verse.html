@@ -170,7 +170,7 @@
    ---------------------------------------------------------
    ★ 文章を直すときは、この VERSES の中だけを書き換えてください。
    ★ 音声は audio フォルダに verse_01.mp3 〜 verse_12.mp3 の名前で
-     置くと、自動で再生ボタンが出ます（.m4a でも可）。
+     置くと、自動で再生ボタンが出ます（.m4a / .wav でも可）。
    ========================================================= */
 var VERSES = [
   {
@@ -264,7 +264,7 @@ var VERSES = [
 (function () {
   "use strict";
 
-  var AUDIO_EXTS = ["mp3", "m4a"];
+  var AUDIO_EXTS = ["mp3", "m4a", "wav"];
   var current = 1;
   var probeCache = {};
   var audioEl = document.getElementById("v-audio");
