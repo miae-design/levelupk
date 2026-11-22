@@ -689,7 +689,7 @@ button, input { font-family: inherit; }
   background: #fff;
   border-color: rgba(255, 255, 255, .9);
   box-shadow: 0 2px 10px rgba(10, 40, 25, .18);
-  padding: 4%;
+  padding: 4px;
   box-sizing: border-box;
 }
 .dhero__icon--brand img {
