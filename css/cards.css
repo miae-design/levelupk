@@ -88,10 +88,9 @@ body.cards-page[data-vol="3"] { --vol: #2E6FBF; --vol-soft: #E8F1FD; --vol-deep:
   line-height: 1.4;
   letter-spacing: -.01em;
   color: var(--navy);
-  text-wrap: balance;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
+  text-wrap: pretty;
 }
+.chero__title span { display: block; }
 .chero__lead {
   margin: 8px 0 0;
   font-size: 13.5px;
