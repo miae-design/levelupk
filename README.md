@@ -12,14 +12,32 @@
 ```
 index.html            トップページ（教材・教室・オンライン・プロフィール）
 verse.html            1月〜12月の聖句ページ（月切り替え・音声）
+cards.html            KDP絵本の「ことばカード」（45語・音声）
 css/style.css         サイト全体のデザイン
 css/verse.css         聖句ページ用の追加デザイン
+css/cards.css         ことばカード用の追加デザイン
 js/i18n.js            日本語／英語／韓国語の文章
 js/app.js             画面切り替え・音声プレーヤー・パスワード
 assets/               ロゴ・写真・LINE QR
+assets/fonts/         ことばカード用ハングル書体（サブセット）
 images/               教室ページの写真（Crowdpic・出典は images/CREDITS.md）
 audio/                音声ファイル
+audio/cards/          絵本のことはの音声（tokki.mp3 など）
 ```
+
+## 絵本の音声を入れる（先生向け）
+
+`audio/cards/` フォルダに、ことばの名前（スラッグ）でファイルを置くと、`cards.html` に再生ボタンが出ます。
+
+```
+audio/cards/tokki.mp3      → 토끼
+audio/cards/jadongcha.mp3  → 자동차
+```
+
+- `.mp3` がなければ `.m4a`、`.wav` の順に探します。無いことばは「音声準備中 ／ Audio Coming Soon」と表示されます。
+- 45語の一覧・録音チェック表は `kdp_cards/녹음용_단어_목록_45개.md`（ワークスペース）にあります。
+- ことばと翻訳は `cards.html` の `VOLUMES` の中だけを書き換えてください。
+- ページは `noindex, nofollow`、`index.html` からのリンクなし（絵本のQR専用）。QR は `cards.html?w=スラッグ` です。
 
 ## 聖句の音声を入れる（先生向け）
 

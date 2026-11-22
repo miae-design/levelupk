@@ -1,0 +1,487 @@
+/* =========================================================
+   Level Up K with MiAe Ssem — cards.css
+   絵本のQRコード用「ことばカード」（cards.html）
+   style.css のデザイントークンを継承して使います。
+   巻ごとに色を変えます：1巻＝コーラル／2巻＝グリーン／3巻＝ブルー
+   ========================================================= */
+
+/* ナビゲーション付きのハングル表示用（SIL OFL・サブセット版） */
+@font-face {
+  font-family: "NanumBarunGothic Web";
+  src: url("../assets/fonts/nanum-barun-gothic-bold.subset.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body.cards-page {
+  --hangul: "NanumBarunGothic Web", "Apple SD Gothic Neo", "Malgun Gothic",
+            "Noto Sans KR", "Hiragino Sans", sans-serif;
+  --vol: #E8613C;
+  --vol-soft: #FDEDE6;
+  --vol-deep: #B8412A;
+  --vol-line: #F3C7B8;
+  background:
+    radial-gradient(120% 55% at 50% 0%, #FFFDF8 0%, rgba(255, 253, 248, 0) 62%),
+    var(--cream);
+  transition: background .35s ease;
+}
+
+body.cards-page[data-vol="1"] { --vol: #E8613C; --vol-soft: #FDEDE6; --vol-deep: #B8412A; --vol-line: #F3C7B8; }
+body.cards-page[data-vol="2"] { --vol: #2F7D4A; --vol-soft: #E8F4EC; --vol-deep: #1E5B35; --vol-line: #BFDDC9; }
+body.cards-page[data-vol="3"] { --vol: #2E6FBF; --vol-soft: #E8F1FD; --vol-deep: #1B4C8A; --vol-line: #C2D6F0; }
+
+/* ---------- Header（verse.html と同じ見た目） ---------- */
+.vhead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+.vhead__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(20, 40, 70, .12);
+  box-shadow: 0 2px 8px rgba(18, 35, 58, .06);
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .18s ease, transform .18s ease;
+}
+.vhead__link:hover { background: #F4F7FB; transform: translateY(-1px); }
+.vhead__link svg { flex: 0 0 auto; }
+
+/* ---------- Hero ---------- */
+.chero {
+  margin-top: 20px;
+  padding: clamp(20px, 3.4vw, 32px) clamp(22px, 4vw, 40px);
+  border-radius: 26px;
+  background:
+    radial-gradient(90% 120% at 100% 0%, var(--vol-soft) 0%, rgba(255, 255, 255, 0) 70%),
+    #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.chero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--vol-soft);
+  color: var(--vol-deep);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+.chero__title {
+  margin: 0;
+  font-size: clamp(1.3rem, 3.6vw, 1.75rem);
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: -.01em;
+  color: var(--navy);
+}
+.chero__lead {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  line-height: 1.8;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* ---------- ことばカード ---------- */
+.wcard {
+  position: relative;
+  overflow: hidden;
+  margin-top: 18px;
+  padding: clamp(24px, 4.2vw, 46px) clamp(20px, 4vw, 48px) clamp(22px, 3.6vw, 38px);
+  border-radius: 30px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 44px rgba(18, 35, 58, .10);
+}
+.wcard::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 8px;
+  background: linear-gradient(90deg, var(--vol) 0%, var(--vol-deep) 100%);
+}
+
+.wcard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: clamp(14px, 2.4vw, 22px);
+}
+.wbadge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 0;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background: var(--vol-soft);
+  border: 1px solid var(--vol-line);
+  color: var(--vol-deep);
+  font-weight: 800;
+  line-height: 1.35;
+}
+.wbadge__no { font-size: 12px; letter-spacing: .06em; }
+.wbadge__ja { font-size: 15px; }
+.wbadge__ko {
+  font-family: var(--hangul);
+  font-size: 13px;
+  font-weight: 700;
+  opacity: .82;
+  padding-left: 9px;
+  border-left: 1px solid var(--vol-line);
+}
+.wcount {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 大きなハングル */
+.wcard__word {
+  margin: 0;
+  font-family: var(--hangul);
+  font-size: clamp(64px, 21vw, 148px);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: .015em;
+  text-align: center;
+  color: var(--ink);
+  white-space: nowrap;
+  word-break: keep-all;
+  padding: clamp(6px, 2vw, 18px) 0 clamp(4px, 1.4vw, 12px);
+}
+
+/* 意味（日本語／英語の切り替え） */
+.wtrans {
+  margin-top: clamp(8px, 1.6vw, 16px);
+  text-align: center;
+}
+.langtoggle {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #F4F1EA;
+  border: 1px solid var(--line);
+}
+.langtoggle__btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #5E6D80;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  padding: 6px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease;
+}
+.langtoggle__btn:hover { color: var(--navy); }
+.langtoggle__btn.is-active {
+  background: #fff;
+  color: var(--navy);
+  box-shadow: 0 2px 8px rgba(18, 35, 58, .12);
+}
+.wtrans__main {
+  margin: 14px 0 0;
+  font-size: clamp(1.55rem, 5.2vw, 2.35rem);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: .01em;
+  color: var(--vol-deep);
+}
+.wtrans__sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.wtrans__sub--ja { letter-spacing: .02em; }
+.wtrans__sub-label {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: #93A0B2;
+  text-transform: uppercase;
+}
+
+/* ---------- 音声 ---------- */
+.waudio {
+  margin-top: clamp(20px, 3.4vw, 30px);
+  padding: clamp(16px, 2.6vw, 22px);
+  border-radius: 22px;
+  background: #FBF9F4;
+  border: 1px solid var(--line);
+}
+.waudio__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.waudio__icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--vol-soft);
+  color: var(--vol-deep);
+}
+.waudio__head h2 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.4;
+}
+.waudio__head p {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.wplayer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #EDE7DA;
+}
+.wplayer[hidden] { display: none; }
+.wplay {
+  appearance: none;
+  flex: 0 0 auto;
+  width: 58px;
+  height: 58px;
+  border: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--vol);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(18, 35, 58, .18);
+  transition: transform .18s ease, background .18s ease;
+}
+.wplay:hover { background: var(--vol-deep); transform: translateY(-1px); }
+.wplay:active { transform: scale(.96); }
+.wplay svg { pointer-events: none; }
+.wplay__pause { display: none; }
+.wplay.is-playing .wplay__play { display: none; }
+.wplay.is-playing .wplay__pause { display: block; }
+.wplayer__body { flex: 1 1 auto; min-width: 0; }
+.wplayer__audio {
+  width: 100%;
+  height: 38px;
+  display: block;
+  border-radius: 12px;
+  outline-offset: 4px;
+}
+.wplayer__hint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.wnotice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px 16px;
+  border-radius: 16px;
+  background: #FFF8E9;
+  border: 1px dashed #E3C489;
+  color: #7A5405;
+}
+.wnotice[hidden] { display: none; }
+.wnotice__ico { flex: 0 0 auto; margin-top: 2px; }
+.wnotice p { margin: 0; font-size: 14px; font-weight: 800; line-height: 1.65; }
+.wnotice span {
+  display: block;
+  margin-top: 3px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #8A6A24;
+}
+
+.wmiss {
+  margin: 16px 0 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #F4F7FB;
+  border: 1px solid #DCE5F0;
+  color: #4C6079;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* ---------- 前後のことば ---------- */
+.wnav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.wnav__btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 15px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(20, 40, 70, .12);
+  background: #fff;
+  color: var(--navy);
+  font-size: 13.5px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(18, 35, 58, .07);
+  transition: background .18s ease, color .18s ease, transform .16s ease, opacity .18s ease;
+}
+.wnav__btn:hover:not(:disabled) { background: var(--navy); color: #fff; }
+.wnav__btn:active:not(:disabled) { transform: scale(.98); }
+.wnav__btn:disabled {
+  opacity: .38;
+  cursor: default;
+  box-shadow: none;
+  background: #F6F3EC;
+}
+.wnav__btn svg { flex: 0 0 auto; }
+#w-prev { justify-self: start; }
+#w-next { justify-self: end; }
+.wnav__hint {
+  margin: 0;
+  text-align: center;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: var(--vol-deep);
+  white-space: nowrap;
+}
+.wnav__hint:empty { display: none; }
+
+/* ---------- ほかの巻 ---------- */
+.vswitch {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .72);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+.vswitch__label {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .2em;
+  color: var(--muted);
+}
+.vswitch__list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.vswitch__btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(20, 40, 70, .12);
+  background: #fff;
+  color: #4E5F75;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
+}
+.vswitch__btn b {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #F1ECE1;
+  color: #7A8798;
+  font-size: 10.5px;
+  font-weight: 900;
+}
+.vswitch__btn i {
+  font-family: var(--hangul);
+  font-style: normal;
+  font-weight: 700;
+  color: #8C99AA;
+  padding-left: 7px;
+  border-left: 1px solid #E7E2D6;
+}
+.vswitch__btn:hover { background: #F7F4EC; color: var(--navy); }
+.vswitch__btn.is-active {
+  background: var(--vol);
+  border-color: var(--vol);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(18, 35, 58, .16);
+}
+.vswitch__btn.is-active b { background: rgba(255, 255, 255, .24); color: #fff; }
+.vswitch__btn.is-active i { color: rgba(255, 255, 255, .86); border-left-color: rgba(255, 255, 255, .3); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .vhead__link span { display: none; }
+  .vhead__link { padding: 10px; }
+  .wcard__word { font-size: clamp(58px, 20vw, 120px); }
+  .wnav { grid-template-columns: 1fr 1fr; }
+  .wnav__hint { grid-column: 1 / -1; grid-row: 2; }
+  .wnav__btn { padding: 13px 10px; font-size: 12.5px; }
+  .wplayer { flex-direction: column; align-items: stretch; gap: 10px; }
+  .wplay { width: 100%; border-radius: 14px; height: 50px; }
+  .wplay svg { width: 22px; height: 22px; }
+  .waudio__head { align-items: flex-start; }
+}
+
+@media (max-width: 380px) {
+  .brand__text em { display: none; }
+  .wbadge__ko { display: none; }
+  .wbadge__ja { font-size: 14px; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .site-header, .site-footer, .wnav, .vswitch, .langtoggle, .waudio { display: none !important; }
+  body.cards-page { background: #fff; }
+  .wcard, .chero { box-shadow: none; }
+}

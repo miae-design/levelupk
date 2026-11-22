@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ことばカード｜Level Up K with MiAe Ssem</title>
+<meta name="description" content="絵本の韓国語ことばを、音で聞いてまねしてみよう。日本語・英語の意味つき。Level Up K with MiAe Ssem の幼児向け韓国語ことばカード。">
+<meta name="theme-color" content="#0E2B52">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ことばカード｜Level Up K with MiAe Ssem">
+<meta property="og:description" content="絵本の韓国語ことばを、音で聞いてまねしてみよう。">
+<meta property="og:image" content="assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/nanum-barun-gothic-bold.subset.woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cards.css">
+</head>
+<body class="cards-page">
+<a class="skip-link" href="#card-main">メインコンテンツへ</a>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-label="Level Up K with MiAe Ssem トップページ">
+      <img class="brand__icon" src="assets/icon.png" alt="" width="256" height="256">
+      <span class="brand__text">Level Up K <em>with MiAe Ssem</em></span>
+    </a>
+    <div class="vhead">
+      <a class="vhead__link" href="index.html">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg>
+        <span>教室サイトへ</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="card-main">
+  <div class="wrap">
+
+    <!-- ============ Hero ============ -->
+    <section class="chero">
+      <p class="chero__kicker">ことばカード ／ 말 카드</p>
+      <h1 class="chero__title">えほんの ことばを きいてみよう</h1>
+      <p class="chero__lead">絵本と同じ言葉です。音を聞いて、いっしょに言ってみましょう。</p>
+    </section>
+
+    <!-- ============ Word card ============ -->
+    <article class="wcard" id="wcard" aria-live="polite" aria-labelledby="w-ko">
+      <div class="wcard__top">
+        <p class="wbadge">
+          <span class="wbadge__no" id="w-vol-no">第1巻</span>
+          <span class="wbadge__ja" id="w-vol-ja">どうぶつ</span>
+          <span class="wbadge__ko" id="w-vol-ko" lang="ko">동물</span>
+        </p>
+        <p class="wcount"><span id="w-count">1 / 15</span></p>
+      </div>
+
+      <p class="wcard__word" id="w-ko" lang="ko">토끼</p>
+
+      <div class="wtrans">
+        <div class="langtoggle" role="group" aria-label="意味の言語を選ぶ">
+          <button class="langtoggle__btn" type="button" data-lang="ja" aria-pressed="true">日本語</button>
+          <button class="langtoggle__btn" type="button" data-lang="en" aria-pressed="false">English</button>
+        </div>
+        <p class="wtrans__main" id="w-main">うさぎ</p>
+        <p class="wtrans__sub" id="w-sub"><span class="wtrans__sub-label">English</span> <span id="w-sub-text">rabbit</span></p>
+      </div>
+
+      <section class="waudio" aria-labelledby="waudio-title">
+        <div class="waudio__head">
+          <span class="waudio__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3l4.5-3.6v12.2L7 14.5H4z"/><path d="M15.5 9a4.2 4.2 0 010 6M18.5 6.4a8 8 0 010 11.2"/></svg>
+          </span>
+          <div>
+            <h2 id="waudio-title">音声で聞く ／ 소리로 듣기</h2>
+            <p id="w-audio-caption">「토끼」の音声</p>
+          </div>
+        </div>
+
+        <div class="wplayer" id="wplayer" hidden>
+          <button class="wplay" id="w-play" type="button" aria-label="再生">
+            <svg class="wplay__play" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M8 5.2v13.6c0 .8.9 1.3 1.6.9l10.2-6.8c.6-.4.6-1.3 0-1.7L9.6 4.3C8.9 3.9 8 4.4 8 5.2z"/></svg>
+            <svg class="wplay__pause" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><rect x="6.5" y="5" width="4" height="14" rx="1.2"/><rect x="13.5" y="5" width="4" height="14" rx="1.2"/></svg>
+          </button>
+          <div class="wplayer__body">
+            <audio class="wplayer__audio" id="w-audio" controls preload="none"></audio>
+            <p class="wplayer__hint">大きな音で聞くときは、端末の音量にご注意ください。</p>
+          </div>
+        </div>
+
+        <div class="wnotice" id="w-pending">
+          <span class="wnotice__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.2M12 16.2h.01"/></svg>
+          </span>
+          <p>
+            音声準備中 ／ Audio Coming Soon
+            <span>先生の録音が入ると、ここから聞けます。それまでは、おうちの人と一緒に声に出して言ってみましょう。</span>
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <!-- ============ Prev / Next ============ -->
+    <nav class="wnav" aria-label="ことばを移動する">
+      <button class="wnav__btn" id="w-prev" type="button">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        <span>まえの ことば</span>
+      </button>
+      <p class="wnav__hint" id="w-navhint" aria-live="polite"></p>
+      <button class="wnav__btn" id="w-next" type="button">
+        <span>つぎの ことば</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </nav>
+
+    <!-- ============ Volume switch ============ -->
+    <nav class="vswitch" id="vswitch" aria-label="ほかの巻をひらく">
+      <p class="vswitch__label">ほかの まき</p>
+      <div class="vswitch__list"></div>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="assets/icon.png" alt="" width="256" height="256" loading="lazy">
+      <p><strong>Level Up K</strong> with MiAe Ssem<br><span>教室・オンライン・オリジナル教材</span></p>
+    </div>
+    <div class="site-footer__links">
+      <a href="index.html">ホーム</a>
+      <a href="mailto:levelupk.ssem@gmail.com">levelupk.ssem@gmail.com</a>
+    </div>
+    <p class="site-footer__rights">© 2026 Level Up K with MiAe Ssem</p>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   ことばデータ（3巻・45語）
+   ---------------------------------------------------------
+   ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
+   ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
+     自動で再生ボタンが出ます（例：audio/cards/tokki.mp3、.m4a / .wav も可）。
+   ★ 各ページのQRコードは cards.html?w=スラッグ です。
+   ========================================================= */
+var VOLUMES = [
+  {
+    id: 1,
+    no: "第1巻",
+    ja: "どうぶつ",
+    ko: "동물",
+    en: "Animals",
+    words: [
+      { slug: "tokki",       ko: "토끼",    ja: "うさぎ",       en: "rabbit" },
+      { slug: "gangaji",     ko: "강아지",  ja: "こいぬ",       en: "puppy" },
+      { slug: "goyangi",     ko: "고양이",  ja: "ねこ",         en: "cat" },
+      { slug: "gom",         ko: "곰",      ja: "くま",         en: "bear" },
+      { slug: "saja",        ko: "사자",    ja: "ライオン",     en: "lion" },
+      { slug: "kokkiri",     ko: "코끼리",  ja: "ぞう",         en: "elephant" },
+      { slug: "girin",       ko: "기린",    ja: "きりん",       en: "giraffe" },
+      { slug: "wonsungi",    ko: "원숭이",  ja: "さる",         en: "monkey" },
+      { slug: "penggwin",    ko: "펭귄",    ja: "ペンギン",     en: "penguin" },
+      { slug: "ori",         ko: "오리",    ja: "あひる",       en: "duck" },
+      { slug: "gaeguri",     ko: "개구리",  ja: "かえる",       en: "frog" },
+      { slug: "nabi",        ko: "나비",    ja: "ちょう",       en: "butterfly" },
+      { slug: "mulgogi",     ko: "물고기",  ja: "さかな",       en: "fish" },
+      { slug: "geobugi",     ko: "거북이",  ja: "かめ",         en: "turtle" },
+      { slug: "byeongari",   ko: "병아리",  ja: "ひよこ",       en: "chick" }
+    ]
+  },
+  {
+    id: 2,
+    no: "第2巻",
+    ja: "しょくぶつ・しき",
+    ko: "식물・사계절",
+    en: "Plants & Seasons",
+    words: [
+      { slug: "bom",         ko: "봄",      ja: "はる",         en: "spring" },
+      { slug: "yeoreum",     ko: "여름",    ja: "なつ",         en: "summer" },
+      { slug: "gaeul",       ko: "가을",    ja: "あき",         en: "autumn" },
+      { slug: "gyeoul",      ko: "겨울",    ja: "ふゆ",         en: "winter" },
+      { slug: "kkot",        ko: "꽃",      ja: "はな",         en: "flower" },
+      { slug: "namu",        ko: "나무",    ja: "き",           en: "tree" },
+      { slug: "haebaragi",   ko: "해바라기", ja: "ひまわり",    en: "sunflower" },
+      { slug: "danpung",     ko: "단풍",    ja: "もみじ",       en: "maple leaf" },
+      { slug: "nunsaram",    ko: "눈사람",  ja: "ゆきだるま",   en: "snowman" },
+      { slug: "hae",         ko: "해",      ja: "たいよう",     en: "sun" },
+      { slug: "dal",         ko: "달",      ja: "つき",         en: "moon" },
+      { slug: "byeol",       ko: "별",      ja: "ほし",         en: "star" },
+      { slug: "gureum",      ko: "구름",    ja: "くも",         en: "cloud" },
+      { slug: "bi",          ko: "비",      ja: "あめ",         en: "rain" },
+      { slug: "mujigae",     ko: "무지개",  ja: "にじ",         en: "rainbow" }
+    ]
+  },
+  {
+    id: 3,
+    no: "第3巻",
+    ja: "のりもの",
+    ko: "탈 것",
+    en: "Vehicles",
+    words: [
+      { slug: "jadongcha",   ko: "자동차",  ja: "くるま",       en: "car" },
+      { slug: "beoseu",      ko: "버스",    ja: "バス",         en: "bus" },
+      { slug: "gicha",       ko: "기차",    ja: "きしゃ",       en: "train" },
+      { slug: "bihaenggi",   ko: "비행기",  ja: "ひこうき",     en: "airplane" },
+      { slug: "bae",         ko: "배",      ja: "ふね",         en: "ship" },
+      { slug: "jajeongeo",   ko: "자전거",  ja: "じてんしゃ",   en: "bicycle" },
+      { slug: "sobangcha",   ko: "소방차",  ja: "しょうぼうしゃ", en: "fire truck" },
+      { slug: "gyeongchalcha", ko: "경찰차", ja: "パトカー",    en: "police car" },
+      { slug: "gugeupcha",   ko: "구급차",  ja: "きゅうきゅうしゃ", en: "ambulance" },
+      { slug: "teureok",     ko: "트럭",    ja: "トラック",     en: "truck" },
+      { slug: "hellikopteo", ko: "헬리콥터", ja: "ヘリコプター", en: "helicopter" },
+      { slug: "jihacheol",   ko: "지하철",  ja: "ちかてつ",     en: "subway" },
+      { slug: "taeksi",      ko: "택시",    ja: "タクシー",     en: "taxi" },
+      { slug: "otobai",      ko: "오토바이", ja: "バイク",      en: "motorcycle" },
+      { slug: "roket",       ko: "로켓",    ja: "ロケット",     en: "rocket" }
+    ]
+  }
+];
+
+(function () {
+  "use strict";
+
+  var AUDIO_EXTS = ["mp3", "m4a", "wav"];
+  var LANG_KEY = "levelupk_cards_lang";
+  var probeCache = {};
+  var lang = "ja";
+  var volume = null;
+  var index = 0;
+  var audioToken = 0;
+
+  var audioEl = document.getElementById("w-audio");
+  var playerBox = document.getElementById("wplayer");
+  var playBtn = document.getElementById("w-play");
+  var pendingBox = document.getElementById("w-pending");
+  var caption = document.getElementById("w-audio-caption");
+  var wordEl = document.getElementById("w-ko");
+  var prevBtn = document.getElementById("w-prev");
+  var nextBtn = document.getElementById("w-next");
+  var navHint = document.getElementById("w-navhint");
+
+  function $(id) { return document.getElementById(id); }
+  function pad2(n) { return n < 10 ? "0" + n : String(n); }
+
+  /* ---------- 言葉を探す ---------- */
+  function findWord(slug) {
+    if (!slug) return null;
+    var key = String(slug).toLowerCase();
+    for (var v = 0; v < VOLUMES.length; v++) {
+      var words = VOLUMES[v].words;
+      for (var i = 0; i < words.length; i++) {
+        if (words[i].slug === key) return { volume: VOLUMES[v], index: i, word: words[i] };
+      }
+    }
+    return null;
+  }
+
+  function firstOf(volId) {
+    for (var v = 0; v < VOLUMES.length; v++) {
+      if (VOLUMES[v].id === volId) return VOLUMES[v];
+    }
+    return VOLUMES[0];
+  }
+
+  function slugFromUrl() {
+    var raw = null;
+    try { raw = new URLSearchParams(location.search).get("w"); } catch (e) {}
+    if (raw === null) {
+      var hash = (location.hash || "").replace(/^#/, "");
+      if (hash) raw = hash;
+    }
+    return raw ? decodeURIComponent(raw).trim() : "";
+  }
+
+  function setUrl(slug) {
+    var next = "?w=" + encodeURIComponent(slug);
+    if (location.search === next) return;
+    try { history.replaceState(null, "", location.pathname + next); } catch (e) {}
+  }
+
+  /* ---------- 言語トグル ---------- */
+  function langFromUrl() {
+    var raw = null;
+    try { raw = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+    if (!raw) { try { raw = localStorage.getItem(LANG_KEY); } catch (e) {} }
+    return raw === "en" ? "en" : "ja";
+  }
+
+  function applyLangButtons() {
+    Array.prototype.forEach.call(document.querySelectorAll(".langtoggle__btn"), function (btn) {
+      var active = btn.getAttribute("data-lang") === lang;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
+  function setLang(next) {
+    lang = next === "en" ? "en" : "ja";
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+    applyLangButtons();
+    renderTranslations();
+  }
+
+  /* ---------- 文字の大きさを合わせる ---------- */
+  function fitWord() {
+    wordEl.style.fontSize = "";
+    var size = parseFloat(window.getComputedStyle(wordEl).fontSize) || 96;
+    var max = size;
+    var guard = 0;
+    while (wordEl.scrollWidth > wordEl.clientWidth + 1 && size > 34 && guard < 60) {
+      size -= 3;
+      wordEl.style.fontSize = size + "px";
+      guard++;
+    }
+    wordEl.style.lineHeight = Math.max(1.1, (max / size) > 1.35 ? 1.12 : 1.14);
+  }
+
+  /* ---------- 音声 ---------- */
+  function probe(url) {
+    if (probeCache[url] !== undefined) return Promise.resolve(probeCache[url]);
+    return new Promise(function (resolve) {
+      var el = new Audio();
+      var settled = false;
+      function finish(ok) {
+        if (settled) return;
+        settled = true;
+        probeCache[url] = ok;
+        el.removeAttribute("src");
+        try { el.load(); } catch (e) {}
+        resolve(ok);
+      }
+      el.preload = "metadata";
+      el.addEventListener("loadedmetadata", function () { finish(true); });
+      el.addEventListener("error", function () { finish(false); });
+      window.setTimeout(function () { finish(false); }, 6000);
+      el.src = url;
+      try { el.load(); } catch (e) { finish(false); }
+    });
+  }
+
+  function findAudio(slug) {
+    var base = "audio/cards/" + slug;
+    var at = 0;
+    function step() {
+      if (at >= AUDIO_EXTS.length) return Promise.resolve(null);
+      var url = base + "." + AUDIO_EXTS[at++] + "?v=1";
+      return probe(url).then(function (ok) { return ok ? url : step(); });
+    }
+    return step();
+  }
+
+  function resetPlayer() {
+    playerBox.hidden = true;
+    pendingBox.hidden = false;
+    playBtn.classList.remove("is-playing");
+    playBtn.setAttribute("aria-label", "再生");
+    try {
+      audioEl.pause();
+      audioEl.removeAttribute("src");
+    } catch (e) {}
+  }
+
+  function loadAudio(word) {
+    audioToken++;
+    var token = audioToken;
+    caption.textContent = "「" + word.ko + "」の音声";
+    findAudio(word.slug).then(function (url) {
+      if (token !== audioToken) return;
+      if (!url) { resetPlayer(); return; }
+      audioEl.src = url;
+      playerBox.hidden = false;
+      pendingBox.hidden = true;
+      try { audioEl.load(); } catch (e) {}
+    });
+  }
+
+  /* ---------- 表示 ---------- */
+  function renderTranslations() {
+    var word = volume.words[index];
+    var main = lang === "ja" ? word.ja : word.en;
+    var sub = lang === "ja" ? word.en : word.ja;
+    $("w-main").textContent = main;
+    $("w-main").setAttribute("lang", lang === "ja" ? "ja" : "en");
+    $("w-sub-text").textContent = sub;
+    $("w-sub").setAttribute("lang", lang === "ja" ? "en" : "ja");
+    $("w-sub").className = "wtrans__sub wtrans__sub--" + (lang === "ja" ? "en" : "ja");
+    document.querySelector(".wtrans__sub-label").textContent = lang === "ja" ? "English" : "日本語";
+  }
+
+  function render(opts) {
+    var word = volume.words[index];
+
+    document.body.setAttribute("data-vol", String(volume.id));
+    $("w-vol-no").textContent = volume.no;
+    $("w-vol-ja").textContent = volume.ja;
+    $("w-vol-ko").textContent = volume.ko;
+    $("w-count").textContent = (index + 1) + " / " + volume.words.length;
+
+    wordEl.textContent = word.ko;
+    renderTranslations();
+    fitWord();
+
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === volume.words.length - 1;
+    if (index === 0 && volume.words.length === 1) {
+      navHint.textContent = "";
+    } else if (index === volume.words.length - 1) {
+      navHint.textContent = "この巻はここまで。よくできました！";
+    } else if (index === 0) {
+      navHint.textContent = volume.no + "のはじまり";
+    } else {
+      navHint.textContent = "";
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll(".vswitch__btn"), function (btn) {
+      var on = parseInt(btn.getAttribute("data-vol-id"), 10) === volume.id;
+      btn.classList.toggle("is-active", on);
+      if (on) { btn.setAttribute("aria-current", "true"); } else { btn.removeAttribute("aria-current"); }
+    });
+
+    document.title = word.ko + "（" + word.ja + "・" + word.en + "）｜ことばカード｜Level Up K";
+    setUrl(word.slug);
+
+    resetPlayer();
+    loadAudio(word);
+
+    if (opts && opts.scroll) {
+      var top = document.querySelector(".wcard").getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    }
+  }
+
+  function show(target, opts) {
+    volume = target.volume;
+    index = target.index;
+    render(opts);
+  }
+
+  function go(delta) {
+    var next = index + delta;
+    if (next < 0 || next >= volume.words.length) return;
+    index = next;
+    render({ scroll: false });
+  }
+
+  function jumpToVolume(volId) {
+    var vol = firstOf(volId);
+    show({ volume: vol, index: 0 }, { scroll: true });
+  }
+
+  /* ---------- 巻の切り替えボタン ---------- */
+  (function buildVolumeSwitch() {
+    var list = document.querySelector(".vswitch__list");
+    VOLUMES.forEach(function (vol) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "vswitch__btn";
+      btn.setAttribute("data-vol-id", String(vol.id));
+      btn.innerHTML = "<b>" + vol.id + "</b><span>" + vol.ja + "</span><i lang=\"ko\">" + vol.ko + "</i>";
+      btn.addEventListener("click", function () { jumpToVolume(vol.id); });
+      list.appendChild(btn);
+    });
+  })();
+
+  /* ---------- イベント ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll(".langtoggle__btn"), function (btn) {
+    btn.addEventListener("click", function () { setLang(btn.getAttribute("data-lang")); });
+  });
+
+  prevBtn.addEventListener("click", function () { go(-1); });
+  nextBtn.addEventListener("click", function () { go(1); });
+
+  playBtn.addEventListener("click", function () {
+    if (!audioEl.getAttribute("src")) return;
+    if (audioEl.paused) {
+      var p = audioEl.play();
+      if (p && typeof p.catch === "function") p.catch(function () {});
+    } else {
+      audioEl.pause();
+    }
+  });
+
+  audioEl.addEventListener("play", function () {
+    playBtn.classList.add("is-playing");
+    playBtn.setAttribute("aria-label", "一時停止");
+  });
+  audioEl.addEventListener("pause", function () {
+    playBtn.classList.remove("is-playing");
+    playBtn.setAttribute("aria-label", "再生");
+  });
+  audioEl.addEventListener("ended", function () {
+    playBtn.classList.remove("is-playing");
+    playBtn.setAttribute("aria-label", "再生");
+    audioEl.currentTime = 0;
+  });
+  audioEl.addEventListener("error", function () {
+    if (audioEl.getAttribute("src")) resetPlayer();
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.target && /^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)) return;
+    if (event.key === "ArrowLeft") { go(-1); }
+    else if (event.key === "ArrowRight") { go(1); }
+  });
+
+  /* スマホは左右スワイプでも移動 */
+  (function swipe() {
+    var startX = 0, startY = 0, tracking = false;
+    var card = document.getElementById("wcard");
+    card.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { tracking = false; return; }
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      tracking = true;
+    }, { passive: true });
+    card.addEventListener("touchend", function (e) {
+      if (!tracking) return;
+      tracking = false;
+      var t = e.changedTouches[0];
+      var dx = t.clientX - startX;
+      var dy = t.clientY - startY;
+      if (Math.abs(dx) < 55 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+      go(dx < 0 ? 1 : -1);
+    }, { passive: true });
+  })();
+
+  window.addEventListener("resize", function () { if (volume) fitWord(); });
+
+  /* ---------- 起動 ---------- */
+  (function boot() {
+    lang = langFromUrl();
+    applyLangButtons();
+
+    var slug = slugFromUrl();
+    var found = findWord(slug);
+    if (found) {
+      show(found, { scroll: false });
+    } else {
+      show({ volume: VOLUMES[0], index: 0 }, { scroll: false });
+      if (slug) {
+        var hint = document.createElement("p");
+        hint.className = "wmiss";
+        hint.textContent = "「" + slug + "」のことばが見つかりませんでした。最初のことばを表示しています。";
+        document.querySelector(".wcard").appendChild(hint);
+      }
+    }
+  })();
+})();
+</script>
+</body>
+</html>
