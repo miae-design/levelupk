@@ -816,6 +816,8 @@ button, input { font-family: inherit; }
   font-weight: 900;
   line-height: 1.5;
   color: var(--navy);
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 .fcard p {
   margin: 0 0 14px;

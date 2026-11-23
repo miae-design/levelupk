@@ -4,7 +4,7 @@ window.I18N = {
   ja: {
     meta: {
       title: "Level Up K with MiAe Ssem｜韓国語教室・オンライン・オリジナル教材",
-      desc: "福島県郡山市の韓国語教室「セボメ韓国語教室」とオンラインレッスン、Amazon KDPのオリジナル教材・音声を紹介する Level Up K with MiAe Ssem の公式サイトです。"
+      desc: "福島県郡山市の韓国語教室「セボメ韓国語教室」とオンラインレッスン、Amazonで販売中のオリジナル教材・音声を紹介する Level Up K with MiAe Ssem の公式サイトです。"
     },
     splash: {
       headline: "韓国語が、もっと楽しくなる。",
@@ -26,7 +26,7 @@ window.I18N = {
       heroSub: "教室・オンライン・オリジナル教材&動画",
       ctaContact: "体験・お問合せ",
       cardsLabel: "メニュー",
-      card1: { title: "教材・音声・動画", tag1: "KDP書籍", tag2: "音声QR", tag3: "録画セット", cta: "見てみる" },
+      card1: { title: "教材・音声・動画", tag1: "Amazon発売中", tag2: "音声QR", tag3: "録画セット", cta: "見てみる" },
       card2: { title: "セボメ韓国語教室", tag1: "2027.4 郡山開講", tag2: "月3回", tag3: "少人数クラス", cta: "教室案内" },
       card3: { title: "オンラインレッスン", tag1: "個人", tag2: "グループ", tag3: "TOPIK対策", cta: "コース一覧" },
       card4: { title: "李 美愛 先生", tag1: "韓国語教員資格2級", tag2: "指導歴10年+", cta: "プロフィール" }
@@ -35,7 +35,7 @@ window.I18N = {
       kicker: "教材",
       title: "教材・音声・動画",
       heroLead: "本・音声・録画の3つで、ひとりでも続けられる教材です。",
-      b1Title: "Amazon KDP のワークブック",
+      b1Title: "オリジナルワークブック（Amazonで販売中）",
       b1Text: "幼児から大人まで、レベル別に5つのシリーズ。日本語の説明と発音の表記つきで、ひとりでも進められます。",
       b1Tag1: "5シリーズ・レベル別",
       b1Tag2: "年間36回カリキュラム",
@@ -47,7 +47,7 @@ window.I18N = {
     },
     audio: {
       kicker: "音声ポータル",
-      title: "KDP 音声ポータル",
+      title: "教材・書籍 音声ポータル",
       lead: "書籍に記載のパスワードを入れると、各課の音声が聴けます。",
       label: "パスワード",
       placeholder: "パスワードを入力",
@@ -198,7 +198,7 @@ window.I18N = {
   en: {
     meta: {
       title: "Level Up K with MiAe Ssem | Korean Classes, Online Lessons & Books",
-      desc: "Official site of Level Up K with MiAe Ssem: the Sebome Korean Class in Koriyama, Fukushima, online Korean lessons, and original workbooks and audio on Amazon KDP."
+      desc: "Official site of Level Up K with MiAe Ssem: the Sebome Korean Class in Koriyama, Fukushima, online Korean lessons, and original workbooks available on Amazon and audio."
     },
     splash: {
       headline: "Level Up Your Korean",
@@ -220,7 +220,7 @@ window.I18N = {
       heroSub: "Classes · Online lessons · Original books & video",
       ctaContact: "Trial & Contact",
       cardsLabel: "Menu",
-      card1: { title: "Books, Audio & Video", tag1: "KDP books", tag2: "Audio QR", tag3: "Video set", cta: "Explore" },
+      card1: { title: "Books, Audio & Video", tag1: "On Amazon", tag2: "Audio QR", tag3: "Video set", cta: "Explore" },
       card2: { title: "Sebome Korean Class", tag1: "Apr 2027 · Koriyama", tag2: "3× a month", tag3: "Small groups", cta: "Class info" },
       card3: { title: "Online Lessons", tag1: "1:1", tag2: "Group", tag3: "TOPIK prep", cta: "See courses" },
       card4: { title: "Miae Lee", tag1: "Teacher cert. Lv.2", tag2: "10+ years", cta: "Profile" }
@@ -229,7 +229,7 @@ window.I18N = {
       kicker: "Materials",
       title: "Books, Audio & Video",
       heroLead: "Books, audio and recorded lessons — three ways to keep going on your own.",
-      b1Title: "Workbooks on Amazon KDP",
+      b1Title: "Original Workbooks (Available on Amazon)",
       b1Text: "Five level-based series, from young children to adults — with explanations and pronunciation in Japanese, so you can learn on your own.",
       b1Tag1: "5 level-based series",
       b1Tag2: "36 lessons a year",
@@ -241,7 +241,7 @@ window.I18N = {
     },
     audio: {
       kicker: "Audio portal",
-      title: "KDP Audio Portal",
+      title: "Workbook Audio Portal",
       lead: "Enter the password printed in your book to hear each lesson.",
       label: "Password",
       placeholder: "Enter password",
@@ -389,7 +389,7 @@ window.I18N = {
   ko: {
     meta: {
       title: "Level Up K with MiAe Ssem｜한국어 교실·온라인 레슨·오리지널 교재",
-      desc: "후쿠시마현 고리야마시의 한국어 교실 「새봄에 한국어 교실」과 온라인 레슨, 아마존 KDP 오리지널 교재·음원을 소개하는 Level Up K with MiAe Ssem 공식 사이트입니다."
+      desc: "후쿠시마현 고리야마시의 한국어 교실 「새봄에 한국어 교실」과 온라인 레슨, Amazon에서 판매 중인 오리지널 교재·음원을 소개하는 Level Up K with MiAe Ssem 공식 사이트입니다."
     },
     splash: {
       headline: "한국어가 더 즐거워집니다",
@@ -411,7 +411,7 @@ window.I18N = {
       heroSub: "교실 · 온라인 · 오리지널 교재&영상",
       ctaContact: "체험·문의",
       cardsLabel: "메뉴",
-      card1: { title: "교재·음원·영상", tag1: "KDP 도서", tag2: "음원 QR", tag3: "녹화 세트", cta: "살펴보기" },
+      card1: { title: "교재·음원·영상", tag1: "Amazon 판매 중", tag2: "음원 QR", tag3: "녹화 세트", cta: "살펴보기" },
       card2: { title: "새봄에 한국어 교실", tag1: "2027.4 고리야마", tag2: "월 3회", tag3: "소그룹", cta: "교실 안내" },
       card3: { title: "온라인 레슨", tag1: "개인", tag2: "그룹", tag3: "TOPIK 대비", cta: "과정 보기" },
       card4: { title: "이미애 선생님", tag1: "한국어교원자격 2급", tag2: "지도 경력 10년+", cta: "프로필" }
@@ -420,7 +420,7 @@ window.I18N = {
       kicker: "교재",
       title: "교재·음원·영상",
       heroLead: "책·음원·녹화 영상, 세 가지로 혼자서도 이어 갈 수 있는 교재입니다.",
-      b1Title: "아마존 KDP 워크북",
+      b1Title: "오리지널 워크북 (Amazon 판매 중)",
       b1Text: "유아부터 성인까지 수준별 5개 시리즈. 일본어 설명과 발음 표기가 있어 혼자서도 공부할 수 있습니다.",
       b1Tag1: "5개 시리즈·수준별",
       b1Tag2: "연간 36회 커리큘럼",
@@ -432,7 +432,7 @@ window.I18N = {
     },
     audio: {
       kicker: "음원 포털",
-      title: "KDP 음원 포털",
+      title: "교재·도서 음원 포털",
       lead: "책에 적힌 비밀번호를 입력하면 각 과의 음원을 들을 수 있습니다.",
       label: "비밀번호",
       placeholder: "비밀번호 입력",
