@@ -418,7 +418,8 @@ body.cards-page[data-vol="7"] { --vol: #2E8B7E; --vol-soft: #E9F6F3; --vol-deep:
 }
 .wphoto__img.is-loaded { opacity: 1; }
 .wphoto__credit {
-  margin: 9px 0 0;
+  margin: 9px auto 0;
+  max-width: 560px;
   font-size: 11px;
   line-height: 1.5;
   font-weight: 600;
@@ -575,4 +576,5 @@ body.cards-page[data-vol="7"] { --vol: #2E8B7E; --vol-soft: #E9F6F3; --vol-deep:
   .site-header, .site-footer, .wnav, .vswitch, .langtoggle, .waudio { display: none !important; }
   body.cards-page { background: #fff; }
   .wcard, .chero { box-shadow: none; }
+  .wphoto { break-inside: avoid; }
 }
