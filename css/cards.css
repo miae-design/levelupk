@@ -351,6 +351,89 @@ body.cards-page[data-vol="7"] { --vol: #2E8B7E; --vol-soft: #E9F6F3; --vol-deep:
   word-break: break-all;
 }
 
+/* ---------- 実際の写真（Real Photo） ---------- */
+.wphoto {
+  margin-top: clamp(16px, 2.8vw, 24px);
+  padding: clamp(16px, 2.6vw, 22px);
+  border-radius: 22px;
+  background: #FFFDF8;
+  border: 1px solid var(--line);
+}
+.wphoto[hidden] { display: none; }
+.wphoto__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.wphoto__icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--vol-soft);
+  font-size: 21px;
+  line-height: 1;
+}
+.wphoto__head h2 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.45;
+}
+.wphoto__head h2 [lang="ko"] { font-family: var(--hangul); font-weight: 700; }
+.wphoto__sep {
+  margin: 0 .32em;
+  color: var(--vol-line);
+  font-weight: 700;
+}
+.wphoto__head p {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.wphoto__frame {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(20, 40, 70, .1);
+  background: var(--vol-soft);
+}
+.wphoto__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.wphoto__img.is-loaded { opacity: 1; }
+.wphoto__credit {
+  margin: 9px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #93A0B2;
+  text-align: right;
+  word-break: break-word;
+}
+.wphoto__credit:empty { display: none; }
+.wphoto__credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.wphoto__credit a:hover { color: var(--vol-deep); }
+
 /* ---------- 前後のことば ---------- */
 .wnav {
   display: grid;
@@ -476,6 +559,9 @@ body.cards-page[data-vol="7"] { --vol: #2E8B7E; --vol-soft: #E9F6F3; --vol-deep:
   .wplay { width: 100%; border-radius: 14px; height: 50px; }
   .wplay svg { width: 22px; height: 22px; }
   .waudio__head { align-items: flex-start; }
+  .wphoto__head { align-items: flex-start; }
+  .wphoto__head h2 { font-size: .95rem; }
+  .wphoto__credit { text-align: left; }
 }
 
 @media (max-width: 380px) {

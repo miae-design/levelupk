@@ -101,6 +101,20 @@
           </p>
         </div>
       </section>
+
+      <section class="wphoto" id="w-photo" aria-labelledby="wphoto-title">
+        <div class="wphoto__head">
+          <span class="wphoto__icon" aria-hidden="true">📷</span>
+          <div>
+            <h2 id="wphoto-title"><span lang="ja">じっさいの しゃしん</span><span class="wphoto__sep">／</span><span lang="ko">실제 모습</span><span class="wphoto__sep">／</span><span lang="en">Real Photo</span></h2>
+            <p id="w-photo-caption">「토끼」の写真</p>
+          </div>
+        </div>
+        <figure class="wphoto__frame">
+          <img class="wphoto__img" id="w-photo-img" src="assets/photos/v1-tokki.jpg" alt="토끼（うさぎ・rabbit）の写真" width="800" height="600" loading="lazy" decoding="async">
+        </figure>
+        <p class="wphoto__credit" id="w-photo-credit"></p>
+      </section>
     </article>
 
     <!-- ============ Prev / Next ============ -->
@@ -348,6 +362,130 @@ var VOLUMES = [
   }
 ];
 
+  /* 写真の出典（Wikimedia Commons / 自由利用ライセンス） */
+  var PHOTOS = {
+  "1-tokki": { f: "assets/photos/v1-tokki.jpg", a: "U.S. Fish and Wildlife Service", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Eastern_cottontail_rabbit_-_DPLA_-_44fa1ec441a88c9edb00f74a85ce8958.jpg" },
+  "1-gangaji": { f: "assets/photos/v1-gangaji.jpg", a: "Johannnes89", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg" },
+  "1-goyangi": { f: "assets/photos/v1-goyangi.jpg", a: "George Chernilevsky", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg" },
+  "1-gom": { f: "assets/photos/v1-gom.jpg", a: "Robert F. Tobler", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg" },
+  "1-saja": { f: "assets/photos/v1-saja.jpg", a: "Giles Laurent", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg" },
+  "1-kokkiri": { f: "assets/photos/v1-kokkiri.jpg", a: "Diego Delso", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Elefantes_africanos_de_sabana_(Loxodonta_africana),_parque_nacional_de_Chobe,_Botsuana,_2018-07-28,_DD_25.jpg" },
+  "1-girin": { f: "assets/photos/v1-girin.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Kruger_National_Park_(ZA),_Giraffe_--_2024_--_0431.jpg" },
+  "1-wonsungi": { f: "assets/photos/v1-wonsungi.jpg", a: "Alfonsopazphoto", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Wildlife_primate_monkey-of-japan_macaca-fuscata_closeup_31-05-2010.jpg" },
+  "1-penggwin": { f: "assets/photos/v1-penggwin.jpg", a: "Jay Ruzesky wolsenburg", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Penguin_on_a_rock_(Unsplash).jpg" },
+  "1-ori": { f: "assets/photos/v1-ori.jpg", a: "MetalGecko462", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Female_Mallard_duck,_with_ducklings.jpg" },
+  "1-gaeguri": { f: "assets/photos/v1-gaeguri.jpg", a: "Davidvraju", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Green_frog_on_a_leaf_(2016).jpg" },
+  "1-nabi": { f: "assets/photos/v1-nabi.jpg", a: "Charles J. Sharp", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg" },
+  "1-mulgogi": { f: "assets/photos/v1-mulgogi.jpg", a: "Vassil", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Carassius_auratus_Lionhead_goldfish_2.jpg" },
+  "1-geobugi": { f: "assets/photos/v1-geobugi.jpg", a: "Aaron Lucas", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Eastern_box_turtle_walking_through_grass.jpg" },
+  "1-byeongari": { f: "assets/photos/v1-byeongari.jpg", a: "ELTORO.VET", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg" },
+  "2-bom": { f: "assets/photos/v2-bom.jpg", a: "Karolien Brughmans karolien", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Pink_cherry_blossom_on_blue_(Unsplash).jpg" },
+  "2-yeoreum": { f: "assets/photos/v2-yeoreum.jpg", a: "Andrei Dan Suciu", l: "CC BY 3.0", u: "https://commons.wikimedia.org/wiki/File:Sunny_Beach_-_panoramio_(14).jpg" },
+  "2-gaeul": { f: "assets/photos/v2-gaeul.jpg", a: "AS Photography", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:The_first_autumn_colours_in_the_Carpathian_Forest_(54022892029).jpg" },
+  "2-gyeoul": { f: "assets/photos/v2-gyeoul.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Umland,_Sonnenaufgang_im_Winter_--_2013_--_9899.jpg" },
+  "2-kkot": { f: "assets/photos/v2-kkot.jpg", a: "Hallo3800", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Cherry_blossom_flower.jpg" },
+  "2-namu": { f: "assets/photos/v2-namu.jpg", a: "M J Roscoe", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Large_oak_tree_in_hillside_field_-_geograph.org.uk_-_6906380.jpg" },
+  "2-haebaragi": { f: "assets/photos/v2-haebaragi.jpg", a: "Bruce Fritz, U.S. Department of Agriculture", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Sunflowers_helianthus_annuus.jpg" },
+  "2-danpung": { f: "assets/photos/v2-danpung.jpg", a: "Jeremy Cooper jcooper", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Acer_rubrum_leaf_on_brown_(Unsplash).jpg" },
+  "2-nunsaram": { f: "assets/photos/v2-nunsaram.jpg", a: "Frank Hebbert", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:2007_snowman_in_massachusetts_424825688.jpg" },
+  "2-hae": { f: "assets/photos/v2-hae.jpg", a: "Famartin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:2015-07-10_20_15_09_Sun_near_sunset_shining_through_low-level_dust_over_Collin_County,_Texas_viewed_from_an_airplane_flying_from_Washington_Dulles_International_Airport_to_Dallas-Fort_Worth_International_Airport.jpg" },
+  "2-dal": { f: "assets/photos/v2-dal.jpg", a: "eberhard grossgasteiger eberhardgross", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Crescent_moon_on_a_blue_sky_(Unsplash).jpg" },
+  "2-byeol": { f: "assets/photos/v2-byeol.jpg", a: "Guillaume guillaume", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Milky_Way_Night_Sky_(Unsplash).jpg" },
+  "2-gureum": { f: "assets/photos/v2-gureum.jpg", a: "Jakec", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Clouds_in_the_sky_in_August_2014.JPG" },
+  "2-bi": { f: "assets/photos/v2-bi.jpg", a: "Szilas", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Street_in_Fredericia,_heavy_rain,_2015-07-29-2.jpg" },
+  "2-mujigae": { f: "assets/photos/v2-mujigae.jpg", a: "Robin Webster", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Rainbow_over_Green_Lane_-_geograph.org.uk_-_6405825.jpg" },
+  "3-jadongcha": { f: "assets/photos/v3-jadongcha.jpg", a: "Jace Grandinetti jacegrandinetti", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Red_car_yellow_buildings_(Unsplash).jpg" },
+  "3-beoseu": { f: "assets/photos/v3-beoseu.jpg", a: "Nikhilb239", l: "CC BY 3.0", u: "https://commons.wikimedia.org/wiki/File:APSRTC_Bus_07122014.jpg" },
+  "3-gicha": { f: "assets/photos/v3-gicha.jpg", a: "DXR", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:E2_Series_and_E3-2000_Shinkansen_in_multiple-unit_train_control_at_Utsunomiya_Station_130812_1-2.jpg" },
+  "3-bihaenggi": { f: "assets/photos/v3-bihaenggi.jpg", a: "NASA/USRA 1998", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:SOFIA_Boeing_747SP_1998AC0014.jpg" },
+  "3-bae": { f: "assets/photos/v3-bae.jpg", a: "LN9267", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Coral_Sea_8A_Coral_Sea_Ferry_Sai_Wan_Ho_to_Kwun_Tong_08-07-2017.jpg" },
+  "3-jajeongeo": { f: "assets/photos/v3-jajeongeo.jpg", a: "Matti Blume", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Bicycle,_IAA_Summit_2023,_Munich_(P1110794).jpg" },
+  "3-sobangcha": { f: "assets/photos/v3-sobangcha.jpg", a: "Retired electrician", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Moscow,_Durova_Street,_KamAZ-43253_fire_engine,_Sept_2025_03.jpg" },
+  "3-gyeongchalcha": { f: "assets/photos/v3-gyeongchalcha.jpg", a: "Quintin Soloviev", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Louisiana_State_Police_Patrol_Car_2025.jpg" },
+  "3-gugeupcha": { f: "assets/photos/v3-gugeupcha.jpg", a: "玄史生", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:ROCA_VW_Ambulance_Parked_at_Armor_School_Brave_Tiger_Hall_Front_20130302.jpg" },
+  "3-teureok": { f: "assets/photos/v3-teureok.jpg", a: "Bob Harvey", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Lorry_in_West_Road_-_geograph.org.uk_-_7029753.jpg" },
+  "3-hellikopteo": { f: "assets/photos/v3-hellikopteo.jpg", a: "USFWS/Southeast", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Helicopter_in_the_sky_(4116030260).jpg" },
+  "3-jihacheol": { f: "assets/photos/v3-jihacheol.jpg", a: "LERK", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Toei-subway-E23-Roppongi-station-platform-2-20190909-100123.jpg" },
+  "3-taeksi": { f: "assets/photos/v3-taeksi.jpg", a: "Redd Angelo reddangelo16", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Catch_a_CAB_(Unsplash).jpg" },
+  "3-otobai": { f: "assets/photos/v3-otobai.jpg", a: "Simson Petrol simson_petrol", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Yellow_motorcycle_parked_(Unsplash).jpg" },
+  "3-roket": { f: "assets/photos/v3-roket.jpg", a: "NASA", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Challenger_Rocket_Booster_-_GPN-2000-001422.jpg" },
+  "4-sagwa": { f: "assets/photos/v4-sagwa.jpg", a: "Paolo Neo", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Small_apples_on_branch.jpg" },
+  "4-banana": { f: "assets/photos/v4-banana.jpg", a: "Shixart1985", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:A_group_of_ripe_bananas_sits_next_to_several_oranges.jpg" },
+  "4-ttalgi": { f: "assets/photos/v4-ttalgi.jpg", a: "George Chernilevsky", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Strawberries_in_basket_2018_G1.jpg" },
+  "4-podo": { f: "assets/photos/v4-podo.jpg", a: "Ian Schneider on Unsplash", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:A_bunch_of_grapes_on_a_vine.jpg" },
+  "4-subak": { f: "assets/photos/v4-subak.jpg", a: "PattayaPatrol", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:DFC_6158_Sweet_summer_ready_to_slice_-_ripe_watermelons_on_display_one_halved_to_reveal_its_juicy_red_flesh.jpg" },
+  "4-gyul": { f: "assets/photos/v4-gyul.jpg", a: "Choo Yut Shing", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Mandarin_Oranges_-_Flickr_-_chooyutshing.jpg" },
+  "4-boksunga": { f: "assets/photos/v4-boksunga.jpg", a: "Jack Dykinga, USDA", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Autumn_Red_peaches.jpg" },
+  "4-bae": { f: "assets/photos/v4-bae.jpg", a: "Forest and Kim Starr", l: "CC BY 3.0 us", u: "https://commons.wikimedia.org/wiki/File:Starr-140614-4543-Pyrus_communis-Hood_pear_fruit-Hawea_Pl_Olinda-Maui_(25243717045).jpg" },
+  "4-painaepeul": { f: "assets/photos/v4-painaepeul.jpg", a: "Judgefloro", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:04012jfQueen_Formosa_pineapple_Philippines_Malolos_Cityfvf_10.jpg" },
+  "4-cheri": { f: "assets/photos/v4-cheri.jpg", a: "George Chernilevsky", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Sweet_cherries_in_basket_2018_G2.jpg" },
+  "4-kiwui": { f: "assets/photos/v4-kiwui.jpg", a: "Judgefloro", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:3325Cross_sections_of_kiwifruits_10.jpg" },
+  "4-mellon": { f: "assets/photos/v4-mellon.jpg", a: "Forest and Kim Starr", l: "CC BY 3.0 us", u: "https://commons.wikimedia.org/wiki/File:Starr-100611-6931-Cucumis_melo-Korean_melon_fruit_in_half_with_seeds_and_cut_in_bowl-Olinda-Maui_(25039969155).jpg" },
+  "4-beulluberi": { f: "assets/photos/v4-beulluberi.jpg", a: "Matthew Henry", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Blueberries_545041.jpg" },
+  "4-manggo": { f: "assets/photos/v4-manggo.jpg", a: "Retired electrician", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Mango_(Egypt),_green_tangerine_(Turkey).jpg" },
+  "4-lemon": { f: "assets/photos/v4-lemon.jpg", a: "Zinnmann", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:20210812_Lemon_Drop_chilis_001-012.jpg" },
+  "5-ppalgang": { f: "assets/photos/v5-ppalgang.jpg", a: "maticsteve", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Red_Rose_-_Flickr_-_maticsteve.jpg" },
+  "5-parang": { f: "assets/photos/v5-parang.jpg", a: "Shuvaev", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Delphinium_%27Guardian_Blue%27,_Longwood_Gardens_2025_01.jpg" },
+  "5-norang": { f: "assets/photos/v5-norang.jpg", a: "acediscovery", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Yellow-Red-Tulips_Bollenstreek_Hillegom.jpg" },
+  "5-chorok": { f: "assets/photos/v5-chorok.jpg", a: "Unknown authorUnknown author", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Background_green_leave_macro.jpg" },
+  "5-juhwang": { f: "assets/photos/v5-juhwang.jpg", a: "Jesselikesweather", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Orange_Marigold_Flowers.jpg" },
+  "5-bora": { f: "assets/photos/v5-bora.jpg", a: "Francis Cheung riceball", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Purple_lavender_field_(Unsplash).jpg" },
+  "5-bunhong": { f: "assets/photos/v5-bunhong.jpg", a: "Nathanieljoyce", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Pink_Peony_Flower.jpg" },
+  "5-galssaek": { f: "assets/photos/v5-galssaek.jpg", a: "AKA MBG", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Brown_horse_white_blaze_eye_closeup_Kalganovsky_Horse_Factory_2026.jpg" },
+  "5-geomjeong": { f: "assets/photos/v5-geomjeong.jpg", a: "Ross Parmly rparmly", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Black_coffee_cup_(Unsplash).jpg" },
+  "5-hayan": { f: "assets/photos/v5-hayan.jpg", a: "U.S. Fish and Wildlife Service", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:White_water_lily_or_fragrant_water_lily_flower_nymphaea_odorata_blossom_with_leaves_floating_on_water.jpg" },
+  "5-hoesaek": { f: "assets/photos/v5-hoesaek.jpg", a: "CGP Grey", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:King_Pigeon_(4889321223).jpg" },
+  "5-haneulsaek": { f: "assets/photos/v5-haneulsaek.jpg", a: "Ellin Beltz", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Blue_Hydrangea_Ferndale_CA.JPG" },
+  "5-yeondusaek": { f: "assets/photos/v5-yeondusaek.jpg", a: "mxwegele Sasin Tipchai", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Man_rice_paddy_work.jpg" },
+  "5-geumsaek": { f: "assets/photos/v5-geumsaek.jpg", a: "W.carter", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Domed_gold_ring_with_a_black_diamond.jpg" },
+  "5-eunsaek": { f: "assets/photos/v5-eunsaek.jpg", a: "Manfred Werner - Tsui", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:SIIDA_Inari,_Suomi_Finland_2013-03-10_spoon_silver.jpg" },
+  "6-meori": { f: "assets/photos/v6-meori.jpg", a: "Helgi Halldórsson", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg" },
+  "6-eolgul": { f: "assets/photos/v6-eolgul.jpg", a: "Les Anderson lesanderson", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Child_with_thumbs_in_her_mouth_(Unsplash).jpg" },
+  "6-nun": { f: "assets/photos/v6-nun.jpg", a: "Vladimer Shioshvili", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg" },
+  "6-ko": { f: "assets/photos/v6-ko.jpg", a: "TheNoseKnows2Much", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Nose_Example.jpg" },
+  "6-ip": { f: "assets/photos/v6-ip.jpg", a: "Maurajbo at English Wikipedia", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:3.5-month-old_baby_laughing.jpg" },
+  "6-gwi": { f: "assets/photos/v6-gwi.jpg", a: "צולם על ידי he:משתמש:אנדר-ויק", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg" },
+  "6-i": { f: "assets/photos/v6-i.jpg", a: "Shixart1985", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Child_brushing_teeth_with_a_toothbrush_at_home_during_a_daily_routine.jpg" },
+  "6-mok": { f: "assets/photos/v6-mok.jpg", a: "FotoFyl / Erifyli Tsavdari", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Female_neck.jpg" },
+  "6-eokkae": { f: "assets/photos/v6-eokkae.jpg", a: "Djembayz", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Child_on_fathers_shoulders_at_Inauguration_2013.jpg" },
+  "6-pal": { f: "assets/photos/v6-pal.jpg", a: "PinkStock Photos, D. Sharon Pruitt", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Sleeping_baby_with_arm_extended.jpg" },
+  "6-son": { f: "assets/photos/v6-son.jpg", a: "trestletech", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg" },
+  "6-bae": { f: "assets/photos/v6-bae.jpg", a: "george ruiz", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Tummy_time.jpg" },
+  "6-dari": { f: "assets/photos/v6-dari.jpg", a: "abinaya", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Leg_of_baby.jpg" },
+  "6-mureup": { f: "assets/photos/v6-mureup.jpg", a: "Kristoffer Trolle", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:My_9_month_baby_son_-_Flickr_-_Kristoffer_Trolle.jpg" },
+  "6-bal": { f: "assets/photos/v6-bal.jpg", a: "lou &amp; magoo", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Baby_feet_3_-_Flickr_-_lou_%5E_magoo.jpg" },
+  "7-san": { f: "assets/photos/v7-san.jpg", a: "kallerna", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg" },
+  "7-gang": { f: "assets/photos/v7-gang.jpg", a: "Bejov590", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:River_Flowing_Through_Autumn_Landscape.jpg" },
+  "7-bada": { f: "assets/photos/v7-bada.jpg", a: "Radomianin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Baltic_Sea_view_from_Schmiedeberg_hill_in_Rerik,_2025-06-23.jpg" },
+  "7-haneul": { f: "assets/photos/v7-haneul.jpg", a: "Real Ammar", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Blue_Sky_and_beautiful_white_clouds.jpg" },
+  "7-sup": { f: "assets/photos/v7-sup.jpg", a: "Sergei Akulich sakulich", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Forest_path_at_sunset_(Unsplash).jpg" },
+  "7-seom": { f: "assets/photos/v7-seom.jpg", a: "Vyacheslav Argenberg", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Havelock_Island,_Mangrove_tree_on_the_beach,_Andaman_Islands.jpg" },
+  "7-hosu": { f: "assets/photos/v7-hosu.jpg", a: "Gorgo", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Moraine_Lake_17092005.jpg" },
+  "7-pokpo": { f: "assets/photos/v7-pokpo.jpg", a: "DXR", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Maid_of_the_Mist_VII_approaching_the_Horseshoe_Falls,_West_view_20170418_1.jpg" },
+  "7-pado": { f: "assets/photos/v7-pado.jpg", a: "Alvesgaspar", l: "CC BY 2.5", u: "https://commons.wikimedia.org/wiki/File:Breaking_wave_July_2007-1.jpg" },
+  "7-morae": { f: "assets/photos/v7-morae.jpg", a: "freestocks.org", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Sea_beach_sand_in_a_hand_closeup_(42621473960).jpg" },
+  "7-dol": { f: "assets/photos/v7-dol.jpg", a: "Zeny Rosalina iamzeny", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Smooth_Round_Rocks_Ocean_(Unsplash).jpg" },
+  "7-pul": { f: "assets/photos/v7-pul.jpg", a: "ben_kitchener3", l: "CC BY 3.0", u: "https://commons.wikimedia.org/wiki/File:Droplet_on_a_Blade_of_Grass_-_panoramio.jpg" },
+  "7-baram": { f: "assets/photos/v7-baram.jpg", a: "Oscar Taylor", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Tall_grass_in_the_wind_-_geograph.org.uk_-_7602415.jpg" },
+  "7-beongae": { f: "assets/photos/v7-beongae.jpg", a: "Mike Eliason, Santa Barbara County Fire…", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Lightning_strikes_in_Santa_Barbara_2019-03-05.jpg" },
+  "7-nun": { f: "assets/photos/v7-nun.jpg", a: "Cameron Kirby ckirby", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Winter_snowfall_near_a_forest_(Unsplash).jpg" },
+  "8-jamjari": { f: "assets/photos/v8-jamjari.jpg", a: "Johnnybam", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Dragonfly_perched_on_a_twig.jpg" },
+  "8-beol": { f: "assets/photos/v8-beol.jpg", a: "John Severns (Severnjc)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg" },
+  "8-mudangbeolle": { f: "assets/photos/v8-mudangbeolle.jpg", a: "Gareth James", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Ladybird_on_a_nettle_leaf_-_geograph.org.uk_-_3942313.jpg" },
+  "8-gaemi": { f: "assets/photos/v8-gaemi.jpg", a: "Memainak", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Insect_closeup_ant.jpg" },
+  "8-maemi": { f: "assets/photos/v8-maemi.jpg", a: "StalJosA", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Cicada_Shell_27.8.26.jpg" },
+  "8-mettugi": { f: "assets/photos/v8-mettugi.jpg", a: "Swethasakthivel", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:(Omocestus_viridulus)_Grasshopper.jpg" },
+  "8-gwitturami": { f: "assets/photos/v8-gwitturami.jpg", a: "Agnieszka Kwiecień, Nova", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Gryllus_campestris_%C5%9Awierszcz_polny_2025-04-19_Wi%C4%85zownica-Kolonia_04.jpg" },
+  "8-saseumbeolle": { f: "assets/photos/v8-saseumbeolle.jpg", a: "George Chernilevsky", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Lucanus_cervus_male_2017_G1.jpg" },
+  "8-jangsupungdengi": { f: "assets/photos/v8-jangsupungdengi.jpg", a: "KKPCW", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Male_rhinoceros_beetle_on_tree.jpg" },
+  "8-banditburi": { f: "assets/photos/v8-banditburi.jpg", a: "Zsolyomi", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:The_fairytale_forest_-_Eastern_fireflies_(Luciola_mingrelica)_dance_in_the_night_in_the_forests_of_Mount_Paggaio,_Greece.jpg" },
+  "8-aebeolle": { f: "assets/photos/v8-aebeolle.jpg", a: "Johnnybam", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Caterpillar_on_a_green_leaf.jpg" },
+  "8-samagwi": { f: "assets/photos/v8-samagwi.jpg", a: "池田正樹 (talk) Masaki Ikeda", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:The_mantis_which_eats_a_Bee20080829.jpg" },
+  "8-sogeumjaengi": { f: "assets/photos/v8-sogeumjaengi.jpg", a: "Richard Bartz", l: "CC BY-SA 2.5", u: "https://commons.wikimedia.org/wiki/File:Water_strider_Gerris_lacustris.jpg" },
+  "8-dalpaengi": { f: "assets/photos/v8-dalpaengi.jpg", a: "Waris hundal", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg" },
+  "8-gongbeolle": { f: "assets/photos/v8-gongbeolle.jpg", a: "Daniel Das", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg" }
+  };
+
 (function () {
   "use strict";
 
@@ -368,6 +506,14 @@ var VOLUMES = [
   var prevBtn = document.getElementById("w-prev");
   var nextBtn = document.getElementById("w-next");
   var navHint = document.getElementById("w-navhint");
+  var photoBox = document.getElementById("w-photo");
+  var photoImg = document.getElementById("w-photo-img");
+  var photoCap = document.getElementById("w-photo-caption");
+  var photoCredit = document.getElementById("w-photo-credit");
+
+  function esc(text) {
+    return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
 
   function $(id) { return document.getElementById(id); }
   function pad2(n) { return n < 10 ? "0" + n : String(n); }
@@ -527,6 +673,24 @@ var VOLUMES = [
     });
   }
 
+  /* ---------- 実際の写真 ---------- */
+  function renderPhoto(word) {
+    var photo = PHOTOS[volume.id + "-" + word.slug];
+    if (!photo) { photoBox.hidden = true; return; }
+    photoBox.hidden = false;
+    photoCap.textContent = "「" + word.ko + "」の写真";
+    photoImg.alt = word.ko + "（" + word.ja + "・" + word.en + "）の写真";
+    photoImg.classList.remove("is-loaded");
+    if (photoImg.getAttribute("src") !== photo.f) {
+      photoImg.setAttribute("src", photo.f);
+    } else if (photoImg.complete && photoImg.naturalWidth) {
+      photoImg.classList.add("is-loaded");
+    }
+    var who = photo.a ? esc(photo.a) + " ／ " : "";
+    photoCredit.innerHTML = "写真：<a href=\"" + esc(photo.u) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" +
+      who + "Wikimedia Commons</a>（" + esc(photo.l) + "）";
+  }
+
   /* ---------- 表示 ---------- */
   function renderTranslations() {
     var word = volume.words[index];
@@ -576,6 +740,7 @@ var VOLUMES = [
 
     resetPlayer();
     loadAudio(word);
+    renderPhoto(word);
 
     if (opts && opts.scroll) {
       var top = document.querySelector(".wcard").getBoundingClientRect().top + window.pageYOffset - 70;
@@ -649,6 +814,9 @@ var VOLUMES = [
   audioEl.addEventListener("error", function () {
     if (audioEl.getAttribute("src")) resetPlayer();
   });
+
+  photoImg.addEventListener("load", function () { photoImg.classList.add("is-loaded"); });
+  photoImg.addEventListener("error", function () { photoBox.hidden = true; });
 
   document.addEventListener("keydown", function (event) {
     if (event.target && /^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)) return;
