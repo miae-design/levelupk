@@ -93,8 +93,8 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第6巻 からだ | v6-eokkae.jpg | 어깨（かた） | Child on fathers shoulders at Inauguration 2013.jpg | Djembayz | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Child_on_fathers_shoulders_at_Inauguration_2013.jpg) |
 | 第6巻 からだ | v6-pal.jpg | 팔（うで） | Sleeping baby with arm extended.jpg | PinkStock Photos, D. Sharon Pruitt | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sleeping_baby_with_arm_extended.jpg) |
 | 第6巻 からだ | v6-son.jpg | 손（て） | Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg | trestletech from Pixabay | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg) |
-| 第6巻 からだ | v6-bae.jpg | 배（おなか） | Tummy time.jpg | george ruiz | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tummy_time.jpg) |
-| 第6巻 からだ | v6-dari.jpg | 다리（あし） | Leg of baby.jpg | abinaya | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Leg_of_baby.jpg) |
+| 第6巻 からだ | v6-bae.jpg | 배（おなか） | Baby care, Baby girl, Moscow, Russia.jpg | Vyacheslav Argenberg | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby_care,_Baby_girl,_Moscow,_Russia.jpg) |
+| 第6巻 からだ | v6-dari.jpg | 다리（あし） | Japan, toddler on crooked legs 2.jpg | Marie-Sophie Mejan | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Japan,_toddler_on_crooked_legs_2.jpg) |
 | 第6巻 からだ | v6-mureup.jpg | 무릎（ひざ） | My 9 month baby son - Flickr - Kristoffer Trolle.jpg | Kristoffer Trolle from Copenhagen, Denmark | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:My_9_month_baby_son_-_Flickr_-_Kristoffer_Trolle.jpg) |
 | 第6巻 からだ | v6-bal.jpg | 발（あし） | Baby feet 3 - Flickr - lou ^ magoo.jpg | lou &amp; magoo | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby_feet_3_-_Flickr_-_lou_%5E_magoo.jpg) |
 | 第7巻 そら・つち・うみ | v7-san.jpg | 산（やま） | Vihren & Kutelo Pirin Mountains Bulgaria 2025.jpg | kallerna | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg) |
