@@ -2,7 +2,7 @@
    Level Up K with MiAe Ssem — cards.css
    絵本のQRコード用「ことばカード」（cards.html）
    style.css のデザイントークンを継承して使います。
-   巻ごとに色を変えます：1巻＝コーラル／2巻＝グリーン／3巻＝ブルー
+   巻ごとに色を変えます：1巻＝コーラル／2巻＝グリーン／3巻＝ブルー／4巻＝アンバー／5巻＝パープル
    ========================================================= */
 
 /* ナビゲーション付きのハングル表示用（SIL OFL・サブセット版） */
@@ -30,6 +30,8 @@ body.cards-page {
 body.cards-page[data-vol="1"] { --vol: #E8613C; --vol-soft: #FDEDE6; --vol-deep: #B8412A; --vol-line: #F3C7B8; }
 body.cards-page[data-vol="2"] { --vol: #2F7D4A; --vol-soft: #E8F4EC; --vol-deep: #1E5B35; --vol-line: #BFDDC9; }
 body.cards-page[data-vol="3"] { --vol: #2E6FBF; --vol-soft: #E8F1FD; --vol-deep: #1B4C8A; --vol-line: #C2D6F0; }
+body.cards-page[data-vol="4"] { --vol: #C9801A; --vol-soft: #FDF3E2; --vol-deep: #8E5708; --vol-line: #EFD5A9; }
+body.cards-page[data-vol="5"] { --vol: #7A57B8; --vol-soft: #F2EDFB; --vol-deep: #4E3385; --vol-line: #D8CCF0; }
 
 /* ---------- Header（verse.html と同じ見た目） ---------- */
 .vhead {

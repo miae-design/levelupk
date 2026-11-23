@@ -12,7 +12,7 @@
 ```
 index.html            トップページ（教材・教室・オンライン・プロフィール）
 verse.html            1月〜12月の聖句ページ（月切り替え・音声）
-cards.html            KDP絵本の「ことばカード」（45語・音声）
+cards.html            KDP絵本の「ことばカード」（5巻・75語・音声）
 css/style.css         サイト全体のデザイン
 css/verse.css         聖句ページ用の追加デザイン
 css/cards.css         ことばカード用の追加デザイン

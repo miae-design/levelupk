@@ -141,12 +141,14 @@
 
 <script>
 /* =========================================================
-   ことばデータ（3巻・45語）
+   ことばデータ（5巻・75語）
    ---------------------------------------------------------
    ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
    ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
      自動で再生ボタンが出ます（例：audio/cards/tokki.mp3、.m4a / .wav も可）。
    ★ 各ページのQRコードは cards.html?w=スラッグ です。
+   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」と4巻「배/なし」）は、
+     巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
    ========================================================= */
 var VOLUMES = [
   {
@@ -220,6 +222,55 @@ var VOLUMES = [
       { slug: "otobai",      ko: "오토바이", ja: "バイク",      en: "motorcycle" },
       { slug: "roket",       ko: "로켓",    ja: "ロケット",     en: "rocket" }
     ]
+  },
+  {
+    id: 4,
+    no: "第4巻",
+    ja: "くだもの",
+    ko: "과일",
+    en: "Fruits",
+    words: [
+      { slug: "sagwa",       ko: "사과",     ja: "りんご",       en: "apple" },
+      { slug: "banana",      ko: "바나나",   ja: "バナナ",       en: "banana" },
+      { slug: "ttalgi",      ko: "딸기",     ja: "いちご",       en: "strawberry" },
+      { slug: "podo",        ko: "포도",     ja: "ぶどう",       en: "grape" },
+      { slug: "subak",       ko: "수박",     ja: "すいか",       en: "watermelon" },
+      { slug: "gyul",        ko: "귤",       ja: "みかん",       en: "mandarin" },
+      { slug: "boksunga",    ko: "복숭아",   ja: "もも",         en: "peach" },
+      /* 3巻にも bae（배／ふね）があります。この巻の「배（なし）」は ?w=bae&v=4 で開きます。 */
+      { slug: "bae",         ko: "배",       ja: "なし",         en: "pear" },
+      { slug: "painaepeul",  ko: "파인애플", ja: "パイナップル", en: "pineapple" },
+      { slug: "cheri",       ko: "체리",     ja: "さくらんぼ",   en: "cherry" },
+      { slug: "kiwui",       ko: "키위",     ja: "キウイ",       en: "kiwi" },
+      { slug: "mellon",      ko: "멜론",     ja: "メロン",       en: "melon" },
+      { slug: "manggo",      ko: "망고",     ja: "マンゴー",     en: "mango" },
+      { slug: "lemon",       ko: "레몬",     ja: "レモン",       en: "lemon" },
+      { slug: "beulluberi",  ko: "블루베리", ja: "ブルーベリー", en: "blueberry" }
+    ]
+  },
+  {
+    id: 5,
+    no: "第5巻",
+    ja: "いろ",
+    ko: "색깔",
+    en: "Colors",
+    words: [
+      { slug: "ppalgang",    ko: "빨강",     ja: "あか",         en: "red" },
+      { slug: "parang",      ko: "파랑",     ja: "あお",         en: "blue" },
+      { slug: "norang",      ko: "노랑",     ja: "きいろ",       en: "yellow" },
+      { slug: "chorok",      ko: "초록",     ja: "みどり",       en: "green" },
+      { slug: "juhwang",     ko: "주황",     ja: "オレンジ",     en: "orange" },
+      { slug: "bora",        ko: "보라",     ja: "むらさき",     en: "purple" },
+      { slug: "bunhong",     ko: "분홍",     ja: "ピンク",       en: "pink" },
+      { slug: "galssaek",    ko: "갈색",     ja: "ちゃいろ",     en: "brown" },
+      { slug: "geomjeong",   ko: "검정",     ja: "くろ",         en: "black" },
+      { slug: "hayan",       ko: "하양",     ja: "しろ",         en: "white" },
+      { slug: "hoesaek",     ko: "회색",     ja: "はいいろ",     en: "gray" },
+      { slug: "haneulsaek",  ko: "하늘색",   ja: "みずいろ",     en: "sky blue" },
+      { slug: "yeondusaek",  ko: "연두색",   ja: "きみどり",     en: "light green" },
+      { slug: "geumsaek",    ko: "금색",     ja: "きんいろ",     en: "gold" },
+      { slug: "eunsaek",     ko: "은색",     ja: "ぎんいろ",     en: "silver" }
+    ]
   }
 ];
 
@@ -248,16 +299,38 @@ var VOLUMES = [
   function pad2(n) { return n < 10 ? "0" + n : String(n); }
 
   /* ---------- 言葉を探す ---------- */
-  function findWord(slug) {
+  /* 同じスラッグが複数の巻にあるとき（例：bae）は ?v=巻番号 で巻を指定できます。 */
+  function findWord(slug, volId) {
     if (!slug) return null;
     var key = String(slug).toLowerCase();
+    var first = null;
     for (var v = 0; v < VOLUMES.length; v++) {
       var words = VOLUMES[v].words;
       for (var i = 0; i < words.length; i++) {
-        if (words[i].slug === key) return { volume: VOLUMES[v], index: i, word: words[i] };
+        if (words[i].slug !== key) continue;
+        var hit = { volume: VOLUMES[v], index: i, word: words[i] };
+        if (volId && VOLUMES[v].id === volId) return hit;
+        if (!first) first = hit;
       }
     }
-    return null;
+    return first;
+  }
+
+  function volFromUrl() {
+    var raw = null;
+    try { raw = new URLSearchParams(location.search).get("v"); } catch (e) {}
+    var n = parseInt(raw, 10);
+    return isNaN(n) ? 0 : n;
+  }
+
+  function slugCount(slug) {
+    var n = 0;
+    for (var v = 0; v < VOLUMES.length; v++) {
+      for (var i = 0; i < VOLUMES[v].words.length; i++) {
+        if (VOLUMES[v].words[i].slug === slug) n++;
+      }
+    }
+    return n;
   }
 
   function firstOf(volId) {
@@ -279,6 +352,7 @@ var VOLUMES = [
 
   function setUrl(slug) {
     var next = "?w=" + encodeURIComponent(slug);
+    if (volume && slugCount(slug) > 1) next += "&v=" + volume.id;
     if (location.search === next) return;
     try { history.replaceState(null, "", location.pathname + next); } catch (e) {}
   }
@@ -537,7 +611,7 @@ var VOLUMES = [
     applyLangButtons();
 
     var slug = slugFromUrl();
-    var found = findWord(slug);
+    var found = findWord(slug, volFromUrl());
     if (found) {
       show(found, { scroll: false });
     } else {
