@@ -141,13 +141,13 @@
 
 <script>
 /* =========================================================
-   ことばデータ（6巻・90語）
+   ことばデータ（7巻・105語）
    ---------------------------------------------------------
    ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
    ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
      自動で再生ボタンが出ます（例：audio/cards/tokki.mp3、.m4a / .wav も可）。
    ★ 各ページのQRコードは cards.html?w=スラッグ です。
-   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」）は、
+   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」、nun＝6巻「눈/め」・7巻「눈/ゆき」）は、
      巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
    ========================================================= */
 var VOLUMES = [
@@ -295,6 +295,31 @@ var VOLUMES = [
       { slug: "dari",        ko: "다리",     ja: "あし",         en: "leg" },
       { slug: "mureup",      ko: "무릎",     ja: "ひざ",         en: "knee" },
       { slug: "bal",         ko: "발",       ja: "あし",         en: "foot" }
+    ]
+  },
+  {
+    id: 7,
+    no: "第7巻",
+    ja: "そら・つち・うみ",
+    ko: "하늘 · 땅 · 바다",
+    en: "Sky, Land & Sea",
+    words: [
+      { slug: "san",         ko: "산",       ja: "やま",         en: "mountain" },
+      { slug: "gang",        ko: "강",       ja: "かわ",         en: "river" },
+      { slug: "bada",        ko: "바다",     ja: "うみ",         en: "sea" },
+      { slug: "haneul",      ko: "하늘",     ja: "そら",         en: "sky" },
+      { slug: "sup",         ko: "숲",       ja: "もり",         en: "forest" },
+      { slug: "seom",        ko: "섬",       ja: "しま",         en: "island" },
+      { slug: "hosu",        ko: "호수",     ja: "みずうみ",     en: "lake" },
+      { slug: "pokpo",       ko: "폭포",     ja: "たき",         en: "waterfall" },
+      { slug: "pado",        ko: "파도",     ja: "なみ",         en: "wave" },
+      { slug: "morae",       ko: "모래",     ja: "すな",         en: "sand" },
+      { slug: "dol",         ko: "돌",       ja: "いし",         en: "stone" },
+      { slug: "pul",         ko: "풀",       ja: "くさ",         en: "grass" },
+      { slug: "baram",       ko: "바람",     ja: "かぜ",         en: "wind" },
+      { slug: "beongae",     ko: "번개",     ja: "かみなり",     en: "lightning" },
+      /* 6巻「눈／め」と同じスラッグ。この巻は ?w=nun&v=7 で開きます（音声 nun.mp3 は共通）。 */
+      { slug: "nun",         ko: "눈",       ja: "ゆき",         en: "snow" }
     ]
   }
 ];
