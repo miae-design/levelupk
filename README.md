@@ -12,7 +12,7 @@
 ```
 index.html            トップページ（教材・教室・オンライン・プロフィール）
 verse.html            1月〜12月の聖句ページ（月切り替え・音声）
-cards.html            KDP絵本の「ことばカード」（5巻・75語・音声）
+cards.html            KDP絵本の「ことばカード」（6巻・90語・音声）
 css/style.css         サイト全体のデザイン
 css/verse.css         聖句ページ用の追加デザイン
 css/cards.css         ことばカード用の追加デザイン
@@ -35,7 +35,7 @@ audio/cards/jadongcha.mp3  → 자동차
 ```
 
 - `.mp3` がなければ `.m4a`、`.wav` の順に探します。無いことばは「音声準備中 ／ Audio Coming Soon」と表示されます。
-- 45語の一覧・録音チェック表は `kdp_cards/녹음용_단어_목록_45개.md`（ワークスペース）にあります。
+- 45語の一覧・録音チェック表は `kdp_cards/녹음용_단어_목록_45개.md`（ワークスペース）にあります。6巻「우리 몸」の15語は `kdp_cards/vol6_body/녹음용_단어_목록_6권.md` です。
 - ことばと翻訳は `cards.html` の `VOLUMES` の中だけを書き換えてください。
 - ページは `noindex, nofollow`、`index.html` からのリンクなし（絵本のQR専用）。QR は `cards.html?w=スラッグ` です。
 

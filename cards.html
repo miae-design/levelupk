@@ -141,13 +141,13 @@
 
 <script>
 /* =========================================================
-   ことばデータ（5巻・75語）
+   ことばデータ（6巻・90語）
    ---------------------------------------------------------
    ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
    ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
      自動で再生ボタンが出ます（例：audio/cards/tokki.mp3、.m4a / .wav も可）。
    ★ 各ページのQRコードは cards.html?w=スラッグ です。
-   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」と4巻「배/なし」）は、
+   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」）は、
      巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
    ========================================================= */
 var VOLUMES = [
@@ -270,6 +270,31 @@ var VOLUMES = [
       { slug: "yeondusaek",  ko: "연두색",   ja: "きみどり",     en: "light green" },
       { slug: "geumsaek",    ko: "금색",     ja: "きんいろ",     en: "gold" },
       { slug: "eunsaek",     ko: "은색",     ja: "ぎんいろ",     en: "silver" }
+    ]
+  },
+  {
+    id: 6,
+    no: "第6巻",
+    ja: "からだ",
+    ko: "우리 몸",
+    en: "My Body",
+    words: [
+      { slug: "meori",       ko: "머리",     ja: "あたま",       en: "head" },
+      { slug: "eolgul",      ko: "얼굴",     ja: "かお",         en: "face" },
+      { slug: "nun",         ko: "눈",       ja: "め",           en: "eye" },
+      { slug: "ko",          ko: "코",       ja: "はな",         en: "nose" },
+      { slug: "ip",          ko: "입",       ja: "くち",         en: "mouth" },
+      { slug: "gwi",         ko: "귀",       ja: "みみ",         en: "ear" },
+      { slug: "i",           ko: "이",       ja: "は",           en: "tooth" },
+      { slug: "mok",         ko: "목",       ja: "くび",         en: "neck" },
+      { slug: "eokkae",      ko: "어깨",     ja: "かた",         en: "shoulder" },
+      { slug: "pal",         ko: "팔",       ja: "うで",         en: "arm" },
+      { slug: "son",         ko: "손",       ja: "て",           en: "hand" },
+      /* 3巻「배／ふね」・4巻「배／なし」と同じスラッグ。この巻は ?w=bae&v=6 で開きます。 */
+      { slug: "bae",         ko: "배",       ja: "おなか",       en: "belly" },
+      { slug: "dari",        ko: "다리",     ja: "あし",         en: "leg" },
+      { slug: "mureup",      ko: "무릎",     ja: "ひざ",         en: "knee" },
+      { slug: "bal",         ko: "발",       ja: "あし",         en: "foot" }
     ]
   }
 ];

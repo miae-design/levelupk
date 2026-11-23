@@ -32,6 +32,7 @@ body.cards-page[data-vol="2"] { --vol: #2F7D4A; --vol-soft: #E8F4EC; --vol-deep:
 body.cards-page[data-vol="3"] { --vol: #2E6FBF; --vol-soft: #E8F1FD; --vol-deep: #1B4C8A; --vol-line: #C2D6F0; }
 body.cards-page[data-vol="4"] { --vol: #C9801A; --vol-soft: #FDF3E2; --vol-deep: #8E5708; --vol-line: #EFD5A9; }
 body.cards-page[data-vol="5"] { --vol: #7A57B8; --vol-soft: #F2EDFB; --vol-deep: #4E3385; --vol-line: #D8CCF0; }
+body.cards-page[data-vol="6"] { --vol: #C4567E; --vol-soft: #FCEEF3; --vol-deep: #8C2F52; --vol-line: #F2CBD9; }
 
 /* ---------- Header（verse.html と同じ見た目） ---------- */
 .vhead {
