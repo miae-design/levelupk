@@ -476,7 +476,7 @@ var VOLUMES = [
   "5-geumsaek": { c: "linear-gradient(135deg,#FBF0B2 0%,#E8C766 28%,#C9A227 52%,#F7E7A6 74%,#D4AF37 100%)" },
   "5-eunsaek": { c: "linear-gradient(135deg,#F7F9FB 0%,#CBD3DC 30%,#9FA9B4 55%,#E6EBF0 78%,#B4BDC7 100%)" },
   "6-meori": { f: "assets/photos/v6-meori.jpg", a: "Philippe Alès", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Back_head,_grey_hairs.jpg" },
-  "6-eolgul": { f: "assets/photos/v6-eolgul.jpg", a: "Les Anderson lesanderson", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Child_with_thumbs_in_her_mouth_(Unsplash).jpg" },
+  "6-eolgul": { f: "assets/photos/v6-eolgul.jpg", a: "Helgi Halldórsson", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg" },
   "6-nun": { f: "assets/photos/v6-nun.jpg", a: "Vladimer Shioshvili", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg" },
   "6-ko": { f: "assets/photos/v6-ko.jpg", a: "TheNoseKnows2Much", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Nose_Example.jpg" },
   "6-ip": { f: "assets/photos/v6-ip.jpg", a: "Punker1999", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Up_close_of_human_chin_and_lips.jpg" },
@@ -565,6 +565,7 @@ var VOLUMES = [
   var photoTitleJa = document.getElementById("w-photo-title-ja");
   var photoTitleKo = document.getElementById("w-photo-title-ko");
   var photoTitleEn = document.getElementById("w-photo-title-en");
+  var photoIcon = photoBox ? photoBox.querySelector(".wphoto__icon") : null;
 
   function esc(text) {
     return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -777,6 +778,7 @@ var VOLUMES = [
     if (photoTitleJa) photoTitleJa.textContent = isColor ? "いろの みほん" : "じっさいの しゃしん";
     if (photoTitleKo) photoTitleKo.textContent = isColor ? "색 견본" : "실제 모습";
     if (photoTitleEn) photoTitleEn.textContent = isColor ? "Colour" : "Real Photo";
+    if (photoIcon) photoIcon.textContent = isColor ? "🎨" : "📷";
     var items = photo.p || (isColor ? [] : [photo]);
     mediaBox.className = "wphoto__media" + (items.length > 1 ? " is-pair" : "") + (isColor ? " is-color" : "");
     while (mediaBox.firstChild) mediaBox.removeChild(mediaBox.firstChild);
