@@ -19,7 +19,7 @@ css/cards.css         ことばカード用の追加デザイン
 js/i18n.js            日本語／英語／韓国語の文章
 js/app.js             画面切り替え・音声プレーヤー・パスワード
 assets/               ロゴ・写真・LINE QR
-assets/photos/         ことばカードの実写真（135点・出典は assets/photos/CREDITS.md）
+assets/photos/         ことばカードの実写真（120点・第5巻の15語は色見本・出典は assets/photos/CREDITS.md）
 assets/fonts/         ことばカード用ハングル書体（サブセット）
 images/               教室ページの写真（Crowdpic・出典は images/CREDITS.md）
 audio/                音声ファイル
@@ -46,7 +46,7 @@ audio/cards/jadongcha.mp3  → 자동차
 
 - 写真ファイル: `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）。例：`v3-bae.jpg`（ふね）、`v4-bae.jpg`（なし）、`v6-bae.jpg`（おなか）
 - 出典データ: `cards.html` の `PHOTOS`（ファイル・作者・ライセンス・Commonsのページ）。カード下のクレジット表示に使います。
-- 一覧表: `assets/photos/CREDITS.md`（135点の作者・ライセンス・出典URL）
+- 一覧表: `assets/photos/CREDITS.md`（写真120点の作者・ライセンス・出典URL）
 - 写真はすべて Wikimedia Commons の自由利用ライセンス（CC0／パブリックドメイン／CC BY／CC BY-SA）です。CC BY・CC BY-SA の写真は作者名とライセンスをカード下に表示しています。
 - 写真を差し替えるときは、`assets/photos/` のファイルを同じ名前で置き換えるだけで表示されます（`PHOTOS` の出典も書き換えてください）。
 
