@@ -159,7 +159,7 @@
 
 <script>
 /* =========================================================
-   ことばデータ（9巻・135語）
+   ことばデータ（10巻・150語）
    ---------------------------------------------------------
    ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
    ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
@@ -172,12 +172,14 @@ var VOLUMES = [
   {
     id: 1,
     no: "第1巻",
-    ja: "どうぶつ",
-    ko: "동물",
-    en: "Animals",
+    ja: "どうぶつ 1",
+    ko: "동물 1",
+    en: "Animals 1",
     words: [
       { slug: "tokki",       ko: "토끼",    ja: "うさぎ",       en: "rabbit" },
-      { slug: "gangaji",     ko: "강아지",  ja: "こいぬ",       en: "puppy" },
+      /* 2026-11-25: 강아지・병아리は第10巻へ、나비は第8巻へ移りました。
+         かわりに どうぶつ 1 は 호랑이・달팽이・판다 の15語になりました。 */
+      { slug: "dalpaengi",   ko: "달팽이",  ja: "かたつむり",   en: "snail" },
       { slug: "goyangi",     ko: "고양이",  ja: "ねこ",         en: "cat" },
       { slug: "gom",         ko: "곰",      ja: "くま",         en: "bear" },
       { slug: "saja",        ko: "사자",    ja: "ライオン",     en: "lion" },
@@ -187,10 +189,10 @@ var VOLUMES = [
       { slug: "penggwin",    ko: "펭귄",    ja: "ペンギン",     en: "penguin" },
       { slug: "ori",         ko: "오리",    ja: "あひる",       en: "duck" },
       { slug: "gaeguri",     ko: "개구리",  ja: "かえる",       en: "frog" },
-      { slug: "nabi",        ko: "나비",    ja: "ちょう",       en: "butterfly" },
+      { slug: "horangi",     ko: "호랑이",  ja: "とら",         en: "tiger" },
       { slug: "mulgogi",     ko: "물고기",  ja: "さかな",       en: "fish" },
       { slug: "geobugi",     ko: "거북이",  ja: "かめ",         en: "turtle" },
-      { slug: "byeongari",   ko: "병아리",  ja: "ひよこ",       en: "chick" }
+      { slug: "panda",       ko: "판다",    ja: "パンダ",       en: "panda" }
     ]
   },
   {
@@ -360,7 +362,7 @@ var VOLUMES = [
       { slug: "aebeolle",      ko: "애벌레",     ja: "いもむし",       en: "caterpillar" },
       { slug: "samagwi",       ko: "사마귀",     ja: "かまきり",       en: "mantis" },
       { slug: "sogeumjaengi",  ko: "소금쟁이",   ja: "あめんぼ",       en: "water strider" },
-      { slug: "dalpaengi",     ko: "달팽이",     ja: "かたつむり",     en: "snail" },
+      { slug: "nabi",          ko: "나비",       ja: "ちょう",         en: "butterfly" },
       { slug: "gongbeolle",    ko: "공벌레",     ja: "だんごむし",     en: "pill bug" }
     ]
   },
@@ -389,13 +391,39 @@ var VOLUMES = [
       { slug: "cheon",         ko: "천",         ja: "せん",             en: "one thousand" },
       { slug: "man",           ko: "만",         ja: "いちまん",         en: "ten thousand" }
     ]
+  },
+  {
+    id: 10,
+    no: "第10巻",
+    ja: "どうぶつ 2",
+    ko: "동물 2",
+    en: "Animals 2",
+    words: [
+      /* おとなと こどもが ペアです（개・강아지、소・송아지、말・망아지、닭・병아리）。
+         강아지・병아りは 第1巻から この巻へ 移りました。 */
+      { slug: "gae",           ko: "개",         ja: "いぬ",             en: "dog" },
+      { slug: "gangaji",       ko: "강아지",     ja: "こいぬ",           en: "puppy" },
+      { slug: "so",            ko: "소",         ja: "うし",             en: "cow" },
+      { slug: "songaji",       ko: "송아지",     ja: "こうし",           en: "calf" },
+      { slug: "mal",           ko: "말",         ja: "うま",             en: "horse" },
+      { slug: "mangaji",       ko: "망아지",     ja: "こうま",           en: "foal" },
+      { slug: "dak",           ko: "닭",         ja: "にわとり",         en: "chicken" },
+      { slug: "byeongari",     ko: "병아리",     ja: "ひよこ",           en: "chick" },
+      { slug: "dwaeji",        ko: "돼지",       ja: "ぶた",             en: "pig" },
+      { slug: "chamse",        ko: "참새",       ja: "すずめ",           en: "sparrow" },
+      { slug: "kkachi",        ko: "까치",       ja: "かささぎ",         en: "magpie" },
+      { slug: "kkamagwi",      ko: "까마귀",     ja: "からす",           en: "crow" },
+      { slug: "doksuri",       ko: "독수리",     ja: "わし",             en: "eagle" },
+      { slug: "bidulgi",       ko: "비둘기",     ja: "はと",             en: "pigeon" },
+      { slug: "gongjaksae",    ko: "공작새",     ja: "くじゃく",         en: "peacock" }
+    ]
   }
 ];
 
   /* 写真の出典（Wikimedia Commons / 自由利用ライセンス） */
   var PHOTOS = {
   "1-tokki": { f: "assets/photos/v1-tokki.jpg", a: "U.S. Fish and Wildlife Service", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Eastern_cottontail_rabbit_-_DPLA_-_44fa1ec441a88c9edb00f74a85ce8958.jpg" },
-  "1-gangaji": { f: "assets/photos/v1-gangaji.jpg", a: "Johannnes89", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg" },
+  "1-dalpaengi": { f: "assets/photos/v1-dalpaengi.jpg", a: "Waris hundal", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg" },
   "1-goyangi": { f: "assets/photos/v1-goyangi.jpg", a: "George Chernilevsky", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg" },
   "1-gom": { f: "assets/photos/v1-gom.jpg", a: "Robert F. Tobler", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg" },
   "1-saja": { f: "assets/photos/v1-saja.jpg", a: "Giles Laurent", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg" },
@@ -405,10 +433,10 @@ var VOLUMES = [
   "1-penggwin": { f: "assets/photos/v1-penggwin.jpg", a: "Jay Ruzesky wolsenburg", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Penguin_on_a_rock_(Unsplash).jpg" },
   "1-ori": { f: "assets/photos/v1-ori.jpg", a: "Laitche", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Spot-billed_duck_at_Expo%E2%80%9970_Commemorative_Park_in_Osaka,_November_2015_II.jpg" },
   "1-gaeguri": { f: "assets/photos/v1-gaeguri.jpg", a: "Davidvraju", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Green_frog_on_a_leaf_(2016).jpg" },
-  "1-nabi": { f: "assets/photos/v1-nabi.jpg", a: "Charles J. Sharp", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg" },
+  "1-horangi": { f: "assets/photos/v1-horangi.jpg", a: "Tisha Mukherjee", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Sanjay_Dubri_Tiger_Reserve_December_2024_by_Tisha_Mukherjee_15.jpg" },
   "1-mulgogi": { f: "assets/photos/v1-mulgogi.jpg", a: "Vassil", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Carassius_auratus_Lionhead_goldfish_2.jpg" },
   "1-geobugi": { f: "assets/photos/v1-geobugi.jpg", a: "Aaron Lucas", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Eastern_box_turtle_walking_through_grass.jpg" },
-  "1-byeongari": { f: "assets/photos/v1-byeongari.jpg", a: "ELTORO.VET", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg" },
+  "1-panda": { f: "assets/photos/v1-panda.jpg", a: "Skip Brown", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Giant_Panda_(Ailuropoda_melanoleuca)_Feeding_on_Bamboo_in_an_Arboreal_Perch.jpg" },
   "2-bom": { f: "assets/photos/v2-bom.jpg", a: "Karolien Brughmans karolien", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Pink_cherry_blossom_on_blue_(Unsplash).jpg" },
   "2-yeoreum": { f: "assets/photos/v2-yeoreum.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Santa_Monica_Beach_--_2012_--_5301.jpg" },
   "2-gaeul": { f: "assets/photos/v2-gaeul.jpg", a: "ForestWander", l: "CC BY-SA 3.0 us", u: "https://commons.wikimedia.org/wiki/File:Red-autumn-maple-leaves-water-drops-moss_-_Virginia_-_ForestWander.jpg" },
@@ -518,7 +546,7 @@ var VOLUMES = [
   "8-aebeolle": { f: "assets/photos/v8-aebeolle.jpg", a: "Johnnybam", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Caterpillar_on_a_green_leaf.jpg" },
   "8-samagwi": { f: "assets/photos/v8-samagwi.jpg", a: "池田正樹 (talk) Masaki Ikeda", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:The_mantis_which_eats_a_Bee20080829.jpg" },
   "8-sogeumjaengi": { f: "assets/photos/v8-sogeumjaengi.jpg", a: "Richard Bartz", l: "CC BY-SA 2.5", u: "https://commons.wikimedia.org/wiki/File:Water_strider_Gerris_lacustris.jpg" },
-  "8-dalpaengi": { f: "assets/photos/v8-dalpaengi.jpg", a: "Waris hundal", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg" },
+  "8-nabi": { f: "assets/photos/v8-nabi.jpg", a: "Charles J. Sharp", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg" },
   "8-gongbeolle": { f: "assets/photos/v8-gongbeolle.jpg", a: "Daniel Das", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg" },
   "9-yeong": { f: "assets/photos/v9-yeong.jpg", a: "D. Sharon Pruitt", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:0_zero_(12041421074).jpg" },
   "9-hana": { f: "assets/photos/v9-hana.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_1_on_Tel_Aviv_street.jpg" },
@@ -534,7 +562,22 @@ var VOLUMES = [
   "9-seumul": { f: "assets/photos/v9-seumul.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_20_on_Jerusalem_Street.jpg" },
   "9-baek": { f: "assets/photos/v9-baek.jpg", a: "Clwacker", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Milestone_Italienische_Strasse_km_100_(06).jpg" },
   "9-cheon": { f: "assets/photos/v9-cheon.jpg", a: "MartinD", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:GR34_1000_km_milestone_at_Pointe_de_Pen-Hir.jpg" },
-  "9-man": { f: "assets/photos/v9-man.jpg", a: "Crisco 1492 (Bank Indonesia banknote)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg" }
+  "9-man": { f: "assets/photos/v9-man.jpg", a: "Crisco 1492 (Bank Indonesia banknote)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg" },
+  "10-gae": { f: "assets/photos/v10-gae.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg" },
+  "10-gangaji": { f: "assets/photos/v10-gangaji.jpg", a: "Johannnes89", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg" },
+  "10-so": { f: "assets/photos/v10-so.jpg", a: "Keith Weller/USDA", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg" },
+  "10-songaji": { f: "assets/photos/v10-songaji.jpg", a: "Ranjithkumar Murugesan", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:HOLSTEIN_FRIESIAN_CALF.jpg" },
+  "10-mal": { f: "assets/photos/v10-mal.jpg", a: "Korona Lacasse", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Horse_(8272800419).jpg" },
+  "10-mangaji": { f: "assets/photos/v10-mangaji.jpg", a: "Tiia Monto", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Crymlyn_Bog_-_horse.jpg" },
+  "10-dak": { f: "assets/photos/v10-dak.jpg", a: "MichalPL", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Hen,_Brenna,_Poland_July_2020.jpg" },
+  "10-byeongari": { f: "assets/photos/v10-byeongari.jpg", a: "ELTORO.VET", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg" },
+  "10-dwaeji": { f: "assets/photos/v10-dwaeji.jpg", a: "Gzen92", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(2).jpg" },
+  "10-chamse": { f: "assets/photos/v10-chamse.jpg", a: "Laitche", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Tree_Sparrow_August_2007_Osaka_Japan.jpg" },
+  "10-kkachi": { f: "assets/photos/v10-kkachi.jpg", a: "Alexis Lours", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg" },
+  "10-kkamagwi": { f: "assets/photos/v10-kkamagwi.jpg", a: "Alexis Lours", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Carrion_Crow_2025_05_23.jpg" },
+  "10-doksuri": { f: "assets/photos/v10-doksuri.jpg", a: "BLMUtah", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Golden_Eagle_2_(51192287753).jpg" },
+  "10-bidulgi": { f: "assets/photos/v10-bidulgi.jpg", a: "Alexis Lours", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Feral_pigeon_2024_05_13.jpg" },
+  "10-gongjaksae": { f: "assets/photos/v10-gongjaksae.jpg", a: "Rohit Sharma", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Indian_Peacock_courtship_display_at_Pench_national_park_(April,_2024)_08,_edited.jpg" }
   };
 
 (function () {

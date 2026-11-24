@@ -1,6 +1,6 @@
 # ことばカード「じっさいの しゃしん」写真クレジット
 
-`cards.html` の各ことばカードに表示している写真（120点）の出典一覧です（第5巻「いろ」の15語は色見本）。
+`cards.html` の各ことばカードに表示している写真（135点）の出典一覧です（第5巻「いろ」の15語は色見本）。
 すべて Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真で、
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
 CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています。
@@ -8,21 +8,21 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
-| 第1巻 どうぶつ | v1-tokki.jpg | 토끼（うさぎ） | Eastern cottontail rabbit - DPLA - 44fa1ec441a88c9edb00f74a8… | Department of the Interior. U.S. Fish and Wildlife Service. National C | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Eastern_cottontail_rabbit_-_DPLA_-_44fa1ec441a88c9edb00f74a85ce8958.jpg) |
-| 第1巻 どうぶつ | v1-gangaji.jpg | 강아지（こいぬ） | Golden Retriever Puppy 2012 03.jpg | Johannnes89 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg) |
-| 第1巻 どうぶつ | v1-goyangi.jpg | 고양이（ねこ） | Domestic cat 2011 G02.jpg | George Chernilevsky | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg) |
-| 第1巻 どうぶつ | v1-gom.jpg | 곰（くま） | Kamchatka Brown Bear near Dvuhyurtochnoe on 2015-07-23.jpg | Robert F. Tobler | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg) |
-| 第1巻 どうぶつ | v1-saja.jpg | 사자（ライオン） | 002 The lion king Snyggve in the Serengeti National Park Pho… | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg) |
-| 第1巻 どうぶつ | v1-kokkiri.jpg | 코끼리（ぞう） | Elefantes africanos de sabana (Loxodonta africana), parque n… | Diego Delso | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Elefantes_africanos_de_sabana_(Loxodonta_africana),_parque_nacional_de_Chobe,_Botsuana,_2018-07-28,_DD_25.jpg) |
-| 第1巻 どうぶつ | v1-girin.jpg | 기린（きりん） | Kruger National Park (ZA), Giraffe -- 2024 -- 0431.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kruger_National_Park_(ZA),_Giraffe_--_2024_--_0431.jpg) |
-| 第1巻 どうぶつ | v1-wonsungi.jpg | 원숭이（さる） | Wildlife primate monkey-of-japan macaca-fuscata closeup 31-0… | Alfonsopazphoto | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Wildlife_primate_monkey-of-japan_macaca-fuscata_closeup_31-05-2010.jpg) |
-| 第1巻 どうぶつ | v1-penggwin.jpg | 펭귄（ペンギン） | Penguin on a rock (Unsplash).jpg | Jay Ruzesky wolsenburg | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Penguin_on_a_rock_(Unsplash).jpg) |
-| 第1巻 どうぶつ | v1-ori.jpg | 오리（あひる） | Spot-billed duck at Expo’70 Commemorative Park in Osaka, November 2015 II.jpg | Laitche | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Spot-billed_duck_at_Expo%E2%80%9970_Commemorative_Park_in_Osaka,_November_2015_II.jpg) |
-| 第1巻 どうぶつ | v1-gaeguri.jpg | 개구리（かえる） | Green frog on a leaf (2016).jpg | Davidvraju | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Green_frog_on_a_leaf_(2016).jpg) |
-| 第1巻 どうぶつ | v1-nabi.jpg | 나비（ちょう） | Peacock butterfly (Aglais io) 2.jpg | Charles J. Sharp | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg) |
-| 第1巻 どうぶつ | v1-mulgogi.jpg | 물고기（さかな） | Aquarium tropical de Pierrefitte-Nestalas 03082018 Carassius… | Vassil | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Carassius_auratus_Lionhead_goldfish_2.jpg) |
-| 第1巻 どうぶつ | v1-geobugi.jpg | 거북이（かめ） | Eastern box turtle walking through grass.jpg | Aaron Lucas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eastern_box_turtle_walking_through_grass.jpg) |
-| 第1巻 どうぶつ | v1-byeongari.jpg | 병아리（ひよこ） | Fuzzy yellow chicks in a brooder.jpg | ELTORO.VET | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg) |
+| 第1巻 どうぶつ 1 | v1-tokki.jpg | 토끼（うさぎ） | Eastern cottontail rabbit - DPLA - 44fa1ec441a88c9edb00f74a8… | Department of the Interior. U.S. Fish and Wildlife Service. National C | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Eastern_cottontail_rabbit_-_DPLA_-_44fa1ec441a88c9edb00f74a85ce8958.jpg) |
+| 第1巻 どうぶつ 1 | v1-dalpaengi.jpg | 달팽이（かたつむり） | Garden snail on wooden fence.jpg | Waris hundal | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg) |
+| 第1巻 どうぶつ 1 | v1-goyangi.jpg | 고양이（ねこ） | Domestic cat 2011 G02.jpg | George Chernilevsky | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg) |
+| 第1巻 どうぶつ 1 | v1-gom.jpg | 곰（くま） | Kamchatka Brown Bear near Dvuhyurtochnoe on 2015-07-23.jpg | Robert F. Tobler | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg) |
+| 第1巻 どうぶつ 1 | v1-saja.jpg | 사자（ライオン） | 002 The lion king Snyggve in the Serengeti National Park Pho… | Giles Laurent | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg) |
+| 第1巻 どうぶつ 1 | v1-kokkiri.jpg | 코끼리（ぞう） | Elefantes africanos de sabana (Loxodonta africana), parque n… | Diego Delso | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Elefantes_africanos_de_sabana_(Loxodonta_africana),_parque_nacional_de_Chobe,_Botsuana,_2018-07-28,_DD_25.jpg) |
+| 第1巻 どうぶつ 1 | v1-girin.jpg | 기린（きりん） | Kruger National Park (ZA), Giraffe -- 2024 -- 0431.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kruger_National_Park_(ZA),_Giraffe_--_2024_--_0431.jpg) |
+| 第1巻 どうぶつ 1 | v1-wonsungi.jpg | 원숭이（さる） | Wildlife primate monkey-of-japan macaca-fuscata closeup 31-0… | Alfonsopazphoto | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Wildlife_primate_monkey-of-japan_macaca-fuscata_closeup_31-05-2010.jpg) |
+| 第1巻 どうぶつ 1 | v1-penggwin.jpg | 펭귄（ペンギン） | Penguin on a rock (Unsplash).jpg | Jay Ruzesky wolsenburg | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Penguin_on_a_rock_(Unsplash).jpg) |
+| 第1巻 どうぶつ 1 | v1-ori.jpg | 오리（あひる） | Spot-billed duck at Expo’70 Commemorative Park in Osaka, November 2015 II.jpg | Laitche | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Spot-billed_duck_at_Expo%E2%80%9970_Commemorative_Park_in_Osaka,_November_2015_II.jpg) |
+| 第1巻 どうぶつ 1 | v1-gaeguri.jpg | 개구리（かえる） | Green frog on a leaf (2016).jpg | Davidvraju | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Green_frog_on_a_leaf_(2016).jpg) |
+| 第1巻 どうぶつ 1 | v1-horangi.jpg | 호랑이（とら） | Bengal tiger in Sanjay Dubri Tiger Reserve December 2024 by Tisha Mukherjee 15.jpg | Tisha Mukherjee | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Sanjay_Dubri_Tiger_Reserve_December_2024_by_Tisha_Mukherjee_15.jpg) |
+| 第1巻 どうぶつ 1 | v1-mulgogi.jpg | 물고기（さかな） | Aquarium tropical de Pierrefitte-Nestalas 03082018 Carassius… | Vassil | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Carassius_auratus_Lionhead_goldfish_2.jpg) |
+| 第1巻 どうぶつ 1 | v1-geobugi.jpg | 거북이（かめ） | Eastern box turtle walking through grass.jpg | Aaron Lucas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eastern_box_turtle_walking_through_grass.jpg) |
+| 第1巻 どうぶつ 1 | v1-panda.jpg | 판다（パンダ） | Giant Panda (Ailuropoda melanoleuca) Feeding on Bamboo in an Arboreal Perch.jpg | Skip Brown | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Giant_Panda_(Ailuropoda_melanoleuca)_Feeding_on_Bamboo_in_an_Arboreal_Perch.jpg) |
 | 第2巻 しょくぶつ・しき | v2-bom.jpg | 봄（はる） | Pink cherry blossom on blue (Unsplash).jpg | Karolien Brughmans karolien | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Pink_cherry_blossom_on_blue_(Unsplash).jpg) |
 | 第2巻 しょくぶつ・しき | v2-yeoreum.jpg | 여름（なつ） | Los Angeles (California, USA), Santa Monica Beach -- 2012 -- 5301.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Santa_Monica_Beach_--_2012_--_5301.jpg) |
 | 第2巻 しょくぶつ・しき | v2-gaeul.jpg | 가을（あき） | Red-autumn-maple-leaves-water-drops-moss - Virginia - ForestWander.jpg | ForestWander | CC BY-SA 3.0 us | [Commons](https://commons.wikimedia.org/wiki/File:Red-autumn-maple-leaves-water-drops-moss_-_Virginia_-_ForestWander.jpg) |
@@ -114,7 +114,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第8巻 むし | v8-aebeolle.jpg | 애벌레（いもむし） | Caterpillar on a green leaf.jpg | Johnnybam | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Caterpillar_on_a_green_leaf.jpg) |
 | 第8巻 むし | v8-samagwi.jpg | 사마귀（かまきり） | The mantis which eats a Bee20080829.jpg | 池田正樹 (talk) Masaki Ikeda | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_mantis_which_eats_a_Bee20080829.jpg) |
 | 第8巻 むし | v8-sogeumjaengi.jpg | 소금쟁이（あめんぼ） | Water strider Gerris lacustris.jpg | Richard Bartz | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Water_strider_Gerris_lacustris.jpg) |
-| 第8巻 むし | v8-dalpaengi.jpg | 달팽이（かたつむり） | Garden snail on wooden fence.jpg | Waris hundal | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg) |
+| 第8巻 むし | v8-nabi.jpg | 나비（ちょう） | Peacock butterfly (Aglais io) 2.jpg | Charles J. Sharp | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg) |
 | 第8巻 むし | v8-gongbeolle.jpg | 공벌레（だんごむし） | Armadillidium vulgare 138264167.jpg | Daniel Das | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg) |
 | 第9巻 すうじ | v9-yeong.jpg | 영·공（ぜろ・れい） | 0 zero (12041421074).jpg | D. Sharon Pruitt | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:0_zero_(12041421074).jpg) |
 | 第9巻 すうじ | v9-hana.jpg | 일·하나（いち・ひとつ） | Sign number 1 on Tel Aviv street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_1_on_Tel_Aviv_street.jpg) |
@@ -131,5 +131,20 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第9巻 すうじ | v9-baek.jpg | 백（ひゃく） | Milestone Italienische Strasse km 100 (06).jpg | Clwacker | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Milestone_Italienische_Strasse_km_100_(06).jpg) |
 | 第9巻 すうじ | v9-cheon.jpg | 천（せん） | GR34 1000 km milestone at Pointe de Pen-Hir.jpg | MartinD | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:GR34_1000_km_milestone_at_Pointe_de_Pen-Hir.jpg) |
 | 第9巻 すうじ | v9-man.jpg | 만（いちまん） | 10000 rupiah bill, 2010 revision (2014 date), processed, obverse+reverse.jpg | Crisco 1492, scanning a banknote by Bank Indonesia | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg) |
+| 第10巻 どうぶつ 2 | v10-gae.jpg | 개（いぬ） | Dülmen, Hausdülmen, Golden Retriever -- 2022 -- 5945.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg) |
+| 第10巻 どうぶつ 2 | v10-gangaji.jpg | 강아지（こいぬ） | Golden Retriever Puppy 2012 03.jpg | Johannnes89 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg) |
+| 第10巻 どうぶつ 2 | v10-so.jpg | 소（うし） | Cow female black white.jpg | Keith Weller/USDA | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg) |
+| 第10巻 どうぶつ 2 | v10-songaji.jpg | 송아지（こうし） | HOLSTEIN FRIESIAN CALF.jpg | Ranjithkumar Murugesan | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:HOLSTEIN_FRIESIAN_CALF.jpg) |
+| 第10巻 どうぶつ 2 | v10-mal.jpg | 말（うま） | Horse (8272800419).jpg | Korona Lacasse | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Horse_(8272800419).jpg) |
+| 第10巻 どうぶつ 2 | v10-mangaji.jpg | 망아지（こうま） | Crymlyn Bog - horse.jpg | Tiia Monto | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Crymlyn_Bog_-_horse.jpg) |
+| 第10巻 どうぶつ 2 | v10-dak.jpg | 닭（にわとり） | Hen, Brenna, Poland July 2020.jpg | MichalPL | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hen,_Brenna,_Poland_July_2020.jpg) |
+| 第10巻 どうぶつ 2 | v10-byeongari.jpg | 병아리（ひよこ） | Fuzzy yellow chicks in a brooder.jpg | ELTORO.VET | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg) |
+| 第10巻 どうぶつ 2 | v10-dwaeji.jpg | 돼지（ぶた） | Cochon domestique (Sus scrofa domesticus) (2).jpg | Gzen92 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(2).jpg) |
+| 第10巻 どうぶつ 2 | v10-chamse.jpg | 참새（すずめ） | Tree Sparrow August 2007 Osaka Japan.jpg | Laitche | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Tree_Sparrow_August_2007_Osaka_Japan.jpg) |
+| 第10巻 どうぶつ 2 | v10-kkachi.jpg | 까치（かささぎ） | Eurasian magpie 2024 03 03 02.jpg | Alexis Lours | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg) |
+| 第10巻 どうぶつ 2 | v10-kkamagwi.jpg | 까마귀（からす） | Carrion Crow 2025 05 23.jpg | Alexis Lours | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Carrion_Crow_2025_05_23.jpg) |
+| 第10巻 どうぶつ 2 | v10-doksuri.jpg | 독수리（わし） | Golden Eagle 2 (51192287753).jpg | BLMUtah | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Golden_Eagle_2_(51192287753).jpg) |
+| 第10巻 どうぶつ 2 | v10-bidulgi.jpg | 비둘기（はと） | Feral pigeon 2024 05 13.jpg | Alexis Lours | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Feral_pigeon_2024_05_13.jpg) |
+| 第10巻 どうぶつ 2 | v10-gongjaksae.jpg | 공작새（くじゃく） | Indian Peacock courtship display at Pench national park (April, 2024) 08, edited.jpg | Rohit Sharma (some additional editing by Cart) | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Indian_Peacock_courtship_display_at_Pench_national_park_(April,_2024)_08,_edited.jpg) |
 ※ 写真はすべて原典のライセンスに従って利用しています。CC BY-SA の写真は同ライセンスの下で
 再配布されます。差し替え・削除のときは `cards.html` の `PHOTOS` とこの表を更新してください。
