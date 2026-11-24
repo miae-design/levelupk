@@ -12,14 +12,14 @@
 ```
 index.html            トップページ（教材・教室・オンライン・プロフィール）
 verse.html            1月〜12月の聖句ページ（月切り替え・音声）
-cards.html            KDP絵本の「ことばカード」（8巻・120語・音声）
+cards.html            KDP絵本の「ことばカード」（9巻・135語・音声）
 css/style.css         サイト全体のデザイン
 css/verse.css         聖句ページ用の追加デザイン
 css/cards.css         ことばカード用の追加デザイン
 js/i18n.js            日本語／英語／韓国語の文章
 js/app.js             画面切り替え・音声プレーヤー・パスワード
 assets/               ロゴ・写真・LINE QR
-assets/photos/         ことばカードの実写真（120点・出典は assets/photos/CREDITS.md）
+assets/photos/         ことばカードの実写真（135点・出典は assets/photos/CREDITS.md）
 assets/fonts/         ことばカード用ハングル書体（サブセット）
 images/               教室ページの写真（Crowdpic・出典は images/CREDITS.md）
 audio/                音声ファイル
@@ -36,7 +36,7 @@ audio/cards/jadongcha.mp3  → 자동차
 ```
 
 - `.mp3` がなければ `.m4a`、`.wav` の順に探します。無いことばは「音声準備中 ／ Audio Coming Soon」と表示されます。
-- 45語の一覧・録音チェック表は `kdp_cards/녹음용_단어_목록_45개.md`（ワークスペース）にあります。6巻「우리 몸」の15語は `kdp_cards/vol6_body/녹음용_단어_목록_6권.md`、7巻「하늘 · 땅 · 바다」の15語は `kdp_cards/vol7_sky_land_sea/녹음용_단어_목록_7권.md`、8巻「곤충」の15語は `kdp_cards/vol8_insects/녹음용_단어_목록_8권.md` です。
+- 45語の一覧・録音チェック表は `kdp_cards/녹음용_단어_목록_45개.md`（ワークスペース）にあります。6巻「우리 몸」の15語は `kdp_cards/vol6_body/녹음용_단어_목록_6권.md`、7巻「하늘 · 땅 · 바다」の15語は `kdp_cards/vol7_sky_land_sea/녹음용_단어_목록_7권.md`、8巻「곤충」の15語は `kdp_cards/vol8_insects/녹음용_단어_목록_8권.md`、9巻「숫자／すうじ」の15語は `kdp_cards/vol9_numbers/녹음용_단어_목록_9권.md` です。
 - ことばと翻訳は `cards.html` の `VOLUMES` の中だけを書き換えてください。
 - ページは `noindex, nofollow`、`index.html` からのリンクなし（絵本のQR専用）。QR は `cards.html?w=スラッグ` です。
 
@@ -46,7 +46,7 @@ audio/cards/jadongcha.mp3  → 자동차
 
 - 写真ファイル: `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）。例：`v3-bae.jpg`（ふね）、`v4-bae.jpg`（なし）、`v6-bae.jpg`（おなか）
 - 出典データ: `cards.html` の `PHOTOS`（ファイル・作者・ライセンス・Commonsのページ）。カード下のクレジット表示に使います。
-- 一覧表: `assets/photos/CREDITS.md`（120点の作者・ライセンス・出典URL）
+- 一覧表: `assets/photos/CREDITS.md`（135点の作者・ライセンス・出典URL）
 - 写真はすべて Wikimedia Commons の自由利用ライセンス（CC0／パブリックドメイン／CC BY／CC BY-SA）です。CC BY・CC BY-SA の写真は作者名とライセンスをカード下に表示しています。
 - 写真を差し替えるときは、`assets/photos/` のファイルを同じ名前で置き換えるだけで表示されます（`PHOTOS` の出典も書き換えてください）。
 

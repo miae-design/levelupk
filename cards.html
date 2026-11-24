@@ -155,7 +155,7 @@
 
 <script>
 /* =========================================================
-   ことばデータ（8巻・120語）
+   ことばデータ（9巻・135語）
    ---------------------------------------------------------
    ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
    ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
@@ -359,6 +359,32 @@ var VOLUMES = [
       { slug: "dalpaengi",     ko: "달팽이",     ja: "かたつむり",     en: "snail" },
       { slug: "gongbeolle",    ko: "공벌레",     ja: "だんごむし",     en: "pill bug" }
     ]
+  },
+  {
+    id: 9,
+    no: "第9巻",
+    ja: "すうじ",
+    ko: "숫자",
+    en: "Numbers",
+    words: [
+      /* 1〜10・20 は こどもが かぞえる ときの ことば（고유어）を スラッグに しています。
+         100〜10,000 は 漢字語だけです。 */
+      { slug: "yeong",         ko: "영·공",      ja: "ぜろ・れい",       en: "zero" },
+      { slug: "hana",          ko: "일·하나",    ja: "いち・ひとつ",     en: "one" },
+      { slug: "dul",           ko: "이·둘",      ja: "に・ふたつ",       en: "two" },
+      { slug: "set",           ko: "삼·셋",      ja: "さん・みっつ",     en: "three" },
+      { slug: "net",           ko: "사·넷",      ja: "し・よっつ",       en: "four" },
+      { slug: "daseot",        ko: "오·다섯",    ja: "ご・いつつ",       en: "five" },
+      { slug: "yeoseot",       ko: "육·여섯",    ja: "ろく・むっつ",     en: "six" },
+      { slug: "ilgop",         ko: "칠·일곱",    ja: "しち・ななつ",     en: "seven" },
+      { slug: "yeodeol",       ko: "팔·여덟",    ja: "はち・やっつ",     en: "eight" },
+      { slug: "ahop",          ko: "구·아홉",    ja: "きゅう・ここのつ", en: "nine" },
+      { slug: "yeol",          ko: "십·열",      ja: "じゅう・とお",     en: "ten" },
+      { slug: "seumul",        ko: "이십·스물",  ja: "にじゅう",         en: "twenty" },
+      { slug: "baek",          ko: "백",         ja: "ひゃく",           en: "one hundred" },
+      { slug: "cheon",         ko: "천",         ja: "せん",             en: "one thousand" },
+      { slug: "man",           ko: "만",         ja: "いちまん",         en: "ten thousand" }
+    ]
   }
 ];
 
@@ -483,7 +509,22 @@ var VOLUMES = [
   "8-samagwi": { f: "assets/photos/v8-samagwi.jpg", a: "池田正樹 (talk) Masaki Ikeda", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:The_mantis_which_eats_a_Bee20080829.jpg" },
   "8-sogeumjaengi": { f: "assets/photos/v8-sogeumjaengi.jpg", a: "Richard Bartz", l: "CC BY-SA 2.5", u: "https://commons.wikimedia.org/wiki/File:Water_strider_Gerris_lacustris.jpg" },
   "8-dalpaengi": { f: "assets/photos/v8-dalpaengi.jpg", a: "Waris hundal", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg" },
-  "8-gongbeolle": { f: "assets/photos/v8-gongbeolle.jpg", a: "Daniel Das", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg" }
+  "8-gongbeolle": { f: "assets/photos/v8-gongbeolle.jpg", a: "Daniel Das", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg" },
+  "9-yeong": { f: "assets/photos/v9-yeong.jpg", a: "D. Sharon Pruitt", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:0_zero_(12041421074).jpg" },
+  "9-hana": { f: "assets/photos/v9-hana.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_1_on_Tel_Aviv_street.jpg" },
+  "9-dul": { f: "assets/photos/v9-dul.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_2_on_Jerusalem_Street.jpg" },
+  "9-set": { f: "assets/photos/v9-set.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_3_on_Jerusalem_Street.jpg" },
+  "9-net": { f: "assets/photos/v9-net.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_4_on_Jerusalem_Street.jpg" },
+  "9-daseot": { f: "assets/photos/v9-daseot.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_5_on_Jerusalem_Street.jpg" },
+  "9-yeoseot": { f: "assets/photos/v9-yeoseot.jpg", a: "Trackings.GE", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Street_sign_%E2%80%94_6_Konstantine_Andriadze_Street,_Tbilisi_(Georgian%E2%80%93English,_2025).jpg" },
+  "9-ilgop": { f: "assets/photos/v9-ilgop.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_7_on_Jerusalem_Street.jpg" },
+  "9-yeodeol": { f: "assets/photos/v9-yeodeol.jpg", a: "SeppVei", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:House_number_8.JPG" },
+  "9-ahop": { f: "assets/photos/v9-ahop.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_9_on_Jerusalem_Street.jpg" },
+  "9-yeol": { f: "assets/photos/v9-yeol.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_10_on_Jerusalem_Street.jpg" },
+  "9-seumul": { f: "assets/photos/v9-seumul.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_20_on_Jerusalem_Street.jpg" },
+  "9-baek": { f: "assets/photos/v9-baek.jpg", a: "Clwacker", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Milestone_Italienische_Strasse_km_100_(06).jpg" },
+  "9-cheon": { f: "assets/photos/v9-cheon.jpg", a: "MartinD", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:GR34_1000_km_milestone_at_Pointe_de_Pen-Hir.jpg" },
+  "9-man": { f: "assets/photos/v9-man.jpg", a: "Crisco 1492 (Bank Indonesia banknote)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg" }
   };
 
 (function () {

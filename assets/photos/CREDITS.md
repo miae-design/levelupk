@@ -1,6 +1,6 @@
 # ことばカード「じっさいの しゃしん」写真クレジット
 
-`cards.html` の各ことばカードに表示している写真（120点）の出典一覧です。
+`cards.html` の各ことばカードに表示している写真（135点）の出典一覧です。
 すべて Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真で、
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
 CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています。
@@ -127,6 +127,20 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第8巻 むし | v8-sogeumjaengi.jpg | 소금쟁이（あめんぼ） | Water strider Gerris lacustris.jpg | Richard Bartz | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Water_strider_Gerris_lacustris.jpg) |
 | 第8巻 むし | v8-dalpaengi.jpg | 달팽이（かたつむり） | Garden snail on wooden fence.jpg | Waris hundal | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Garden_snail_on_wooden_fence.jpg) |
 | 第8巻 むし | v8-gongbeolle.jpg | 공벌레（だんごむし） | Armadillidium vulgare 138264167.jpg | Daniel Das | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg) |
-
+| 第9巻 すうじ | v9-yeong.jpg | 영·공（ぜろ・れい） | 0 zero (12041421074).jpg | D. Sharon Pruitt | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:0_zero_(12041421074).jpg) |
+| 第9巻 すうじ | v9-hana.jpg | 일·하나（いち・ひとつ） | Sign number 1 on Tel Aviv street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_1_on_Tel_Aviv_street.jpg) |
+| 第9巻 すうじ | v9-dul.jpg | 이·둘（に・ふたつ） | Sign number 2 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_2_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-set.jpg | 삼·셋（さん・みっつ） | Sign number 3 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_3_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-net.jpg | 사·넷（し・よっつ） | Sign number 4 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_4_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-daseot.jpg | 오·다섯（ご・いつつ） | Sign number 5 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_5_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-yeoseot.jpg | 육·여섯（ろく・むっつ） | Street sign — 6 Konstantine Andriadze Street, Tbilisi (Georgian–English, 2025).jpg | Trackings.GE | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Street_sign_%E2%80%94_6_Konstantine_Andriadze_Street,_Tbilisi_(Georgian%E2%80%93English,_2025).jpg) |
+| 第9巻 すうじ | v9-ilgop.jpg | 칠·일곱（しち・ななつ） | Sign number 7 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_7_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-yeodeol.jpg | 팔·여덟（はち・やっつ） | House number 8.JPG | SeppVei | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:House_number_8.JPG) |
+| 第9巻 すうじ | v9-ahop.jpg | 구·아홉（きゅう・ここのつ） | Sign number 9 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_9_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-yeol.jpg | 십·열（じゅう・とお） | Sign number 10 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_10_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-seumul.jpg | 이십·스물（にじゅう） | Sign number 20 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_20_on_Jerusalem_Street.jpg) |
+| 第9巻 すうじ | v9-baek.jpg | 백（ひゃく） | Milestone Italienische Strasse km 100 (06).jpg | Clwacker | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Milestone_Italienische_Strasse_km_100_(06).jpg) |
+| 第9巻 すうじ | v9-cheon.jpg | 천（せん） | GR34 1000 km milestone at Pointe de Pen-Hir.jpg | MartinD | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:GR34_1000_km_milestone_at_Pointe_de_Pen-Hir.jpg) |
+| 第9巻 すうじ | v9-man.jpg | 만（いちまん） | 10000 rupiah bill, 2010 revision (2014 date), processed, obverse+reverse.jpg | Crisco 1492, scanning a banknote by Bank Indonesia | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg) |
 ※ 写真はすべて原典のライセンスに従って利用しています。CC BY-SA の写真は同ライセンスの下で
 再配布されます。差し替え・削除のときは `cards.html` の `PHOTOS` とこの表を更新してください。
