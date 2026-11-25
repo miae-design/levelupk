@@ -373,6 +373,6 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第25巻 かぞく | v25-imo.jpg | 이모（おばさん） | April and her little niece Lorelei.jpg | Daisy Romwall from Morro Bay, United States | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:April_and_her_little_niece_Lorelei.jpg) |
 | 第25巻 かぞく | v25-samchon.jpg | 삼촌（おじさん） | Aligharehdaghli.jpg | AliGharehdaghli | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Aligharehdaghli.jpg) |
 | 第25巻 かぞく | v25-sachon.jpg | 사촌（いとこ） | US Navy 030412-A-9330B-093 A group of Iraqi children pose for a photo while their parents receive humanitarian daily rations (HDR's) and water in the town of Ar Rutba.jpg | U.S. Navy photo | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:US_Navy_030412-A-9330B-093_A_group_of_Iraqi_children_pose_for_a_photo_while_their_parents_receive_humanitarian_daily_rations_(HDR%27s)_and_water_in_the_town_of_Ar_Rutba.jpg) |
-| 第25巻 かぞく | v25-chingu.jpg | 친구（ともだち） | Avaz & Selcan best friends, (e-citizen).JPG | Moonsun1981 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Avaz_%26_Selcan_best_friends,_(e-citizen).JPG) |
+| 第25巻 かぞく | v25-chincheok.jpg | 친척（しんせき） | Family Photo 3 Generations.jpg | Calabriafamilywines | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Family_Photo_3_Generations.jpg) |
 ※ 写真はすべて原典のライセンスに従って利用しています。CC BY-SA の写真は同ライセンスの下で
 再配布されます。差し替え・削除のときは `cards.html` の `PHOTOS` とこの表を更新してください。
