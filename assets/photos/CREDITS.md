@@ -6,7 +6,7 @@
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
 CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています。
 第11〜25巻の225点は 2026-11-25 に追加しました（第5巻「いろ」の15語をのぞく全25巻375語が実写真）。
-第6巻（からだ）の 어깨・팔・다리 は、体の部分が一目で分かるように元の写真をトリミングし、矢印（白フチ付き）を描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
+第6巻（からだ）の 이・어깨・팔・다리 は、体の部分が一目で分かるように元の写真をトリミングし（이のみトリミングなし）、矢印（白フチ付き）を描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
@@ -80,7 +80,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第6巻 からだ | v6-ko.jpg | 코（はな） | Nose Example.jpg | TheNoseKnows2Much | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nose_Example.jpg) |
 | 第6巻 からだ | v6-ip.jpg | 입（くち） | Mond Bild letz.jpg | MoreCapablePir | CC BY-SA 4.0（トリミング・軽いシャープ調整） | [Commons](https://commons.wikimedia.org/wiki/File:Mond_Bild_letz.jpg) |
 | 第6巻 からだ | v6-gwi.jpg | 귀（みみ） | Closeup of a human ear.jpg | צולם על ידי he:משתמש:אנדר-ויק | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg) |
-| 第6巻 からだ | v6-i.jpg | 이（は） | Young girl smiling with teeth in sunshine.jpg | Basile Morin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg) |
+| 第6巻 からだ | v6-i.jpg | 이（は） | Young girl smiling with teeth in sunshine.jpg | Basile Morin | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg) |
 | 第6巻 からだ | v6-mok.jpg | 목（くび） | Female neck.jpg | FotoFyl  / Erifyli Tsavdari | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Female_neck.jpg) |
 | 第6巻 からだ | v6-eokkae.jpg | 어깨（かた） | Man in t-shirt posing (Unsplash).jpg | Mohammad Faruque primitivestudios | CC0（トリミング・矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg) |
 | 第6巻 からだ | v6-pal.jpg | 팔（うで） | Guy in blue t-shirt cropped smaller.jpg | Autumn Goodman auttgood | CC0（トリミング・矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg) |
