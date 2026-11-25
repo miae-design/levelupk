@@ -1957,6 +1957,27 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
   color: var(--muted);
 }
 
+/* kids & teens online price card */
+.price-card--kids {
+  background: linear-gradient(135deg, #FFF7F2, #FFFFFF 72%);
+  border-color: #F2E1D6;
+}
+.price-card__icon--coral { background: #FBEDE5; color: #B8431F; }
+.price-card--kids .price-card__tags span {
+  color: #9C4A28;
+  background: #FFF4EC;
+  border-color: #F3DFD2;
+}
+.price-card--kids .price-row {
+  grid-template-columns: minmax(0, 210px) minmax(0, 1fr);
+}
+.price-card__note {
+  margin: 10px 0 0;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
 /* ---------- Now teaching (Profile) ---------- */
 .now-card {
   margin-top: 16px;
@@ -2067,6 +2088,7 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
     align-items: start;
   }
   .price-row__note { grid-column: 1; }
+  .price-card--kids .price-row { grid-template-columns: 1fr; }
   .price-opt { flex: 1 1 auto; justify-content: center; }
   .now-item__tag { margin-left: 0; }
 
