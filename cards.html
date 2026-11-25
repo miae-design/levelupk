@@ -886,15 +886,15 @@ var VOLUMES = [
   "6-eolgul": { f: "assets/photos/v6-eolgul.jpg", a: "Helgi Halldórsson", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg" },
   "6-nun": { f: "assets/photos/v6-nun.jpg", a: "Vladimer Shioshvili", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg" },
   "6-ko": { f: "assets/photos/v6-ko.jpg", a: "TheNoseKnows2Much", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Nose_Example.jpg" },
-  "6-ip": { f: "assets/photos/v6-ip.jpg", a: "Pupittaz", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Woman_lips.jpg" },
+  "6-ip": { f: "assets/photos/v6-ip.jpg", a: "さえぼー", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Two-days_stubble_partially_white.jpg", m: "トリミング" },
   "6-gwi": { f: "assets/photos/v6-gwi.jpg", a: "צולם על ידי he:משתמש:אנדר-ויק", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg" },
   "6-i": { f: "assets/photos/v6-i.jpg", a: "Basile Morin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg" },
   "6-mok": { f: "assets/photos/v6-mok.jpg", a: "FotoFyl / Erifyli Tsavdari", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Female_neck.jpg" },
-  "6-eokkae": { f: "assets/photos/v6-eokkae.jpg", a: "Mohammad Faruque primitivestudios", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg" },
-  "6-pal": { f: "assets/photos/v6-pal.jpg", a: "Autumn Goodman auttgood", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg" },
+  "6-eokkae": { f: "assets/photos/v6-eokkae.jpg", a: "Mohammad Faruque primitivestudios", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg", m: "トリミング・矢印を加筆" },
+  "6-pal": { f: "assets/photos/v6-pal.jpg", a: "Autumn Goodman auttgood", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg", m: "トリミング・矢印を加筆" },
   "6-son": { f: "assets/photos/v6-son.jpg", a: "trestletech", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg" },
-  "6-bae": { f: "assets/photos/v6-bae.jpg", a: "Arteida MjESHTRI arteidamjeshtri", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Autumn_baby_to_be_(Unsplash).jpg" },
-  "6-dari": { f: "assets/photos/v6-dari.jpg", a: "Imani Bahati", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Imani-bahati-woman-wearing-distressed-blue-denim-jeans-sitting-on-floor.jpg" },
+  "6-bae": { f: "assets/photos/v6-bae.jpg", a: "elise ramsey", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Child_pokes_own_navel_with_finger.jpg", m: "トリミング" },
+  "6-dari": { f: "assets/photos/v6-dari.jpg", a: "Mario A. P.", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Cute_nice_legs_(50548463197).jpg", m: "トリミング・矢印を加筆" },
   "6-mureup": { f: "assets/photos/v6-mureup.jpg", a: "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Human_knees.jpg" },
   "6-bal": { f: "assets/photos/v6-bal.jpg", a: "lou &amp; magoo", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Baby_feet_3_-_Flickr_-_lou_%5E_magoo.jpg" },
   "7-san": { f: "assets/photos/v7-san.jpg", a: "kallerna", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg" },
@@ -965,6 +965,8 @@ var VOLUMES = [
   var AUDIO_EXTS = ["mp3", "m4a", "wav"];
   /* 音声ファイルを追加したら、この数字を上げてください（ブラウザに残った古い404を避けるため） */
   var AUDIO_VER = "2";
+  /* 写真を差し替えたら、この数字を上げてください（ブラウザに残った古い画像を避けるため） */
+  var PHOTO_VER = "3";
   var LANG_KEY = "levelupk_cards_lang";
   var probeCache = {};
   var lang = "ja";
@@ -1187,8 +1189,9 @@ var VOLUMES = [
   function creditLine(p) {
     if (p.made) return "写真：Level Up K with MiAe Ssem（" + esc(p.l) + "）";
     var who = p.a ? esc(p.a) + " ／ " : "";
+    var note = p.m ? "・" + esc(p.m) : "";
     return "写真：<a href=\"" + esc(p.u) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" +
-      who + "Wikimedia Commons</a>（" + esc(p.l) + "）";
+      who + "Wikimedia Commons</a>（" + esc(p.l) + note + "）";
   }
 
   function photoItem(p, word) {
@@ -1211,7 +1214,7 @@ var VOLUMES = [
     img.decoding = "async";
     img.addEventListener("load", function () { img.classList.add("is-loaded"); });
     img.addEventListener("error", function () { frame.hidden = true; });
-    img.src = p.f;
+    img.src = p.f + (p.f.indexOf("?") >= 0 ? "&" : "?") + "v=" + PHOTO_VER;
     if (img.complete && img.naturalWidth) img.classList.add("is-loaded");
     frame.appendChild(img);
     fig.appendChild(frame);

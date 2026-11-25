@@ -5,6 +5,7 @@
 3点（第9巻の 백・천・만）は当教室で作った数字の画像（CC0・自作）です。
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
 CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています。
+第6巻（からだ）の 어깨・팔・다리 は、体の部分が一目で分かるように元の写真をトリミングし、矢印（白フチ付き）を描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
@@ -76,15 +77,15 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第6巻 からだ | v6-eolgul.jpg | 얼굴（かお） | My baby (2587044619).jpg | Helgi Halldórsson | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg) |
 | 第6巻 からだ | v6-nun.jpg | 눈（め） | World through her eye - Flickr - shioshvili.jpg | Vladimer Shioshvili | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg) |
 | 第6巻 からだ | v6-ko.jpg | 코（はな） | Nose Example.jpg | TheNoseKnows2Much | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nose_Example.jpg) |
-| 第6巻 からだ | v6-ip.jpg | 입（くち） | Woman lips.jpg | Pupittaz | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Woman_lips.jpg) |
+| 第6巻 からだ | v6-ip.jpg | 입（くち） | Two-days stubble partially white.jpg | さえぼー | CC0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Two-days_stubble_partially_white.jpg) |
 | 第6巻 からだ | v6-gwi.jpg | 귀（みみ） | Closeup of a human ear.jpg | צולם על ידי he:משתמש:אנדר-ויק | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg) |
 | 第6巻 からだ | v6-i.jpg | 이（は） | Young girl smiling with teeth in sunshine.jpg | Basile Morin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg) |
 | 第6巻 からだ | v6-mok.jpg | 목（くび） | Female neck.jpg | FotoFyl  / Erifyli Tsavdari | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Female_neck.jpg) |
-| 第6巻 からだ | v6-eokkae.jpg | 어깨（かた） | Man in t-shirt posing (Unsplash).jpg | Mohammad Faruque primitivestudios | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg) |
-| 第6巻 からだ | v6-pal.jpg | 팔（うで） | Guy in blue t-shirt cropped smaller.jpg | Autumn Goodman auttgood | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg) |
+| 第6巻 からだ | v6-eokkae.jpg | 어깨（かた） | Man in t-shirt posing (Unsplash).jpg | Mohammad Faruque primitivestudios | CC0（トリミング・矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg) |
+| 第6巻 からだ | v6-pal.jpg | 팔（うで） | Guy in blue t-shirt cropped smaller.jpg | Autumn Goodman auttgood | CC0（トリミング・矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg) |
 | 第6巻 からだ | v6-son.jpg | 손（て） | Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg | trestletech from Pixabay | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg) |
-| 第6巻 からだ | v6-bae.jpg | 배（おなか） | Autumn baby to be (Unsplash).jpg | Arteida MjESHTRI arteidamjeshtri | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Autumn_baby_to_be_(Unsplash).jpg) |
-| 第6巻 からだ | v6-dari.jpg | 다리（あし） | Imani-bahati-woman-wearing-distressed-blue-denim-jeans-sitting-on-floor.jpg | Imani Bahati | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Imani-bahati-woman-wearing-distressed-blue-denim-jeans-sitting-on-floor.jpg) |
+| 第6巻 からだ | v6-bae.jpg | 배（おなか） | Child pokes own navel with finger.jpg | elise ramsey | CC BY 2.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Child_pokes_own_navel_with_finger.jpg) |
+| 第6巻 からだ | v6-dari.jpg | 다리（あし） | Cute nice legs (50548463197).jpg | Mario A. P. | CC BY-SA 2.0（トリミング・矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Cute_nice_legs_(50548463197).jpg) |
 | 第6巻 からだ | v6-mureup.jpg | 무릎（ひざ） | Human knees.jpg | Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Human_knees.jpg) |
 | 第6巻 からだ | v6-bal.jpg | 발（あし） | Baby feet 3 - Flickr - lou ^ magoo.jpg | lou &amp; magoo | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby_feet_3_-_Flickr_-_lou_%5E_magoo.jpg) |
 | 第7巻 そら・つち・うみ | v7-san.jpg | 산（やま） | Vihren & Kutelo Pirin Mountains Bulgaria 2025.jpg | kallerna | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg) |
