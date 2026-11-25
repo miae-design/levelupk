@@ -967,7 +967,7 @@ var VOLUMES = [
     if (img.complete && img.naturalWidth) img.classList.add("is-loaded");
     frame.appendChild(img);
     fig.appendChild(frame);
-    if (p.u) {
+    if (p.u || p.made) {
       var cr = document.createElement("p");
       cr.className = "wphoto__credit";
       cr.innerHTML = creditLine(p);
