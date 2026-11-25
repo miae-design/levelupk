@@ -42,6 +42,16 @@ body.cards-page[data-vol="12"] { --vol: #2F7F8F; --vol-soft: #E8F4F6; --vol-deep
 body.cards-page[data-vol="13"] { --vol: #4A5FA8; --vol-soft: #EDF0FA; --vol-deep: #2F4079; --vol-line: #CFD7EF; }
 body.cards-page[data-vol="14"] { --vol: #2E8B57; --vol-soft: #E9F6EE; --vol-deep: #1B6440; --vol-line: #C2E3D1; }
 body.cards-page[data-vol="15"] { --vol: #A9791C; --vol-soft: #FAF3E2; --vol-deep: #7A5405; --vol-line: #EBD6A6; }
+body.cards-page[data-vol="16"] { --vol: #3F7F4F; --vol-soft: #EAF4EC; --vol-deep: #2A5C37; --vol-line: #C3DFCB; }
+body.cards-page[data-vol="17"] { --vol: #3A3F8F; --vol-soft: #EDEEF8; --vol-deep: #232763; --vol-line: #CDD0EC; }
+body.cards-page[data-vol="18"] { --vol: #A06A3C; --vol-soft: #F8F1E9; --vol-deep: #744822; --vol-line: #E6D3BC; }
+body.cards-page[data-vol="19"] { --vol: #4A6B8A; --vol-soft: #EDF2F7; --vol-deep: #2F4A63; --vol-line: #CBD9E6; }
+body.cards-page[data-vol="20"] { --vol: #3E8E7A; --vol-soft: #EAF5F2; --vol-deep: #256352; --vol-line: #C2E0D8; }
+body.cards-page[data-vol="21"] { --vol: #D0742E; --vol-soft: #FCF0E6; --vol-deep: #9C5214; --vol-line: #F0D4BC; }
+body.cards-page[data-vol="22"] { --vol: #4F8B34; --vol-soft: #EEF6E8; --vol-deep: #37641E; --vol-line: #CDE3BC; }
+body.cards-page[data-vol="23"] { --vol: #B4589A; --vol-soft: #F9EDF6; --vol-deep: #81366D; --vol-line: #EBCBE3; }
+body.cards-page[data-vol="24"] { --vol: #2F8FA8; --vol-soft: #E9F5F8; --vol-deep: #1B6478; --vol-line: #C2E0E8; }
+body.cards-page[data-vol="25"] { --vol: #C25B6A; --vol-soft: #FBEEF0; --vol-deep: #8E3642; --vol-line: #F0C9CF; }
 
 /* ---------- Header（verse.html と同じ見た目） ---------- */
 .vhead {

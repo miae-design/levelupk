@@ -174,8 +174,9 @@
      タイトルは audio/vol{巻番号}/title.mp3、よくできました は jalhaesseoyo.mp3 です。
    ★ 各ページのQRコードは cards.html?w=スラッグ、標題紙は ?w=title&v=巻番号、
      33ページの「よくできました」は ?w=jalhaesseoyo&v=巻番号 です。
-   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」、nun＝6巻「눈/め」・7巻「눈/ゆき」）は、
-     巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
+   ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」、nun＝6巻「눈/め」・7巻「눈/ゆき」、
+     pul＝7巻「풀/くさ」・23巻「풀/のり」）は、巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
+     意味が同じ重複（hae・dal・byeol＝2巻と17巻、ujubihaengsa＝17巻と21巻）は、v なしで先の巻が開きます。
    ========================================================= */
 var VOLUMES = [
   {
@@ -442,7 +443,7 @@ var VOLUMES = [
       { slug: "tteokbokki",  ko: "떡볶이", ja: "トッポッキ",     en: "Tteokbokki" },
       { slug: "kimchi",      ko: "김치",   ja: "キムチ",         en: "Kimchi" },
       { slug: "mandu",       ko: "만두",   ja: "マンドゥ",       en: "Mandu" },
-      { slug: "jeon",        ko: "전",     ja: "チヂミ",         en: "Jeon" },
+      { slug: "jeon",        ko: "전 (부침개)", ja: "チヂミ",      en: "Jeon" },
       { slug: "miyeokguk",   ko: "미역국", ja: "ワカメスープ",   en: "Seaweed Soup" },
       { slug: "japchae",     ko: "잡채",   ja: "チャプチェ",     en: "Japchae" },
       { slug: "samgyetang",  ko: "삼계탕", ja: "サムゲタン",     en: "Samgyetang" },
@@ -467,7 +468,7 @@ var VOLUMES = [
       { slug: "gukgeureut",  ko: "국그릇",   ja: "スープわん",           en: "Soup Bowl" },
       { slug: "jeopsi",      ko: "접시",     ja: "おさら",               en: "Plate" },
       { slug: "keop",        ko: "컵",       ja: "コップ",               en: "Cup" },
-      { slug: "mulbyeong",   ko: "물병",     ja: "みずさし",             en: "Water Bottle" },
+      { slug: "mulbyeong",   ko: "물병",     ja: "みずさし",             en: "Water Pitcher" },
       { slug: "ppaldae",     ko: "빨대",     ja: "ストロー",             en: "Straw" },
       { slug: "jujeonja",    ko: "주전자",   ja: "やかん",               en: "Kettle" },
       { slug: "naembi",      ko: "냄비",     ja: "なべ",                 en: "Pot" },
@@ -548,6 +549,252 @@ var VOLUMES = [
       { slug: "janggu",           ko: "장구",         ja: "チャング",       en: "Janggu" },
       { slug: "gayageum",         ko: "가야금",       ja: "カヤグム",       en: "Gayageum" },
       { slug: "kkwaenggwari",     ko: "꽹과리",       ja: "ケンガリ",       en: "Kkwaenggwari" }
+    ]
+  },
+  {
+    id: 16,
+    no: "第16巻",
+    ja: "きょうりゅう",
+    ko: "공룡",
+    en: "Dinosaurs",
+    words: [
+      { slug: "tiranosauruseu", ko: "티라노사우루스",     ja: "ティラノサウルス",     en: "Tyrannosaurus" },
+      { slug: "teurikeratopseu", ko: "트리케라톱스",       ja: "トリケラトプス",       en: "Triceratops" },
+      { slug: "beurakiosauruseu", ko: "브라키오사우루스",   ja: "ブラキオサウルス",     en: "Brachiosaurus" },
+      { slug: "seutegosauruseu", ko: "스테고사우루스",     ja: "ステゴサウルス",       en: "Stegosaurus" },
+      { slug: "peuteranodon",   ko: "프테라노돈",         ja: "プテラノドン",         en: "Pteranodon" },
+      { slug: "ankillosauruseu", ko: "안킬로사우루스",     ja: "アンキロサウルス",     en: "Ankylosaurus" },
+      { slug: "seupinosauruseu", ko: "스피노사우루스",     ja: "スピノサウルス",       en: "Spinosaurus" },
+      { slug: "bellosiraepteo", ko: "벨로시랩터",         ja: "ヴェロキラプトル",     en: "Velociraptor" },
+      { slug: "pakikeppallosauruseu", ko: "파키케팔로사우루스", ja: "パキケファロサウルス", en: "Pachycephalosaurus" },
+      { slug: "peullesiosauruseu", ko: "플레시오사우루스",   ja: "プレシオサウルス",     en: "Plesiosaurus" },
+      { slug: "mosasauruseu",   ko: "모사사우루스",       ja: "モササウルス",         en: "Mosasaurus" },
+      { slug: "parasaurollopuseu", ko: "파라사우롤로푸스",   ja: "パラサウロロフス",     en: "Parasaurolophus" },
+      { slug: "dipeullodokuseu", ko: "디플로도쿠스",       ja: "ディプロドクス",       en: "Diplodocus" },
+      { slug: "gongnyongal",    ko: "공룡알",             ja: "たまご",               en: "Dinosaur Egg" },
+      { slug: "baljaguk",       ko: "발자국",             ja: "あしあと",             en: "Footprint" }
+    ]
+  },
+  {
+    id: 17,
+    no: "第17巻",
+    ja: "うちゅう",
+    ko: "우주",
+    en: "Space",
+    words: [
+      /* hae・dal・byeol は 2巻（식물・사계절）と 同じ ことば・同じ 意味です。
+         2巻の カードが そのまま 開きます（17巻の カードで 開くときは ?w=hae&v=17）。 */
+      { slug: "hae",            ko: "해",                 ja: "たいよう",             en: "Sun" },
+      { slug: "dal",            ko: "달",                 ja: "つき",                 en: "Moon" },
+      { slug: "byeol",          ko: "별",                 ja: "ほし",                 en: "Star" },
+      { slug: "jigu",           ko: "지구",               ja: "ちきゅう",             en: "Earth" },
+      { slug: "ujuseon",        ko: "우주선",             ja: "うちゅうせん",         en: "Spaceship" },
+      { slug: "haengseong",     ko: "행성",               ja: "わくせい",             en: "Planet" },
+      { slug: "toseong",        ko: "토성",               ja: "どせい",               en: "Saturn" },
+      { slug: "hyeseong",       ko: "혜성",               ja: "すいせい",             en: "Comet" },
+      { slug: "eunhasu",        ko: "은하수",             ja: "あまのがわ",           en: "Milky Way" },
+      { slug: "byeoljari",      ko: "별자리",             ja: "せいざ",               en: "Constellation" },
+      { slug: "mangwongyeong",  ko: "망원경",             ja: "ぼうえんきょう",       en: "Telescope" },
+      { slug: "ingongwiseong",  ko: "인공위성",           ja: "じんこうえいせい",     en: "Satellite" },
+      /* 21巻（직업）にも ujubihaengsa が あります（同じ ことば・同じ 意味）。
+         21巻の カードは ?w=ujubihaengsa&v=21 で 開きます。 */
+      { slug: "ujubihaengsa",   ko: "우주비행사",         ja: "うちゅうひこうし",     en: "Astronaut" },
+      { slug: "oegyein",        ko: "외계인",             ja: "うちゅうじん",         en: "Alien" },
+      { slug: "taeyanggye",     ko: "태양계",             ja: "たいようけい",         en: "Solar System" }
+    ]
+  },
+  {
+    id: 18,
+    no: "第18巻",
+    ja: "かぐ",
+    ko: "가구",
+    en: "Furniture",
+    words: [
+      { slug: "chaeksang",      ko: "책상",               ja: "つくえ",               en: "Desk" },
+      { slug: "uija",           ko: "의자",               ja: "いす",                 en: "Chair" },
+      { slug: "chimdae",        ko: "침대",               ja: "ベッド",               en: "Bed" },
+      { slug: "sopa",           ko: "소파",               ja: "ソファ",               en: "Sofa" },
+      { slug: "otjang",         ko: "옷장",               ja: "たんす",               en: "Wardrobe" },
+      { slug: "chaekjang",      ko: "책장",               ja: "ほんだな",             en: "Bookshelf" },
+      { slug: "siktak",         ko: "식탁",               ja: "しょくたく",           en: "Dining Table" },
+      { slug: "geoul",          ko: "거울",               ja: "かがみ",               en: "Mirror" },
+      { slug: "sigye",          ko: "시계",               ja: "とけい",               en: "Clock" },
+      { slug: "jomyeong",       ko: "조명",               ja: "スタンド",             en: "Lamp" },
+      { slug: "seorapjang",     ko: "서랍장",             ja: "チェスト",             en: "Chest of Drawers" },
+      { slug: "ibul",           ko: "이불",               ja: "ふとん",               en: "Blanket" },
+      { slug: "begae",          ko: "베개",               ja: "まくら",               en: "Pillow" },
+      { slug: "keoteun",        ko: "커튼",               ja: "カーテン",             en: "Curtain" },
+      { slug: "kapet",          ko: "카펫",               ja: "カーペット",           en: "Rug" }
+    ]
+  },
+  {
+    id: 19,
+    no: "第19巻",
+    ja: "かでん",
+    ko: "전자기기・가전",
+    en: "Electronics",
+    words: [
+      { slug: "tellebijeon",    ko: "텔레비전",           ja: "テレビ",               en: "Television" },
+      { slug: "naengjanggo",    ko: "냉장고",             ja: "れいぞうこ",           en: "Refrigerator" },
+      { slug: "setakgi",        ko: "세탁기",             ja: "せんたくき",           en: "Washing Machine" },
+      { slug: "eeokeon",        ko: "에어컨",             ja: "エアコン",             en: "Air Conditioner" },
+      { slug: "cheongsogi",     ko: "청소기",             ja: "そうじき",             en: "Vacuum Cleaner" },
+      { slug: "jeonjareinji",   ko: "전자레인지",         ja: "でんしレンジ",         en: "Microwave" },
+      { slug: "bapsot",         ko: "밥솥",               ja: "すいはんき",           en: "Rice Cooker" },
+      { slug: "seonpunggi",     ko: "선풍기",             ja: "せんぷうき",           en: "Electric Fan" },
+      { slug: "deuraigi",       ko: "드라이기",           ja: "ドライヤー",           en: "Hair Dryer" },
+      { slug: "seumateupon",    ko: "스마트폰",           ja: "スマホ",               en: "Smartphone" },
+      { slug: "taepeullit",     ko: "태블릿",             ja: "タブレット",           en: "Tablet" },
+      { slug: "keompyuteo",     ko: "컴퓨터",             ja: "パソコン",             en: "Computer" },
+      { slug: "kamera",         ko: "카메라",             ja: "カメラ",               en: "Camera" },
+      { slug: "ieopon",         ko: "이어폰",             ja: "イヤホン",             en: "Earphones" },
+      { slug: "rimokeon",       ko: "리모컨",             ja: "リモコン",             en: "Remote Control" }
+    ]
+  },
+  {
+    id: 20,
+    no: "第20巻",
+    ja: "びょういん・くすり",
+    ko: "병원・약국",
+    en: "Hospital & Pharmacy",
+    words: [
+      { slug: "byeongwon",      ko: "병원",               ja: "びょういん",           en: "Hospital" },
+      { slug: "yakguk",         ko: "약국",               ja: "やっきょく",           en: "Pharmacy" },
+      { slug: "naeka",          ko: "내과",               ja: "ないか",               en: "Internal Medicine" },
+      { slug: "oeka",           ko: "외과",               ja: "げか",                 en: "Surgery" },
+      { slug: "soakwa",         ko: "소아과",             ja: "しょうにか",           en: "Pediatrics" },
+      { slug: "cheongjingi",    ko: "청진기",             ja: "ちょうしんき",         en: "Stethoscope" },
+      { slug: "cheongye",       ko: "체온계",             ja: "たいおんけい",         en: "Thermometer" },
+      { slug: "jusa",           ko: "주사",               ja: "ちゅうしゃ",           en: "Injection" },
+      { slug: "banchanggo",     ko: "반창고",             ja: "ばんそうこう",         en: "Band-Aid" },
+      { slug: "yak",            ko: "약",                 ja: "くすり",               en: "Medicine" },
+      { slug: "aryak",          ko: "알약",               ja: "じょうざい",           en: "Pill" },
+      { slug: "muryak",         ko: "물약",               ja: "シロップ",             en: "Syrup" },
+      { slug: "maseukeu",       ko: "마스크",             ja: "マスク",               en: "Mask" },
+      { slug: "bungdae",        ko: "붕대",               ja: "ほうたい",             en: "Bandage" },
+      { slug: "yeongo",         ko: "연고",               ja: "ぬりぐすり",           en: "Ointment" }
+    ]
+  },
+  {
+    id: 21,
+    no: "第21巻",
+    ja: "しょくぎょう",
+    ko: "직업",
+    en: "Jobs",
+    words: [
+      { slug: "uisa",           ko: "의사",               ja: "いしゃ",               en: "Doctor" },
+      { slug: "ganhosa",        ko: "간호사",             ja: "かんごし",             en: "Nurse" },
+      { slug: "yaksa",          ko: "약사",               ja: "やくざいし",           en: "Pharmacist" },
+      { slug: "seonsaengnim",   ko: "선생님",             ja: "せんせい",             en: "Teacher" },
+      { slug: "gyeongchalgwan", ko: "경찰관",             ja: "けいさつかん",         en: "Police Officer" },
+      { slug: "sobanggwan",     ko: "소방관",             ja: "しょうぼうし",         en: "Firefighter" },
+      { slug: "yorisa",         ko: "요리사",             ja: "コックさん",           en: "Chef" },
+      { slug: "jeppangsa",      ko: "제빵사",             ja: "パンやさん",           en: "Baker" },
+      { slug: "gasu",           ko: "가수",               ja: "かしゅ",               en: "Singer" },
+      { slug: "undongseonsu",   ko: "운동선수",           ja: "スポーツせんしゅ",     en: "Athlete" },
+      { slug: "ujubihaengsa",   ko: "우주비행사",         ja: "うちゅうひこうし",     en: "Astronaut" },
+      { slug: "jojongsa",       ko: "조종사",             ja: "パイロット",           en: "Pilot" },
+      { slug: "hwaga",          ko: "화가",               ja: "がか",                 en: "Artist" },
+      { slug: "nongbu",         ko: "농부",               ja: "のうか",               en: "Farmer" },
+      { slug: "miyongsa",       ko: "미용사",             ja: "びようし",             en: "Hairdresser" }
+    ]
+  },
+  {
+    id: 22,
+    no: "第22巻",
+    ja: "やさい",
+    ko: "채소",
+    en: "Vegetables",
+    words: [
+      { slug: "danggeun",       ko: "당근",               ja: "にんじん",             en: "Carrot" },
+      { slug: "oi",             ko: "오이",               ja: "きゅうり",             en: "Cucumber" },
+      { slug: "baechu",         ko: "배추",               ja: "はくさい",             en: "Napa Cabbage" },
+      { slug: "mu",             ko: "무",                 ja: "だいこん",             en: "Radish" },
+      { slug: "gamja",          ko: "감자",               ja: "じゃがいも",           en: "Potato" },
+      { slug: "goguma",         ko: "고구마",             ja: "さつまいも",           en: "Sweet Potato" },
+      { slug: "yangpa",         ko: "양파",               ja: "たまねぎ",             en: "Onion" },
+      { slug: "pa",             ko: "파",                 ja: "ねぎ",                 en: "Green Onion" },
+      { slug: "maneul",         ko: "마늘",               ja: "にんにく",             en: "Garlic" },
+      { slug: "gochu",          ko: "고추",               ja: "とうがらし",           en: "Chili Pepper" },
+      { slug: "hobak",          ko: "호박",               ja: "かぼちゃ",             en: "Pumpkin" },
+      { slug: "oksusu",         ko: "옥수수",             ja: "とうもろこし",         en: "Corn" },
+      { slug: "beoseot",        ko: "버섯",               ja: "きのこ",               en: "Mushroom" },
+      { slug: "sigeumchi",      ko: "시금치",             ja: "ほうれんそう",         en: "Spinach" },
+      { slug: "beurokolli",     ko: "브로콜리",           ja: "ブロッコリー",         en: "Broccoli" }
+    ]
+  },
+  {
+    id: 23,
+    no: "第23巻",
+    ja: "ようちえん・ぶんぐ",
+    ko: "유치원・학용품",
+    en: "Kindergarten & Stationery",
+    words: [
+      { slug: "yuchiwon",       ko: "유치원",             ja: "ようちえん",           en: "Kindergarten" },
+      { slug: "gyosil",         ko: "교실",               ja: "きょうしつ",           en: "Classroom" },
+      { slug: "chilpan",        ko: "칠판",               ja: "こくばん",             en: "Blackboard" },
+      { slug: "yeonpil",        ko: "연필",               ja: "えんぴつ",             en: "Pencil" },
+      { slug: "jiugae",         ko: "지우개",             ja: "けしゴム",             en: "Eraser" },
+      { slug: "saekyeonpil",    ko: "색연필",             ja: "いろえんぴつ",         en: "Colored Pencil" },
+      { slug: "keurepas",       ko: "크레파스",           ja: "クレヨン",             en: "Crayon" },
+      { slug: "gongchaek",      ko: "공책",               ja: "ノート",               en: "Notebook" },
+      { slug: "chaek",          ko: "책",                 ja: "ほん",                 en: "Book" },
+      { slug: "gawi",           ko: "가위",               ja: "はさみ",               en: "Scissors" },
+      /* 7巻（풀／くさ・grass）と スラッグが 同じですが、意味が ちがいます。
+         この巻の カードは ?w=pul&v=23 で 開きます。 */
+      { slug: "pul",            ko: "풀",                 ja: "のり",                 en: "Glue" },
+      { slug: "ja",             ko: "자",                 ja: "じょうぎ",             en: "Ruler" },
+      { slug: "pilteong",       ko: "필통",               ja: "ふでばこ",             en: "Pencil Case" },
+      { slug: "saekjongi",      ko: "색종이",             ja: "おりがみ",             en: "Origami Paper" },
+      { slug: "mulgam",         ko: "물감",               ja: "えのぐ",               en: "Paint" }
+    ]
+  },
+  {
+    id: 24,
+    no: "第24巻",
+    ja: "おもちゃ",
+    ko: "장난감",
+    en: "Toys",
+    words: [
+      { slug: "inhyeong",       ko: "인형",               ja: "にんぎょう",           en: "Doll" },
+      { slug: "gominhyeong",    ko: "곰인형",             ja: "くまのぬいぐるみ",     en: "Teddy Bear" },
+      { slug: "robot",          ko: "로봇",               ja: "ロボット",             en: "Robot" },
+      { slug: "beullok",        ko: "블록",               ja: "ブロック",             en: "Blocks" },
+      { slug: "peojeul",        ko: "퍼즐",               ja: "パズル",               en: "Puzzle" },
+      { slug: "pungseon",       ko: "풍선",               ja: "ふうせん",             en: "Balloon" },
+      { slug: "binutbangul",    ko: "비눗방울",           ja: "しゃぼんだま",         en: "Soap Bubbles" },
+      { slug: "paengi",         ko: "팽이",               ja: "こま",                 en: "Spinning Top" },
+      { slug: "yeon",           ko: "연",                 ja: "たこ",                 en: "Kite" },
+      { slug: "geune",          ko: "그네",               ja: "ぶらんこ",             en: "Swing" },
+      { slug: "mikkeureomteul", ko: "미끄럼틀",           ja: "すべりだい",           en: "Slide" },
+      { slug: "siso",           ko: "시소",               ja: "シーソー",             en: "Seesaw" },
+      { slug: "jusawi",         ko: "주사위",             ja: "さいころ",             en: "Dice" },
+      { slug: "kadeu",          ko: "카드",               ja: "カード",               en: "Card" },
+      { slug: "kikbodeu",       ko: "킥보드",             ja: "キックボード",         en: "Kick Scooter" }
+    ]
+  },
+  {
+    id: 25,
+    no: "第25巻",
+    ja: "かぞく",
+    ko: "가족",
+    en: "Family",
+    words: [
+      { slug: "gajok",          ko: "가족",               ja: "かぞく",               en: "Family" },
+      { slug: "eomma",          ko: "엄마",               ja: "おかあさん",           en: "Mom" },
+      { slug: "appa",           ko: "아빠",               ja: "おとうさん",           en: "Dad" },
+      { slug: "halmeoni",       ko: "할머니",             ja: "おばあちゃん",         en: "Grandma" },
+      { slug: "harabeoji",      ko: "할아버지",           ja: "おじいちゃん",         en: "Grandpa" },
+      { slug: "eonni",          ko: "언니",               ja: "おねえちゃん",         en: "Older Sister" },
+      { slug: "oppa",           ko: "오빠",               ja: "おにいちゃん",         en: "Older Brother" },
+      { slug: "nuna",           ko: "누나",               ja: "おねえちゃん",         en: "Older Sister (boy's)" },
+      { slug: "hyeong",         ko: "형",                 ja: "おにいちゃん",         en: "Older Brother (boy's)" },
+      { slug: "dongsaeng",      ko: "동생",               ja: "おとうと・いもうと",   en: "Younger Sibling" },
+      { slug: "agi",            ko: "아기",               ja: "あかちゃん",           en: "Baby" },
+      { slug: "imo",            ko: "이모",               ja: "おばさん",             en: "Aunt" },
+      { slug: "samchon",        ko: "삼촌",               ja: "おじさん",             en: "Uncle" },
+      { slug: "sachon",         ko: "사촌",               ja: "いとこ",               en: "Cousin" },
+      { slug: "chingu",         ko: "친구",               ja: "ともだち",             en: "Friend" }
     ]
   }
 ];
