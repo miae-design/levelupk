@@ -77,7 +77,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第6巻 からだ | v6-eolgul.jpg | 얼굴（かお） | My baby (2587044619).jpg | Helgi Halldórsson | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg) |
 | 第6巻 からだ | v6-nun.jpg | 눈（め） | World through her eye - Flickr - shioshvili.jpg | Vladimer Shioshvili | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg) |
 | 第6巻 からだ | v6-ko.jpg | 코（はな） | Nose Example.jpg | TheNoseKnows2Much | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nose_Example.jpg) |
-| 第6巻 からだ | v6-ip.jpg | 입（くち） | Two-days stubble partially white.jpg | さえぼー | CC0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Two-days_stubble_partially_white.jpg) |
+| 第6巻 からだ | v6-ip.jpg | 입（くち） | Mond Bild letz.jpg | MoreCapablePir | CC BY-SA 4.0（トリミング・軽いシャープ調整） | [Commons](https://commons.wikimedia.org/wiki/File:Mond_Bild_letz.jpg) |
 | 第6巻 からだ | v6-gwi.jpg | 귀（みみ） | Closeup of a human ear.jpg | צולם על ידי he:משתמש:אנדר-ויק | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg) |
 | 第6巻 からだ | v6-i.jpg | 이（は） | Young girl smiling with teeth in sunshine.jpg | Basile Morin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg) |
 | 第6巻 からだ | v6-mok.jpg | 목（くび） | Female neck.jpg | FotoFyl  / Erifyli Tsavdari | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Female_neck.jpg) |
