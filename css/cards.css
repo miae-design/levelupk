@@ -34,6 +34,14 @@ body.cards-page[data-vol="4"] { --vol: #C9801A; --vol-soft: #FDF3E2; --vol-deep:
 body.cards-page[data-vol="5"] { --vol: #7A57B8; --vol-soft: #F2EDFB; --vol-deep: #4E3385; --vol-line: #D8CCF0; }
 body.cards-page[data-vol="6"] { --vol: #C4567E; --vol-soft: #FCEEF3; --vol-deep: #8C2F52; --vol-line: #F2CBD9; }
 body.cards-page[data-vol="7"] { --vol: #2E8B7E; --vol-soft: #E9F6F3; --vol-deep: #1C6357; --vol-line: #BFE0D9; }
+body.cards-page[data-vol="8"] { --vol: #6A8F1E; --vol-soft: #F3F7E3; --vol-deep: #4B6710; --vol-line: #DCE7BC; }
+body.cards-page[data-vol="9"] { --vol: #B04E8E; --vol-soft: #FBEDF6; --vol-deep: #7D2F63; --vol-line: #EFCBE2; }
+body.cards-page[data-vol="10"] { --vol: #8A5A2B; --vol-soft: #F8F0E6; --vol-deep: #633D18; --vol-line: #E7D2B8; }
+body.cards-page[data-vol="11"] { --vol: #C2412D; --vol-soft: #FCEEE9; --vol-deep: #8E2A1A; --vol-line: #F2C9BE; }
+body.cards-page[data-vol="12"] { --vol: #2F7F8F; --vol-soft: #E8F4F6; --vol-deep: #1B5A67; --vol-line: #C2DEE4; }
+body.cards-page[data-vol="13"] { --vol: #4A5FA8; --vol-soft: #EDF0FA; --vol-deep: #2F4079; --vol-line: #CFD7EF; }
+body.cards-page[data-vol="14"] { --vol: #2E8B57; --vol-soft: #E9F6EE; --vol-deep: #1B6440; --vol-line: #C2E3D1; }
+body.cards-page[data-vol="15"] { --vol: #A9791C; --vol-soft: #FAF3E2; --vol-deep: #7A5405; --vol-line: #EBD6A6; }
 
 /* ---------- Header（verse.html と同じ見た目） ---------- */
 .vhead {
@@ -175,6 +183,53 @@ body.cards-page[data-vol="7"] { --vol: #2E8B7E; --vol-soft: #E9F6F3; --vol-deep:
   word-break: keep-all;
   padding: clamp(6px, 2vw, 18px) 0 clamp(4px, 1.4vw, 12px);
 }
+
+/* 標題紙（?w=title）・「よくできました」（?w=jalhaesseoyo） */
+body.cards-page[data-special="title"] .wcard__word {
+  font-size: clamp(30px, 8.4vw, 66px);
+  white-space: normal;
+  text-wrap: balance;
+  line-height: 1.3;
+  letter-spacing: .01em;
+}
+body.cards-page[data-special="jalhaesseoyo"] .wcard__word {
+  font-size: clamp(56px, 16vw, 116px);
+  letter-spacing: .02em;
+}
+.wspecial__note {
+  margin: clamp(6px, 1.4vw, 12px) 0 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.wspecial__note[hidden] { display: none; }
+.wspecial__more { margin: 14px 0 0; text-align: center; }
+.wspecial__more[hidden] { display: none; }
+.wmore__btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--vol-line);
+  background: var(--vol-soft);
+  color: var(--vol-deep);
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, transform .16s ease;
+}
+.wmore__btn span {
+  font-family: var(--hangul);
+  font-size: 11.5px;
+  font-weight: 700;
+  opacity: .8;
+}
+.wmore__btn:hover { background: var(--vol); border-color: var(--vol); color: #fff; }
+.wmore__btn:hover span { color: rgba(255, 255, 255, .9); }
 
 /* 意味（日本語／英語の切り替え） */
 .wtrans {

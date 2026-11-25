@@ -69,6 +69,13 @@
         <p class="wtrans__sub" id="w-sub"><span class="wtrans__sub-label">English</span> <span id="w-sub-text">rabbit</span></p>
       </div>
 
+      <p class="wspecial__note" id="w-special-note" hidden></p>
+      <p class="wspecial__more" id="w-more" hidden>
+        <button class="wmore__btn" id="w-towords" type="button">
+          この巻の ことばを 見る<span lang="ko">／ 이 권의 낱말 보기</span>
+        </button>
+      </p>
+
       <section class="waudio" aria-labelledby="waudio-title">
         <div class="waudio__head">
           <span class="waudio__icon" aria-hidden="true">
@@ -97,7 +104,7 @@
           </span>
           <p>
             音声準備中 ／ Audio Coming Soon
-            <span>先生の録音が入ると、ここから聞けます。それまでは、おうちの人と一緒に声に出して言ってみましょう。</span>
+            <span id="w-pending-text">先生の録音が入ると、ここから聞けます。それまでは、おうちの人と一緒に声に出して言ってみましょう。</span>
           </p>
         </div>
       </section>
@@ -159,12 +166,14 @@
 
 <script>
 /* =========================================================
-   ことばデータ（10巻・150語）
+   ことばデータ（15巻・225語）
    ---------------------------------------------------------
    ★ 言葉や翻訳を直すときは、この VOLUMES の中だけを書き換えてください。
-   ★ 音声は audio/cards/ フォルダに「スラッグ.mp3」の名前で置くと
-     自動で再生ボタンが出ます（例：audio/cards/tokki.mp3、.m4a / .wav も可）。
-   ★ 各ページのQRコードは cards.html?w=スラッグ です。
+   ★ 音声は audio/vol{巻番号}/ フォルダに「スラッグ.mp3」の名前で置くと
+     自動で再生ボタンが出ます（例：audio/vol2/bom.mp3、.m4a / .wav も可）。
+     タイトルは audio/vol{巻番号}/title.mp3、よくできました は jalhaesseoyo.mp3 です。
+   ★ 各ページのQRコードは cards.html?w=スラッグ、標題紙は ?w=title&v=巻番号、
+     33ページの「よくできました」は ?w=jalhaesseoyo&v=巻番号 です。
    ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」、nun＝6巻「눈/め」・7巻「눈/ゆき」）は、
      巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
    ========================================================= */
@@ -201,6 +210,8 @@ var VOLUMES = [
     ja: "しょくぶつ・しき",
     ko: "식물・사계절",
     en: "Plants & Seasons",
+    /* 絵本の1ページ（標題紙）に印刷されている表記 */
+    bookKo: "식물사계절",
     words: [
       { slug: "bom",         ko: "봄",      ja: "はる",         en: "spring" },
       { slug: "yeoreum",     ko: "여름",    ja: "なつ",         en: "summer" },
@@ -417,6 +428,127 @@ var VOLUMES = [
       { slug: "bidulgi",       ko: "비둘기",     ja: "はと",             en: "pigeon" },
       { slug: "gongjaksae",    ko: "공작새",     ja: "くじゃく",         en: "peacock" }
     ]
+  },
+  {
+    id: 11,
+    no: "第11巻",
+    ja: "かんこくりょうり",
+    ko: "한국 음식",
+    en: "Korean Food",
+    words: [
+      { slug: "gimbap",      ko: "김밥",   ja: "キンパ",         en: "Gimbap" },
+      { slug: "bibimbap",    ko: "비빔밥", ja: "ビビンバ",       en: "Bibimbap" },
+      { slug: "bulgogi",     ko: "불고기", ja: "プルコギ",       en: "Bulgogi" },
+      { slug: "tteokbokki",  ko: "떡볶이", ja: "トッポッキ",     en: "Tteokbokki" },
+      { slug: "kimchi",      ko: "김치",   ja: "キムチ",         en: "Kimchi" },
+      { slug: "mandu",       ko: "만두",   ja: "マンドゥ",       en: "Mandu" },
+      { slug: "jeon",        ko: "전",     ja: "チヂミ",         en: "Jeon" },
+      { slug: "miyeokguk",   ko: "미역국", ja: "ワカメスープ",   en: "Seaweed Soup" },
+      { slug: "japchae",     ko: "잡채",   ja: "チャプチェ",     en: "Japchae" },
+      { slug: "samgyetang",  ko: "삼계탕", ja: "サムゲタン",     en: "Samgyetang" },
+      { slug: "galbi",       ko: "갈비",   ja: "カルビ",         en: "Galbi" },
+      { slug: "naengmyeon",  ko: "냉면",   ja: "冷麺",           en: "Cold Noodles" },
+      { slug: "hotteok",     ko: "호떡",   ja: "ホットク",       en: "Hotteok" },
+      { slug: "bungeoppang", ko: "붕어빵", ja: "プンオパン",     en: "Bungeoppang" },
+      { slug: "songpyeon",   ko: "송편",   ja: "ソンピョン",     en: "Songpyeon" }
+    ]
+  },
+  {
+    id: 12,
+    no: "第12巻",
+    ja: "しょっき",
+    ko: "식기・부엌",
+    en: "Tableware",
+    words: [
+      { slug: "sutgarak",    ko: "숟가락",   ja: "スプーン（スッカラ）", en: "Korean Spoon" },
+      { slug: "jeotgarak",   ko: "젓가락",   ja: "おはし（チョッカラ）", en: "Korean Chopsticks" },
+      { slug: "pokeu",       ko: "포크",     ja: "フォーク",             en: "Fork" },
+      { slug: "bapgeureut",  ko: "밥그릇",   ja: "ごはんちゃわん",       en: "Rice Bowl" },
+      { slug: "gukgeureut",  ko: "국그릇",   ja: "スープわん",           en: "Soup Bowl" },
+      { slug: "jeopsi",      ko: "접시",     ja: "おさら",               en: "Plate" },
+      { slug: "keop",        ko: "컵",       ja: "コップ",               en: "Cup" },
+      { slug: "mulbyeong",   ko: "물병",     ja: "みずさし",             en: "Water Bottle" },
+      { slug: "ppaldae",     ko: "빨대",     ja: "ストロー",             en: "Straw" },
+      { slug: "jujeonja",    ko: "주전자",   ja: "やかん",               en: "Kettle" },
+      { slug: "naembi",      ko: "냄비",     ja: "なべ",                 en: "Pot" },
+      { slug: "peuraipaen",  ko: "프라이팬", ja: "フライパン",           en: "Frying Pan" },
+      { slug: "doma",        ko: "도마",     ja: "まないた",             en: "Cutting Board" },
+      { slug: "gukja",       ko: "국자",     ja: "おたま",               en: "Ladle" },
+      { slug: "jaengban",    ko: "쟁반",     ja: "おぼん",               en: "Tray" }
+    ]
+  },
+  {
+    id: 13,
+    no: "第13巻",
+    ja: "ふく・かばん・くつ",
+    ko: "옷・가방・신발",
+    en: "Clothes, Bags & Shoes",
+    words: [
+      { slug: "hanbok",      ko: "한복",     ja: "ハンボク",           en: "Hanbok" },
+      { slug: "tisyeocheu",  ko: "티셔츠",   ja: "Tシャツ",            en: "T-shirt" },
+      { slug: "baji",        ko: "바지",     ja: "ズボン",             en: "Pants" },
+      { slug: "chima",       ko: "치마",     ja: "スカート",           en: "Skirt" },
+      { slug: "wonpiseu",    ko: "원피스",   ja: "ワンピース",         en: "Dress" },
+      { slug: "oetu",        ko: "외투",     ja: "コート",             en: "Coat" },
+      { slug: "jamot",       ko: "잠옷",     ja: "パジャマ",           en: "Pajamas" },
+      { slug: "moja",        ko: "모자",     ja: "ぼうし",             en: "Hat" },
+      { slug: "yangmal",     ko: "양말",     ja: "くつした",           en: "Socks" },
+      { slug: "undonghwa",   ko: "운동화",   ja: "スニーカー",         en: "Sneakers" },
+      { slug: "janghwa",     ko: "장화",     ja: "ながぐつ",           en: "Rain Boots" },
+      { slug: "gomusin",     ko: "고무신",   ja: "コムシン",           en: "Gomusin" },
+      { slug: "kkotsin",     ko: "꽃신",     ja: "コッシン",           en: "Kkotsin" },
+      { slug: "gabang",      ko: "가방",     ja: "かばん",             en: "Bag" },
+      { slug: "chaekgabang", ko: "책가방",   ja: "リュック",           en: "Backpack" }
+    ]
+  },
+  {
+    id: 14,
+    no: "第14巻",
+    ja: "スポーツ",
+    ko: "스포츠",
+    en: "Sports",
+    words: [
+      { slug: "chukgu",         ko: "축구",       ja: "サッカー",         en: "Soccer" },
+      { slug: "yagu",           ko: "야구",       ja: "やきゅう",         en: "Baseball" },
+      { slug: "nonggu",         ko: "농구",       ja: "バスケットボール", en: "Basketball" },
+      { slug: "suyeong",        ko: "수영",       ja: "すいえい",         en: "Swimming" },
+      { slug: "dalligi",        ko: "달리기",     ja: "かけっこ",         en: "Running" },
+      /* 3巻にも jajeongeo（자전거／じてんしゃ＝bicycle）があります。この巻は ?w=jajeongeo&v=14 で開きます。 */
+      { slug: "jajeongeo",      ko: "자전거",     ja: "じてんしゃ",       en: "Cycling" },
+      { slug: "julneomgi",      ko: "줄넘기",     ja: "なわとび",         en: "Jump Rope" },
+      { slug: "taekwondo",      ko: "태권도",     ja: "テコンドー",       en: "Taekwondo" },
+      { slug: "baedeuminteon",  ko: "배드민턴",   ja: "バドミントン",     en: "Badminton" },
+      { slug: "takgu",          ko: "탁구",       ja: "たっきゅう",       en: "Table Tennis" },
+      { slug: "teniseu",        ko: "테니스",     ja: "テニス",           en: "Tennis" },
+      { slug: "seukeiteu",      ko: "스케이트",   ja: "スケート",         en: "Skating" },
+      { slug: "seuki",          ko: "스키",       ja: "スキー",           en: "Skiing" },
+      { slug: "chejo",          ko: "체조",       ja: "たいそう",         en: "Gymnastics" },
+      { slug: "ssireum",        ko: "씨름",       ja: "シルム",           en: "Ssireum" }
+    ]
+  },
+  {
+    id: 15,
+    no: "第15巻",
+    ja: "がっき",
+    ko: "악기",
+    en: "Musical Instruments",
+    words: [
+      { slug: "piano",            ko: "피아노",       ja: "ピアノ",         en: "Piano" },
+      { slug: "baiollin",         ko: "바이올린",     ja: "バイオリン",     en: "Violin" },
+      { slug: "gita",             ko: "기타",         ja: "ギター",         en: "Guitar" },
+      { slug: "deureom",          ko: "드럼",         ja: "ドラム",         en: "Drums" },
+      { slug: "sillopon",         ko: "실로폰",       ja: "もっきん・シロフォン", en: "Xylophone" },
+      { slug: "peulluteu",        ko: "플루트",       ja: "フルート",       en: "Flute" },
+      { slug: "teureompet",       ko: "트럼펫",       ja: "トランペット",   en: "Trumpet" },
+      { slug: "hapeu",            ko: "하프",         ja: "ハープ",         en: "Harp" },
+      { slug: "marakaseu",        ko: "마라카스",     ja: "マラカス",       en: "Maracas" },
+      { slug: "taembeorin",       ko: "탬버린",       ja: "タンバリン",     en: "Tambourine" },
+      { slug: "kaeseuteonecheu",  ko: "캐스터네츠",   ja: "カスタネット",   en: "Castanets" },
+      { slug: "buk",              ko: "북",           ja: "たいこ（プク）", en: "Korean Drum" },
+      { slug: "janggu",           ko: "장구",         ja: "チャング",       en: "Janggu" },
+      { slug: "gayageum",         ko: "가야금",       ja: "カヤグム",       en: "Gayageum" },
+      { slug: "kkwaenggwari",     ko: "꽹과리",       ja: "ケンガリ",       en: "Kkwaenggwari" }
+    ]
   }
 ];
 
@@ -438,14 +570,14 @@ var VOLUMES = [
   "1-geobugi": { f: "assets/photos/v1-geobugi.jpg", a: "Aaron Lucas", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Eastern_box_turtle_walking_through_grass.jpg" },
   "1-panda": { f: "assets/photos/v1-panda.jpg", a: "Skip Brown", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Giant_Panda_(Ailuropoda_melanoleuca)_Feeding_on_Bamboo_in_an_Arboreal_Perch.jpg" },
   "2-bom": { f: "assets/photos/v2-bom.jpg", a: "Karolien Brughmans karolien", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Pink_cherry_blossom_on_blue_(Unsplash).jpg" },
-  "2-yeoreum": { f: "assets/photos/v2-yeoreum.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Santa_Monica_Beach_--_2012_--_5301.jpg" },
+  "2-yeoreum": { f: "assets/photos/v2-yeoreum.jpg", a: "Sergiy Galyonkin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Umbrellas_on_Carolina_Beach.jpg" },
   "2-gaeul": { f: "assets/photos/v2-gaeul.jpg", a: "ForestWander", l: "CC BY-SA 3.0 us", u: "https://commons.wikimedia.org/wiki/File:Red-autumn-maple-leaves-water-drops-moss_-_Virginia_-_ForestWander.jpg" },
   "2-gyeoul": { f: "assets/photos/v2-gyeoul.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Umland,_Sonnenaufgang_im_Winter_--_2013_--_9899.jpg" },
   "2-kkot": { f: "assets/photos/v2-kkot.jpg", a: "Hallo3800", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Cherry_blossom_flower.jpg" },
   "2-namu": { f: "assets/photos/v2-namu.jpg", a: "M J Roscoe", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Large_oak_tree_in_hillside_field_-_geograph.org.uk_-_6906380.jpg" },
   "2-haebaragi": { f: "assets/photos/v2-haebaragi.jpg", a: "Bruce Fritz, U.S. Department of Agriculture", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Sunflowers_helianthus_annuus.jpg" },
   "2-danpung": { f: "assets/photos/v2-danpung.jpg", a: "Jeremy Cooper jcooper", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Acer_rubrum_leaf_on_brown_(Unsplash).jpg" },
-  "2-nunsaram": { f: "assets/photos/v2-nunsaram.jpg", a: "Frank Hebbert", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:2007_snowman_in_massachusetts_424825688.jpg" },
+  "2-nunsaram": { f: "assets/photos/v2-nunsaram.jpg", a: "Ambroix", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Harald_038.JPG" },
   "2-hae": { f: "assets/photos/v2-hae.jpg", a: "Famartin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:2015-07-10_20_15_09_Sun_near_sunset_shining_through_low-level_dust_over_Collin_County,_Texas_viewed_from_an_airplane_flying_from_Washington_Dulles_International_Airport_to_Dallas-Fort_Worth_International_Airport.jpg" },
   "2-dal": { f: "assets/photos/v2-dal.jpg", a: "Joselodos", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Full_moon_in_Sagittarius.jpg" },
   "2-byeol": { f: "assets/photos/v2-byeol.jpg", a: "Vincentiu Solomon vincentiu", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Sublime_purple_night_sky_(Unsplash).jpg" },
@@ -470,7 +602,7 @@ var VOLUMES = [
   "3-teureok": { f: "assets/photos/v3-teureok.jpg", a: "Bob Harvey", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Lorry_in_West_Road_-_geograph.org.uk_-_7029753.jpg" },
   "3-hellikopteo": { f: "assets/photos/v3-hellikopteo.jpg", a: "Keller Jo, U.S. Fish and Wildlife Service", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Helicopter_hovering_just_above_the_ground.jpg" },
   "3-jihacheol": { f: "assets/photos/v3-jihacheol.jpg", a: "LERK", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Toei-subway-E23-Roppongi-station-platform-2-20190909-100123.jpg" },
-  "3-taeksi": { f: "assets/photos/v3-taeksi.jpg", a: "Redd Angelo reddangelo16", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Catch_a_CAB_(Unsplash).jpg" },
+  "3-taeksi": { f: "assets/photos/v3-taeksi.jpg", a: "Jiyayo", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Hitachi-comfort.JPG" },
   "3-otobai": { f: "assets/photos/v3-otobai.jpg", a: "Simson Petrol simson_petrol", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Yellow_motorcycle_parked_(Unsplash).jpg" },
   "3-roket": { f: "assets/photos/v3-roket.jpg", a: "NASA", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Apollo_11_Launched_Via_Saturn_V_Rocket.jpg" },
   "4-sagwa": { f: "assets/photos/v4-sagwa.jpg", a: "Paolo Neo", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Small_apples_on_branch.jpg" },
@@ -507,15 +639,15 @@ var VOLUMES = [
   "6-eolgul": { f: "assets/photos/v6-eolgul.jpg", a: "Helgi Halldórsson", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg" },
   "6-nun": { f: "assets/photos/v6-nun.jpg", a: "Vladimer Shioshvili", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg" },
   "6-ko": { f: "assets/photos/v6-ko.jpg", a: "TheNoseKnows2Much", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Nose_Example.jpg" },
-  "6-ip": { f: "assets/photos/v6-ip.jpg", a: "Punker1999", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Up_close_of_human_chin_and_lips.jpg" },
+  "6-ip": { f: "assets/photos/v6-ip.jpg", a: "Pupittaz", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Woman_lips.jpg" },
   "6-gwi": { f: "assets/photos/v6-gwi.jpg", a: "צולם על ידי he:משתמש:אנדר-ויק", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg" },
-  "6-i": { f: "assets/photos/v6-i.jpg", a: "Bharathesha Alasandemajalu", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Primary_Maxillary_Teeth_and_Upper_Lip,_Close-up_View._(85449).jpg" },
+  "6-i": { f: "assets/photos/v6-i.jpg", a: "Basile Morin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg" },
   "6-mok": { f: "assets/photos/v6-mok.jpg", a: "FotoFyl / Erifyli Tsavdari", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Female_neck.jpg" },
-  "6-eokkae": { f: "assets/photos/v6-eokkae.jpg", a: "Genusfotografen (Tomas Gunnarsson) / Wikimedia", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Left_shoulder.jpg" },
-  "6-pal": { f: "assets/photos/v6-pal.jpg", a: "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Extended_arm.jpg" },
+  "6-eokkae": { f: "assets/photos/v6-eokkae.jpg", a: "Mohammad Faruque primitivestudios", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg" },
+  "6-pal": { f: "assets/photos/v6-pal.jpg", a: "Autumn Goodman auttgood", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg" },
   "6-son": { f: "assets/photos/v6-son.jpg", a: "trestletech", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg" },
-  "6-bae": { f: "assets/photos/v6-bae.jpg", a: "Spicejuz2", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Belly_button_close_up.jpg" },
-  "6-dari": { f: "assets/photos/v6-dari.jpg", a: "Robert &amp; Mihaela Vicol", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Water-Droplets-on-Woman-Legs.jpg" },
+  "6-bae": { f: "assets/photos/v6-bae.jpg", a: "Arteida MjESHTRI arteidamjeshtri", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Autumn_baby_to_be_(Unsplash).jpg" },
+  "6-dari": { f: "assets/photos/v6-dari.jpg", a: "Imani Bahati", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Imani-bahati-woman-wearing-distressed-blue-denim-jeans-sitting-on-floor.jpg" },
   "6-mureup": { f: "assets/photos/v6-mureup.jpg", a: "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Human_knees.jpg" },
   "6-bal": { f: "assets/photos/v6-bal.jpg", a: "lou &amp; magoo", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Baby_feet_3_-_Flickr_-_lou_%5E_magoo.jpg" },
   "7-san": { f: "assets/photos/v7-san.jpg", a: "kallerna", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg" },
@@ -530,14 +662,14 @@ var VOLUMES = [
   "7-morae": { f: "assets/photos/v7-morae.jpg", a: "freestocks.org", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Sea_beach_sand_in_a_hand_closeup_(42621473960).jpg" },
   "7-dol": { f: "assets/photos/v7-dol.jpg", a: "Zeny Rosalina iamzeny", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Smooth_Round_Rocks_Ocean_(Unsplash).jpg" },
   "7-pul": { f: "assets/photos/v7-pul.jpg", a: "ben_kitchener3", l: "CC BY 3.0", u: "https://commons.wikimedia.org/wiki/File:Droplet_on_a_Blade_of_Grass_-_panoramio.jpg" },
-  "7-baram": { f: "assets/photos/v7-baram.jpg", a: "Kim Newberg", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Canadian_Flag_Blowing_In_The_Wind.jpg" },
+  "7-baram": { f: "assets/photos/v7-baram.jpg", a: "J. Patrick Fischer", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea_(cropped).jpg" },
   "7-beongae": { f: "assets/photos/v7-beongae.jpg", a: "Mike Eliason, Santa Barbara County Fire…", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Lightning_strikes_in_Santa_Barbara_2019-03-05.jpg" },
   "7-nun": { f: "assets/photos/v7-nun.jpg", a: "Aaron Burden aaronburden", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Snowflake_macro_(Unsplash).jpg" },
   "8-jamjari": { f: "assets/photos/v8-jamjari.jpg", a: "Johnnybam", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Dragonfly_perched_on_a_twig.jpg" },
   "8-beol": { f: "assets/photos/v8-beol.jpg", a: "John Severns (Severnjc)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg" },
   "8-mudangbeolle": { f: "assets/photos/v8-mudangbeolle.jpg", a: "Gareth James", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Ladybird_on_a_nettle_leaf_-_geograph.org.uk_-_3942313.jpg" },
   "8-gaemi": { f: "assets/photos/v8-gaemi.jpg", a: "Memainak", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Insect_closeup_ant.jpg" },
-  "8-maemi": { f: "assets/photos/v8-maemi.jpg", a: "StalJosA", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Cicada_Shell_27.8.26.jpg" },
+  "8-maemi": { f: "assets/photos/v8-maemi.jpg", a: "Alpsdake", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Graptopsaltria_nigrofuscata_s2.jpg" },
   "8-mettugi": { f: "assets/photos/v8-mettugi.jpg", a: "Swethasakthivel", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:(Omocestus_viridulus)_Grasshopper.jpg" },
   "8-gwitturami": { f: "assets/photos/v8-gwitturami.jpg", a: "Agnieszka Kwiecień, Nova", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Gryllus_campestris_%C5%9Awierszcz_polny_2025-04-19_Wi%C4%85zownica-Kolonia_04.jpg" },
   "8-saseumbeolle": { f: "assets/photos/v8-saseumbeolle.jpg", a: "George Chernilevsky", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Lucanus_cervus_male_2017_G1.jpg" },
@@ -560,18 +692,18 @@ var VOLUMES = [
   "9-ahop": { f: "assets/photos/v9-ahop.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_9_on_Jerusalem_Street.jpg" },
   "9-yeol": { f: "assets/photos/v9-yeol.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_10_on_Jerusalem_Street.jpg" },
   "9-seumul": { f: "assets/photos/v9-seumul.jpg", a: "Korenn", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sign_number_20_on_Jerusalem_Street.jpg" },
-  "9-baek": { f: "assets/photos/v9-baek.jpg", a: "Clwacker", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Milestone_Italienische_Strasse_km_100_(06).jpg" },
-  "9-cheon": { f: "assets/photos/v9-cheon.jpg", a: "MartinD", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:GR34_1000_km_milestone_at_Pointe_de_Pen-Hir.jpg" },
-  "9-man": { f: "assets/photos/v9-man.jpg", a: "Crisco 1492 (Bank Indonesia banknote)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg" },
+  "9-baek": { f: "assets/photos/v9-baek.jpg", made: true, l: "CC0（自作）" },
+  "9-cheon": { f: "assets/photos/v9-cheon.jpg", made: true, l: "CC0（自作）" },
+  "9-man": { f: "assets/photos/v9-man.jpg", made: true, l: "CC0（自作）" },
   "10-gae": { f: "assets/photos/v10-gae.jpg", a: "Dietmar Rabich", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg" },
   "10-gangaji": { f: "assets/photos/v10-gangaji.jpg", a: "Johannnes89", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg" },
   "10-so": { f: "assets/photos/v10-so.jpg", a: "Keith Weller/USDA", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg" },
   "10-songaji": { f: "assets/photos/v10-songaji.jpg", a: "Ranjithkumar Murugesan", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:HOLSTEIN_FRIESIAN_CALF.jpg" },
   "10-mal": { f: "assets/photos/v10-mal.jpg", a: "Korona Lacasse", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Horse_(8272800419).jpg" },
-  "10-mangaji": { f: "assets/photos/v10-mangaji.jpg", a: "Tiia Monto", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Crymlyn_Bog_-_horse.jpg" },
+  "10-mangaji": { f: "assets/photos/v10-mangaji.jpg", a: "Bonnie Gruenberg", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Newborn_foal_at_Cumberland_Island_National_Seashore_by_Bonnie_Gruenberg.jpg" },
   "10-dak": { f: "assets/photos/v10-dak.jpg", a: "MichalPL", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Hen,_Brenna,_Poland_July_2020.jpg" },
   "10-byeongari": { f: "assets/photos/v10-byeongari.jpg", a: "ELTORO.VET", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg" },
-  "10-dwaeji": { f: "assets/photos/v10-dwaeji.jpg", a: "Gzen92", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(2).jpg" },
+  "10-dwaeji": { f: "assets/photos/v10-dwaeji.jpg", a: "Scott Bauer, U.S. Department of Agriculture", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Baby_piglets.jpg" },
   "10-chamse": { f: "assets/photos/v10-chamse.jpg", a: "Laitche", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Tree_Sparrow_August_2007_Osaka_Japan.jpg" },
   "10-kkachi": { f: "assets/photos/v10-kkachi.jpg", a: "Alexis Lours", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg" },
   "10-kkamagwi": { f: "assets/photos/v10-kkamagwi.jpg", a: "Alexis Lours", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Carrion_Crow_2025_05_23.jpg" },
@@ -584,18 +716,25 @@ var VOLUMES = [
   "use strict";
 
   var AUDIO_EXTS = ["mp3", "m4a", "wav"];
+  var AUDIO_VER = "2";
   var LANG_KEY = "levelupk_cards_lang";
   var probeCache = {};
   var lang = "ja";
   var volume = null;
   var index = 0;
   var audioToken = 0;
+  var specialKind = null; /* null（ことば）｜"title"｜"jalhaesseoyo" */
 
   var audioEl = document.getElementById("w-audio");
   var playerBox = document.getElementById("wplayer");
   var playBtn = document.getElementById("w-play");
   var pendingBox = document.getElementById("w-pending");
+  var pendingText = document.getElementById("w-pending-text");
   var caption = document.getElementById("w-audio-caption");
+  var countBox = document.querySelector(".wcount");
+  var moreBox = document.getElementById("w-more");
+  var noteBox = document.getElementById("w-special-note");
+  var toWordsBtn = document.getElementById("w-towords");
   var wordEl = document.getElementById("w-ko");
   var prevBtn = document.getElementById("w-prev");
   var nextBtn = document.getElementById("w-next");
@@ -736,12 +875,25 @@ var VOLUMES = [
     });
   }
 
+  /* 音声は巻ごとのフォルダ（audio/vol2/、audio/vol3/…）から探します。
+     同じスラッグが複数の巻にあるとき（bae・nun・jajeongeo）は、
+     別の巻の音声が流れないよう audio/cards/ へはさかのぼりません。 */
+  function audioDirs(slug) {
+    var dirs = ["audio/vol" + volume.id + "/"];
+    if (slugCount(slug) < 2) dirs.push("audio/cards/");
+    return dirs;
+  }
+
   function findAudio(slug) {
-    var base = "audio/cards/" + slug;
+    var dirs = audioDirs(slug);
     var at = 0;
+    var total = dirs.length * AUDIO_EXTS.length;
     function step() {
-      if (at >= AUDIO_EXTS.length) return Promise.resolve(null);
-      var url = base + "." + AUDIO_EXTS[at++] + "?v=1";
+      if (at >= total) return Promise.resolve(null);
+      var d = Math.floor(at / AUDIO_EXTS.length);
+      var e = at % AUDIO_EXTS.length;
+      at++;
+      var url = dirs[d] + slug + "." + AUDIO_EXTS[e] + "?v=" + AUDIO_VER;
       return probe(url).then(function (ok) { return ok ? url : step(); });
     }
     return step();
@@ -758,10 +910,21 @@ var VOLUMES = [
     } catch (e) {}
   }
 
+  function pendingTextFor() {
+    if (specialKind === "title") {
+      return "先生の録音が入ると、ここから聞けます。それまでは、おうちの人と一緒に声に出して読んでみましょう。";
+    }
+    if (specialKind === "jalhaesseoyo") {
+      return "先生の録音が入ると、ここから聞けます。それまでは、おうちの人と一緒に「잘했어요！」と言ってみましょう。";
+    }
+    return "先生の録音が入ると、ここから聞けます。それまでは、おうちの人と一緒に声に出して言ってみましょう。";
+  }
+
   function loadAudio(word) {
     audioToken++;
     var token = audioToken;
     caption.textContent = "「" + word.ko + "」の音声";
+    pendingText.textContent = pendingTextFor();
     findAudio(word.slug).then(function (url) {
       if (token !== audioToken) return;
       if (!url) { resetPlayer(); return; }
@@ -774,6 +937,7 @@ var VOLUMES = [
 
   /* ---------- 実際の写真・色見本 ---------- */
   function creditLine(p) {
+    if (p.made) return "写真：Level Up K with MiAe Ssem（" + esc(p.l) + "）";
     var who = p.a ? esc(p.a) + " ／ " : "";
     return "写真：<a href=\"" + esc(p.u) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" +
       who + "Wikimedia Commons</a>（" + esc(p.l) + "）";
@@ -847,6 +1011,18 @@ var VOLUMES = [
 
   /* ---------- 表示 ---------- */
   function renderTranslations() {
+    if (specialKind) {
+      var info = specialInfo(specialKind, volume);
+      var sMain = info.main[lang];
+      var sSub = info.sub[lang];
+      $("w-main").textContent = sMain;
+      $("w-main").setAttribute("lang", lang === "ja" ? "ja" : "en");
+      $("w-sub-text").textContent = sSub;
+      $("w-sub").setAttribute("lang", lang === "ja" ? "en" : "ja");
+      $("w-sub").className = "wtrans__sub wtrans__sub--" + (lang === "ja" ? "en" : "ja");
+      document.querySelector(".wtrans__sub-label").textContent = lang === "ja" ? "English" : "日本語";
+      return;
+    }
     var word = volume.words[index];
     var main = lang === "ja" ? word.ja : word.en;
     var sub = lang === "ja" ? word.en : word.ja;
@@ -858,10 +1034,23 @@ var VOLUMES = [
     document.querySelector(".wtrans__sub-label").textContent = lang === "ja" ? "English" : "日本語";
   }
 
+  function syncVolumeSwitch() {
+    Array.prototype.forEach.call(document.querySelectorAll(".vswitch__btn"), function (btn) {
+      var on = parseInt(btn.getAttribute("data-vol-id"), 10) === volume.id;
+      btn.classList.toggle("is-active", on);
+      if (on) { btn.setAttribute("aria-current", "true"); } else { btn.removeAttribute("aria-current"); }
+    });
+  }
+
   function render(opts) {
+    if (specialKind) { renderSpecial(opts); return; }
     var word = volume.words[index];
 
+    document.body.removeAttribute("data-special");
     document.body.setAttribute("data-vol", String(volume.id));
+    countBox.hidden = false;
+    moreBox.hidden = true;
+    noteBox.hidden = true;
     $("w-vol-no").textContent = volume.no;
     $("w-vol-ja").textContent = volume.ja;
     $("w-vol-ko").textContent = volume.ko;
@@ -883,11 +1072,7 @@ var VOLUMES = [
       navHint.textContent = "";
     }
 
-    Array.prototype.forEach.call(document.querySelectorAll(".vswitch__btn"), function (btn) {
-      var on = parseInt(btn.getAttribute("data-vol-id"), 10) === volume.id;
-      btn.classList.toggle("is-active", on);
-      if (on) { btn.setAttribute("aria-current", "true"); } else { btn.removeAttribute("aria-current"); }
-    });
+    syncVolumeSwitch();
 
     document.title = word.ko + "（" + word.ja + "・" + word.en + "）｜ことばカード｜Level Up K";
     setUrl(word.slug);
@@ -903,12 +1088,14 @@ var VOLUMES = [
   }
 
   function show(target, opts) {
+    specialKind = null;
     volume = target.volume;
     index = target.index;
     render(opts);
   }
 
   function go(delta) {
+    if (specialKind) return;
     var next = index + delta;
     if (next < 0 || next >= volume.words.length) return;
     index = next;
@@ -918,6 +1105,74 @@ var VOLUMES = [
   function jumpToVolume(volId) {
     var vol = firstOf(volId);
     show({ volume: vol, index: 0 }, { scroll: true });
+  }
+
+  /* ---------- 標題紙QR（?w=title&v=N）と「よくできました」QR（?w=jalhaesseoyo&v=N） ---------- */
+  function bookTitle(vol) { return vol.bookKo || vol.ko; }
+
+  function specialInfo(kind, vol) {
+    if (kind === "title") {
+      return {
+        word: bookTitle(vol),
+        badgeJa: "タイトル",
+        badgeKo: "제목",
+        main: { ja: vol.ja, en: vol.en },
+        sub: { ja: vol.en, en: vol.ja },
+        note: "ほんの タイトルを、いっしょに よんでみよう。／ 이 책의 제목을 함께 읽어 보세요.",
+        hint: vol.no + "の タイトル"
+      };
+    }
+    return {
+      word: "잘했어요!",
+      badgeJa: "よくできました",
+      badgeKo: "잘했어요",
+      main: { ja: "よくできました！", en: "Well done!" },
+      sub: { ja: "Well done!", en: "よくできました！" },
+      note: "15この ことばを ぜんぶ いえたね！／ 15개 낱말을 모두 말했어요!",
+      hint: vol.no + " おわり"
+    };
+  }
+
+  function renderSpecial(opts) {
+    var info = specialInfo(specialKind, volume);
+    document.body.setAttribute("data-vol", String(volume.id));
+    document.body.setAttribute("data-special", specialKind);
+    $("w-vol-no").textContent = volume.no;
+    $("w-vol-ja").textContent = info.badgeJa;
+    $("w-vol-ko").textContent = info.badgeKo;
+    countBox.hidden = true;
+    wordEl.textContent = info.word;
+    renderTranslations();
+    fitWord();
+    noteBox.textContent = info.note;
+    noteBox.hidden = false;
+    moreBox.hidden = false;
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+    navHint.textContent = info.hint;
+    syncVolumeSwitch();
+    document.title = info.word + "（" + info.badgeJa + "）｜ことばカード｜Level Up K";
+    setUrlSpecial(specialKind, volume.id);
+    resetPlayer();
+    loadAudio({ slug: specialKind, ko: info.word });
+    photoBox.hidden = true;
+    if (opts && opts.scroll) {
+      var top = document.querySelector(".wcard").getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    }
+  }
+
+  function showSpecial(kind, volId) {
+    specialKind = kind;
+    volume = firstOf(volId || VOLUMES[0].id);
+    index = 0;
+    render({ scroll: false });
+  }
+
+  function setUrlSpecial(kind, id) {
+    var next = "?w=" + kind + "&v=" + id;
+    if (location.search === next) return;
+    try { history.replaceState(null, "", location.pathname + next); } catch (e) {}
   }
 
   /* ---------- 巻の切り替えボタン ---------- */
@@ -941,6 +1196,10 @@ var VOLUMES = [
 
   prevBtn.addEventListener("click", function () { go(-1); });
   nextBtn.addEventListener("click", function () { go(1); });
+  toWordsBtn.addEventListener("click", function () {
+    var vol = volume;
+    show({ volume: vol, index: 0 }, { scroll: true });
+  });
 
   playBtn.addEventListener("click", function () {
     if (!audioEl.getAttribute("src")) return;
@@ -1006,6 +1265,10 @@ var VOLUMES = [
     applyLangButtons();
 
     var slug = slugFromUrl();
+    if (slug === "title" || slug === "jalhaesseoyo") {
+      showSpecial(slug, volFromUrl());
+      return;
+    }
     var found = findWord(slug, volFromUrl());
     if (found) {
       show(found, { scroll: false });

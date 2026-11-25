@@ -1,7 +1,8 @@
 # ことばカード「じっさいの しゃしん」写真クレジット
 
 `cards.html` の各ことばカードに表示している写真（135点）の出典一覧です（第5巻「いろ」の15語は色見本）。
-すべて Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真で、
+132点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
+3点（第9巻の 백・천・만）は当教室で作った数字の画像（CC0・自作）です。
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
 CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています。
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
@@ -24,14 +25,14 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第1巻 どうぶつ 1 | v1-geobugi.jpg | 거북이（かめ） | Eastern box turtle walking through grass.jpg | Aaron Lucas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eastern_box_turtle_walking_through_grass.jpg) |
 | 第1巻 どうぶつ 1 | v1-panda.jpg | 판다（パンダ） | Giant Panda (Ailuropoda melanoleuca) Feeding on Bamboo in an Arboreal Perch.jpg | Skip Brown | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Giant_Panda_(Ailuropoda_melanoleuca)_Feeding_on_Bamboo_in_an_Arboreal_Perch.jpg) |
 | 第2巻 しょくぶつ・しき | v2-bom.jpg | 봄（はる） | Pink cherry blossom on blue (Unsplash).jpg | Karolien Brughmans karolien | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Pink_cherry_blossom_on_blue_(Unsplash).jpg) |
-| 第2巻 しょくぶつ・しき | v2-yeoreum.jpg | 여름（なつ） | Los Angeles (California, USA), Santa Monica Beach -- 2012 -- 5301.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Los_Angeles_(California,_USA),_Santa_Monica_Beach_--_2012_--_5301.jpg) |
+| 第2巻 しょくぶつ・しき | v2-yeoreum.jpg | 여름（なつ） | Umbrellas on Carolina Beach.jpg | Sergiy Galyonkin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Umbrellas_on_Carolina_Beach.jpg) |
 | 第2巻 しょくぶつ・しき | v2-gaeul.jpg | 가을（あき） | Red-autumn-maple-leaves-water-drops-moss - Virginia - ForestWander.jpg | ForestWander | CC BY-SA 3.0 us | [Commons](https://commons.wikimedia.org/wiki/File:Red-autumn-maple-leaves-water-drops-moss_-_Virginia_-_ForestWander.jpg) |
 | 第2巻 しょくぶつ・しき | v2-gyeoul.jpg | 겨울（ふゆ） | Dülmen, Umland, Sonnenaufgang im Winter -- 2013 -- 9899.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Umland,_Sonnenaufgang_im_Winter_--_2013_--_9899.jpg) |
 | 第2巻 しょくぶつ・しき | v2-kkot.jpg | 꽃（はな） | Cherry blossom flower.jpg | Hallo3800 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Cherry_blossom_flower.jpg) |
 | 第2巻 しょくぶつ・しき | v2-namu.jpg | 나무（き） | Large oak tree in hillside field - geograph.org.uk - 6906380… | M J Roscoe | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Large_oak_tree_in_hillside_field_-_geograph.org.uk_-_6906380.jpg) |
 | 第2巻 しょくぶつ・しき | v2-haebaragi.jpg | 해바라기（ひまわり） | Sunflowers helianthus annuus.jpg | Bruce Fritz, U.S. Department of Agriculture | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Sunflowers_helianthus_annuus.jpg) |
 | 第2巻 しょくぶつ・しき | v2-danpung.jpg | 단풍（もみじ） | Acer rubrum leaf on brown (Unsplash).jpg | Jeremy Cooper jcooper | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Acer_rubrum_leaf_on_brown_(Unsplash).jpg) |
-| 第2巻 しょくぶつ・しき | v2-nunsaram.jpg | 눈사람（ゆきだるま） | 2007 snowman in massachusetts 424825688.jpg | Frank Hebbert | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2007_snowman_in_massachusetts_424825688.jpg) |
+| 第2巻 しょくぶつ・しき | v2-nunsaram.jpg | 눈사람（ゆきだるま） | Harald 038.JPG | Ambroix | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Harald_038.JPG) |
 | 第2巻 しょくぶつ・しき | v2-hae.jpg | 해（たいよう） | 2015-07-10 20 15 09 Sun near sunset shining through low-leve… | Famartin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2015-07-10_20_15_09_Sun_near_sunset_shining_through_low-level_dust_over_Collin_County,_Texas_viewed_from_an_airplane_flying_from_Washington_Dulles_International_Airport_to_Dallas-Fort_Worth_International_Airport.jpg) |
 | 第2巻 しょくぶつ・しき | v2-dal.jpg | 달（つき） | Full moon in Sagittarius.jpg | Joselodos | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Full_moon_in_Sagittarius.jpg) |
 | 第2巻 しょくぶつ・しき | v2-byeol.jpg | 별（ほし） | Sublime purple night sky (Unsplash).jpg | Vincentiu Solomon vincentiu | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Sublime_purple_night_sky_(Unsplash).jpg) |
@@ -52,7 +53,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第3巻 のりもの | v3-teureok.jpg | 트럭（トラック） | Lorry in West Road - geograph.org.uk - 7029753.jpg | Bob Harvey | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lorry_in_West_Road_-_geograph.org.uk_-_7029753.jpg) |
 | 第3巻 のりもの | v3-hellikopteo.jpg | 헬리콥터（ヘリコプター） | Helicopter hovering just above the ground.jpg | Keller Jo, U.S. Fish and Wildlife Service | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Helicopter_hovering_just_above_the_ground.jpg) |
 | 第3巻 のりもの | v3-jihacheol.jpg | 지하철（ちかてつ） | Toei-subway-E23-Roppongi-station-platform-2-20190909-100123.… | LERK | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toei-subway-E23-Roppongi-station-platform-2-20190909-100123.jpg) |
-| 第3巻 のりもの | v3-taeksi.jpg | 택시（タクシー） | Catch a CAB (Unsplash).jpg | Redd Angelo reddangelo16 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Catch_a_CAB_(Unsplash).jpg) |
+| 第3巻 のりもの | v3-taeksi.jpg | 택시（タクシー） | Hitachi-comfort.JPG | Jiyayo | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Hitachi-comfort.JPG) |
 | 第3巻 のりもの | v3-otobai.jpg | 오토바이（バイク） | Yellow motorcycle parked (Unsplash).jpg | Simson Petrol simson_petrol | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Yellow_motorcycle_parked_(Unsplash).jpg) |
 | 第3巻 のりもの | v3-roket.jpg | 로켓（ロケット） | Apollo 11 Launched Via Saturn V Rocket.jpg | NASA | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Apollo_11_Launched_Via_Saturn_V_Rocket.jpg) |
 | 第4巻 くだもの | v4-sagwa.jpg | 사과（りんご） | Small apples on branch.jpg | Paolo Neo | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Small_apples_on_branch.jpg) |
@@ -75,15 +76,15 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第6巻 からだ | v6-eolgul.jpg | 얼굴（かお） | My baby (2587044619).jpg | Helgi Halldórsson | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:My_baby_(2587044619).jpg) |
 | 第6巻 からだ | v6-nun.jpg | 눈（め） | World through her eye - Flickr - shioshvili.jpg | Vladimer Shioshvili | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:World_through_her_eye_-_Flickr_-_shioshvili.jpg) |
 | 第6巻 からだ | v6-ko.jpg | 코（はな） | Nose Example.jpg | TheNoseKnows2Much | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nose_Example.jpg) |
-| 第6巻 からだ | v6-ip.jpg | 입（くち） | Up close of human chin and lips.jpg | Punker1999 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Up_close_of_human_chin_and_lips.jpg) |
+| 第6巻 からだ | v6-ip.jpg | 입（くち） | Woman lips.jpg | Pupittaz | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Woman_lips.jpg) |
 | 第6巻 からだ | v6-gwi.jpg | 귀（みみ） | Closeup of a human ear.jpg | צולם על ידי he:משתמש:אנדר-ויק | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg) |
-| 第6巻 からだ | v6-i.jpg | 이（は） | Primary Maxillary Teeth and Upper Lip, Close-up View. (85449).jpg | Bharathesha Alasandemajalu | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Primary_Maxillary_Teeth_and_Upper_Lip,_Close-up_View._(85449).jpg) |
+| 第6巻 からだ | v6-i.jpg | 이（は） | Young girl smiling with teeth in sunshine.jpg | Basile Morin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Young_girl_smiling_with_teeth_in_sunshine.jpg) |
 | 第6巻 からだ | v6-mok.jpg | 목（くび） | Female neck.jpg | FotoFyl  / Erifyli Tsavdari | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Female_neck.jpg) |
-| 第6巻 からだ | v6-eokkae.jpg | 어깨（かた） | Left shoulder.jpg | Genusfotografen (Tomas Gunnarsson) / Wikimedia | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Left_shoulder.jpg) |
-| 第6巻 からだ | v6-pal.jpg | 팔（うで） | Extended arm.jpg | Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Extended_arm.jpg) |
+| 第6巻 からだ | v6-eokkae.jpg | 어깨（かた） | Man in t-shirt posing (Unsplash).jpg | Mohammad Faruque primitivestudios | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Man_in_t-shirt_posing_(Unsplash).jpg) |
+| 第6巻 からだ | v6-pal.jpg | 팔（うで） | Guy in blue t-shirt cropped smaller.jpg | Autumn Goodman auttgood | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Guy_in_blue_t-shirt_cropped_smaller.jpg) |
 | 第6巻 からだ | v6-son.jpg | 손（て） | Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg | trestletech from Pixabay | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby-Parenthood-Finger-Father-Hand-Love-Mother-1271742.jpg) |
-| 第6巻 からだ | v6-bae.jpg | 배（おなか） | Belly button close up.jpg | Spicejuz2 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Belly_button_close_up.jpg) |
-| 第6巻 からだ | v6-dari.jpg | 다리（あし） | Water-Droplets-on-Woman-Legs.jpg | Robert &amp; Mihaela Vicol | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Water-Droplets-on-Woman-Legs.jpg) |
+| 第6巻 からだ | v6-bae.jpg | 배（おなか） | Autumn baby to be (Unsplash).jpg | Arteida MjESHTRI arteidamjeshtri | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Autumn_baby_to_be_(Unsplash).jpg) |
+| 第6巻 からだ | v6-dari.jpg | 다리（あし） | Imani-bahati-woman-wearing-distressed-blue-denim-jeans-sitting-on-floor.jpg | Imani Bahati | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Imani-bahati-woman-wearing-distressed-blue-denim-jeans-sitting-on-floor.jpg) |
 | 第6巻 からだ | v6-mureup.jpg | 무릎（ひざ） | Human knees.jpg | Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Human_knees.jpg) |
 | 第6巻 からだ | v6-bal.jpg | 발（あし） | Baby feet 3 - Flickr - lou ^ magoo.jpg | lou &amp; magoo | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Baby_feet_3_-_Flickr_-_lou_%5E_magoo.jpg) |
 | 第7巻 そら・つち・うみ | v7-san.jpg | 산（やま） | Vihren & Kutelo Pirin Mountains Bulgaria 2025.jpg | kallerna | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg) |
@@ -98,14 +99,14 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第7巻 そら・つち・うみ | v7-morae.jpg | 모래（すな） | Sea beach sand in a hand closeup (42621473960).jpg | freestocks.org from Olsztyn, Poland | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Sea_beach_sand_in_a_hand_closeup_(42621473960).jpg) |
 | 第7巻 そら・つち・うみ | v7-dol.jpg | 돌（いし） | Smooth Round Rocks Ocean (Unsplash).jpg | Zeny Rosalina iamzeny | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Smooth_Round_Rocks_Ocean_(Unsplash).jpg) |
 | 第7巻 そら・つち・うみ | v7-pul.jpg | 풀（くさ） | Droplet on a Blade of Grass - panoramio.jpg | ben_kitchener3 | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Droplet_on_a_Blade_of_Grass_-_panoramio.jpg) |
-| 第7巻 そら・つち・うみ | v7-baram.jpg | 바람（かぜ） | Canadian Flag Blowing In The Wind.jpg | Kim Newberg | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Canadian_Flag_Blowing_In_The_Wind.jpg) |
+| 第7巻 そら・つち・うみ | v7-baram.jpg | 바람（かぜ） | Flag of South Korea (cropped).jpg | J. Patrick Fischer | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea_(cropped).jpg) |
 | 第7巻 そら・つち・うみ | v7-beongae.jpg | 번개（かみなり） | Lightning strikes in Santa Barbara 2019-03-05.jpg | Mike Eliason, Santa Barbara County Fire Department's public informatio | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Lightning_strikes_in_Santa_Barbara_2019-03-05.jpg) |
 | 第7巻 そら・つち・うみ | v7-nun.jpg | 눈（ゆき） | Snowflake macro (Unsplash).jpg | Aaron Burden aaronburden | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Snowflake_macro_(Unsplash).jpg) |
 | 第8巻 むし | v8-jamjari.jpg | 잠자리（とんぼ） | Dragonfly perched on a twig.jpg | Johnnybam | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Dragonfly_perched_on_a_twig.jpg) |
 | 第8巻 むし | v8-beol.jpg | 벌（はち） | European honey bee extracts nectar.jpg | John Severns (Severnjc) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg) |
 | 第8巻 むし | v8-mudangbeolle.jpg | 무당벌레（てんとうむし） | Ladybird on a nettle leaf - geograph.org.uk - 3942313.jpg | Gareth James | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ladybird_on_a_nettle_leaf_-_geograph.org.uk_-_3942313.jpg) |
 | 第8巻 むし | v8-gaemi.jpg | 개미（あり） | Insect closeup ant.jpg | Memainak | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Insect_closeup_ant.jpg) |
-| 第8巻 むし | v8-maemi.jpg | 매미（せみ） | Cicada Shell 27.8.26.jpg | StalJosA | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Cicada_Shell_27.8.26.jpg) |
+| 第8巻 むし | v8-maemi.jpg | 매미（せみ） | Graptopsaltria nigrofuscata s2.jpg | Alpsdake | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Graptopsaltria_nigrofuscata_s2.jpg) |
 | 第8巻 むし | v8-mettugi.jpg | 메뚜기（ばった） | (Omocestus viridulus) Grasshopper.jpg | Swethasakthivel | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:(Omocestus_viridulus)_Grasshopper.jpg) |
 | 第8巻 むし | v8-gwitturami.jpg | 귀뚜라미（こおろぎ） | Gryllus campestris Świerszcz polny 2025-04-19 Wiązownica-Kol… | Agnieszka Kwiecień, Nova | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Gryllus_campestris_%C5%9Awierszcz_polny_2025-04-19_Wi%C4%85zownica-Kolonia_04.jpg) |
 | 第8巻 むし | v8-saseumbeolle.jpg | 사슴벌레（くわがた） | Lucanus cervus male 2017 G1.jpg | George Chernilevsky | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Lucanus_cervus_male_2017_G1.jpg) |
@@ -128,18 +129,18 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第9巻 すうじ | v9-ahop.jpg | 구·아홉（きゅう・ここのつ） | Sign number 9 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_9_on_Jerusalem_Street.jpg) |
 | 第9巻 すうじ | v9-yeol.jpg | 십·열（じゅう・とお） | Sign number 10 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_10_on_Jerusalem_Street.jpg) |
 | 第9巻 すうじ | v9-seumul.jpg | 이십·스물（にじゅう） | Sign number 20 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_20_on_Jerusalem_Street.jpg) |
-| 第9巻 すうじ | v9-baek.jpg | 백（ひゃく） | Milestone Italienische Strasse km 100 (06).jpg | Clwacker | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Milestone_Italienische_Strasse_km_100_(06).jpg) |
-| 第9巻 すうじ | v9-cheon.jpg | 천（せん） | GR34 1000 km milestone at Pointe de Pen-Hir.jpg | MartinD | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:GR34_1000_km_milestone_at_Pointe_de_Pen-Hir.jpg) |
-| 第9巻 すうじ | v9-man.jpg | 만（いちまん） | 10000 rupiah bill, 2010 revision (2014 date), processed, obverse+reverse.jpg | Crisco 1492, scanning a banknote by Bank Indonesia | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:10000_rupiah_bill,_2010_revision_(2014_date),_processed,_obverse%2Breverse.jpg) |
+| 第9巻 すうじ | v9-baek.jpg | 백（ひゃく） | 白地に「100」（800×600・生成） | Level Up K with MiAe Ssem | CC0（自作） | 自作（Level Up K with MiAe Ssem） |
+| 第9巻 すうじ | v9-cheon.jpg | 천（せん） | 白地に「1,000」（800×600・生成） | Level Up K with MiAe Ssem | CC0（自作） | 自作（Level Up K with MiAe Ssem） |
+| 第9巻 すうじ | v9-man.jpg | 만（いちまん） | 白地に「10,000」（800×600・生成） | Level Up K with MiAe Ssem | CC0（自作） | 自作（Level Up K with MiAe Ssem） |
 | 第10巻 どうぶつ 2 | v10-gae.jpg | 개（いぬ） | Dülmen, Hausdülmen, Golden Retriever -- 2022 -- 5945.jpg | Dietmar Rabich | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg) |
 | 第10巻 どうぶつ 2 | v10-gangaji.jpg | 강아지（こいぬ） | Golden Retriever Puppy 2012 03.jpg | Johannnes89 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_2012_03.jpg) |
 | 第10巻 どうぶつ 2 | v10-so.jpg | 소（うし） | Cow female black white.jpg | Keith Weller/USDA | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg) |
 | 第10巻 どうぶつ 2 | v10-songaji.jpg | 송아지（こうし） | HOLSTEIN FRIESIAN CALF.jpg | Ranjithkumar Murugesan | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:HOLSTEIN_FRIESIAN_CALF.jpg) |
 | 第10巻 どうぶつ 2 | v10-mal.jpg | 말（うま） | Horse (8272800419).jpg | Korona Lacasse | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Horse_(8272800419).jpg) |
-| 第10巻 どうぶつ 2 | v10-mangaji.jpg | 망아지（こうま） | Crymlyn Bog - horse.jpg | Tiia Monto | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Crymlyn_Bog_-_horse.jpg) |
+| 第10巻 どうぶつ 2 | v10-mangaji.jpg | 망아지（こうま） | Newborn foal at Cumberland Island National Seashore by Bonnie Gruenberg.jpg | Bonnie Gruenberg | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Newborn_foal_at_Cumberland_Island_National_Seashore_by_Bonnie_Gruenberg.jpg) |
 | 第10巻 どうぶつ 2 | v10-dak.jpg | 닭（にわとり） | Hen, Brenna, Poland July 2020.jpg | MichalPL | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hen,_Brenna,_Poland_July_2020.jpg) |
 | 第10巻 どうぶつ 2 | v10-byeongari.jpg | 병아리（ひよこ） | Fuzzy yellow chicks in a brooder.jpg | ELTORO.VET | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Fuzzy_yellow_chicks_in_a_brooder.jpg) |
-| 第10巻 どうぶつ 2 | v10-dwaeji.jpg | 돼지（ぶた） | Cochon domestique (Sus scrofa domesticus) (2).jpg | Gzen92 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(2).jpg) |
+| 第10巻 どうぶつ 2 | v10-dwaeji.jpg | 돼지（ぶた） | Baby piglets.jpg | Scott Bauer, U.S. Department of Agriculture | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Baby_piglets.jpg) |
 | 第10巻 どうぶつ 2 | v10-chamse.jpg | 참새（すずめ） | Tree Sparrow August 2007 Osaka Japan.jpg | Laitche | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Tree_Sparrow_August_2007_Osaka_Japan.jpg) |
 | 第10巻 どうぶつ 2 | v10-kkachi.jpg | 까치（かささぎ） | Eurasian magpie 2024 03 03 02.jpg | Alexis Lours | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg) |
 | 第10巻 どうぶつ 2 | v10-kkamagwi.jpg | 까마귀（からす） | Carrion Crow 2025 05 23.jpg | Alexis Lours | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Carrion_Crow_2025_05_23.jpg) |
