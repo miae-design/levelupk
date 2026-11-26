@@ -16,6 +16,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第19巻（かでん）の 텔레비전・에어컨・청소기・선풍기・드라이기・태블릿 の6点と、第20巻の 병원 は、2026-11-26 に、テレビは テレビ本体だけが主役になる白背景の写真、エアコンは 今どきの白い壁かけ形、そうじきは コードレスのスティック形、せんぷうきは 丸い羽根から台まで全体が入る写真、ドライヤーは ふつうの家庭用、タブレットは タブレットが画面いっぱいの写真、びょういんは 建物に「病院」の文字が大きく出ている写真に差し替えました。
 第18巻（かぐ）の 책상 は、コンピューターや雑貨の少ない、机そのものが主役の写真に、옷장 は、扉を開けて服が見える写真に、2026-11-26 に差し替えました。同じ第18巻の最後の4語は、이불（ふとん）→사이드 테이블、베개（まくら）→자개장（らでんたんす、メトロポリタン美術館所蔵）、커튼（カーテン）→붙박이장（つくりつけクローゼット）、카펫（カーペット）→찬장（しょっきだな）に、ことばごと入れ替えました（2026-11-26）。찬장 は縦長の写真なので、左右の壁をのばして 800×600 に収めました。
 第22巻（やさい）の 오이・감자・고구마 は、2026-11-26 に、오이 は ズッキーニと まぎらわしかった写真から 細長く いぼのある きゅうりに、감자 は 赤い皮の品種から ふつうの 黄褐色の じゃがいもに、고구마 は 色の うすい オレンジの皮から 濃い むらさき色の皮の さつまいもに 差し替えました。
+第23巻（ようちえん・ぶんぐ）の 공책 は、2026-11-26 に、ノートの横に置かれていたペンを消して背景を作り直しました（ノートとそのステッカー、背景は元の写真のまま）。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
@@ -344,7 +345,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第23巻 ようちえん・ぶんぐ | v23-jiugae.jpg | 지우개（けしゴム） | Pelikan Radiergummi.jpg | Stefan-Xp | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pelikan_Radiergummi.jpg) |
 | 第23巻 ようちえん・ぶんぐ | v23-saekyeonpil.jpg | 색연필（いろえんぴつ） | Colouring pencils.jpg | MichaelMaggs | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Colouring_pencils.jpg) |
 | 第23巻 ようちえん・ぶんぐ | v23-keurepas.jpg | 크레파스（クレヨン） | Crayons with colors.JPG | Ks.mini | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Crayons_with_colors.JPG) |
-| 第23巻 ようちえん・ぶんぐ | v23-gongchaek.jpg | 공책（ノート） | Stickers on a notebook (Unsplash).jpg | Ian Schneider goian | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Stickers_on_a_notebook_(Unsplash).jpg) |
+| 第23巻 ようちえん・ぶんぐ | v23-gongchaek.jpg | 공책（ノート） | Stickers on a notebook (Unsplash).jpg | Ian Schneider goian | CC0（ペンを消去） | [Commons](https://commons.wikimedia.org/wiki/File:Stickers_on_a_notebook_(Unsplash).jpg) |
 | 第23巻 ようちえん・ぶんぐ | v23-chaek.jpg | 책（ほん） | Open Internal Pages of the Book Detrás del espejo 05.png | HonysTorresArt | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Open_Internal_Pages_of_the_Book_Detr%C3%A1s_del_espejo_05.png) |
 | 第23巻 ようちえん・ぶんぐ | v23-gawi.jpg | 가위（はさみ） | Pair of scissors with black handle.jpg | BGN-WMCO | CC BY 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Pair_of_scissors_with_black_handle.jpg) |
 | 第23巻 ようちえん・ぶんぐ | v23-pul.jpg | 풀（のり） | Pritt Sticks.JPG | Elarkon | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pritt_Sticks.JPG) |
