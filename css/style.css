@@ -2444,6 +2444,9 @@ html[lang="ko"] .fee-note--panel { word-break: keep-all; overflow-wrap: break-wo
   line-height: 1.75;
   color: var(--muted);
 }
+html[lang="ja"] .offer__head h3,
+html[lang="ja"] .offer__lead,
+html[lang="ja"] .offer__note { word-break: auto-phrase; }
 html[lang="ko"] .offer__lead,
 html[lang="ko"] .offer__note,
 html[lang="ko"] .offer-card__sub { word-break: keep-all; overflow-wrap: break-word; }
