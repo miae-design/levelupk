@@ -1,7 +1,8 @@
 # ことばカード「じっさいの しゃしん」写真クレジット
 
 `cards.html` の各ことばカードに表示している写真（360点）の出典一覧です（第5巻「いろ」の15語は色見本）。
-356点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
+352点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
+4点（第25巻の 할머니·할아버지・이모·외삼촌・고모·삼촌・친가）は Flickr の CC BY 写真、
 1点（第24巻の 팽이）は Skitterphoto の CC0 写真、
 3点（第9巻の 백・천・만）は当教室で作った数字の画像（CC0・自作）です。
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
@@ -18,6 +19,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第22巻（やさい）の 오이・감자・고구마 は、2026-11-26 に、오이 は ズッキーニと まぎらわしかった写真から 細長く いぼのある きゅうりに、감자 は 赤い皮の品種から ふつうの 黄褐色の じゃがいもに、고구마 は 色の うすい オレンジの皮から 濃い むらさき色の皮の さつまいもに 差し替えました。
 第23巻（ようちえん・ぶんぐ）の 공책 は、2026-11-26 に、ノートの横に置かれていたペンを消して背景を作り直しました（ノートとそのステッカー、背景は元の写真のまま）。
 第25巻（かぞく）の 언니 は、2026-11-26 に、弟に見える子との写真から、女の子どうしの姉妹に見える写真（ラオスの女の子2人、Basile Morin・CC BY-SA 4.0）に差し替えました。누나 も同じ日に、男の子のほうが大きかった写真から、女の子のほうが大きく男の子が小さい写真（MacGraceSmez・CC BY-SA 4.0）に差し替えました。この2語と 오빠・형・동생 の あわせて5語すべてに、どちらが 언니・오빠・누나・형・동생 かが一目で分かるように、白フチ付きのコーラル色の矢印を、対象の子を隠さない位置に描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
+第25巻（かぞく）は 2026-11-26 に、15語の構成を 엄마·아빠／할머니·할아버지／외할머니·외할아버지／언니／오빠／누나／형／동생／아기／이모·외삼촌／고모·삼촌／사촌·외사촌／친척／친가／외가 に変えました。このうち 8語（엄마·아빠、할머니·할아버지、외할머니·외할아버지、이모·외삼촌、고모·삼촌、사촌·외사촌、친가、외가）は写真も新しくしました。엄마·아빠 は 両親と赤ちゃんの写真、할머니・할아버지 と 외할머니・외할아버지 は 別の 老夫婦の 写真（たがいに まちがえないように、別の 老夫婦の 写真にしました）、이모·외삼촌 と 고모·삼촌 は 家族の 集まりの 写真に 白フチ付きの コーラル色の 矢印を 2本ずつ 描き足し、사촌·외사촌 は 同年代の 子どもたち、친가・외가 は 祖父母から 子どもまで 集まった 大家族の 写真です。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
@@ -369,20 +371,20 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第24巻 おもちゃ | v24-jusawi.jpg | 주사위（さいころ） | A throw of two dice as in the game of hazard IMG 1705s.jpg | JonRichfield | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:A_throw_of_two_dice_as_in_the_game_of_hazard_IMG_1705s.jpg) |
 | 第24巻 おもちゃ | v24-kadeu.jpg | 카드（カード） | Whot-cards Nigerian playing rules example1.jpg | Wikinwg | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Whot-cards_Nigerian_playing_rules_example1.jpg) |
 | 第24巻 おもちゃ | v24-kikbodeu.jpg | 킥보드（キックボード） | Алматы, самокатчица на Толе би-Розыбакиева.jpg | Nikolai Bulykin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B,_%D1%81%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%D1%87%D0%B8%D1%86%D0%B0_%D0%BD%D0%B0_%D0%A2%D0%BE%D0%BB%D0%B5_%D0%B1%D0%B8-%D0%A0%D0%BE%D0%B7%D1%8B%D0%B1%D0%B0%D0%BA%D0%B8%D0%B5%D0%B2%D0%B0.jpg) |
-| 第25巻 かぞく | v25-gajok.jpg | 가족（かぞく） | Happy family (1).jpg | Catherine Scott | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Happy_family_(1).jpg) |
-| 第25巻 かぞく | v25-eomma.jpg | 엄마（おかあさん） | Lots of love (4886481334).jpg | jencu | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lots_of_love_(4886481334).jpg) |
-| 第25巻 かぞく | v25-appa.jpg | 아빠（おとうさん） | Father and son 27.jpg | Onkelbo~commonswiki | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Father_and_son_27.jpg) |
-| 第25巻 かぞく | v25-halmeoni.jpg | 할머니（おばあちゃん） | Grandmas 90th Birthday-36.jpg | Split the Kipper | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grandmas_90th_Birthday-36.jpg) |
-| 第25巻 かぞく | v25-harabeoji.jpg | 할아버지（おじいちゃん） | Grandfather rus.jpg | Bogdanov-62 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grandfather_rus.jpg) |
+| 第25巻 かぞく | v25-eomma-appa.jpg | 엄마 · 아빠（おかあさん・おとうさん） | Parents and their baby.jpg | sheldonl | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Parents_and_their_baby.jpg) |
+| 第25巻 かぞく | v25-halmeoni-harabeoji.jpg | 할머니 · 할아버지（おばあちゃん・おじいちゃん） | Happy and smiling elderly senior couple | Stannah International | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/164316313@N02/27999711698) |
+| 第25巻 かぞく | v25-oehalmeoni-oeharabeoji.jpg | 외할머니 · 외할아버지（ははかたのおばあちゃん・おじいちゃん） | Elderly Kazakh couple in Astana (20240914-1621432600-RP).jpg | ICPCNews | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Elderly_Kazakh_couple_in_Astana_(20240914-1621432600-RP).jpg) |
 | 第25巻 かぞく | v25-eonni.jpg | 언니（おねえちゃん） | Two little Lao girls hugging.jpg | Basile Morin | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Two_little_Lao_girls_hugging.jpg) |
 | 第25巻 かぞく | v25-oppa.jpg | 오빠（おにいちゃん） | Brother and Sister, Yemen (10569460956).jpg | Rod Waddington from Kergunyah, Australia | CC BY-SA 2.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Brother_and_Sister,_Yemen_(10569460956).jpg) |
 | 第25巻 かぞく | v25-nuna.jpg | 누나（おねえちゃん） | Brother-sister love.jpg | MacGraceSmez | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Brother-sister_love.jpg) |
 | 第25巻 かぞく | v25-hyeong.jpg | 형（おにいちゃん） | Irmáns. Só os irmáns se comportan así - 1.jpg | Luis Miguel Bugallo Sánchez | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Irm%C3%A1ns._S%C3%B3_os_irm%C3%A1ns_se_comportan_as%C3%AD_-_1.jpg) |
 | 第25巻 かぞく | v25-dongsaeng.jpg | 동생（おとうと・いもうと） | Lucas Murray.jpg | Sariain | Public domain（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Lucas_Murray.jpg) |
 | 第25巻 かぞく | v25-agi.jpg | 아기（あかちゃん） | Smiling baby lying on towel.jpg | Moinul548 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Smiling_baby_lying_on_towel.jpg) |
-| 第25巻 かぞく | v25-imo.jpg | 이모（おばさん） | April and her little niece Lorelei.jpg | Daisy Romwall from Morro Bay, United States | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:April_and_her_little_niece_Lorelei.jpg) |
-| 第25巻 かぞく | v25-samchon.jpg | 삼촌（おじさん） | Aligharehdaghli.jpg | AliGharehdaghli | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Aligharehdaghli.jpg) |
-| 第25巻 かぞく | v25-sachon.jpg | 사촌（いとこ） | US Navy 030412-A-9330B-093 A group of Iraqi children pose for a photo while their parents receive humanitarian daily rations (HDR's) and water in the town of Ar Rutba.jpg | U.S. Navy photo | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:US_Navy_030412-A-9330B-093_A_group_of_Iraqi_children_pose_for_a_photo_while_their_parents_receive_humanitarian_daily_rations_(HDR%27s)_and_water_in_the_town_of_Ar_Rutba.jpg) |
+| 第25巻 かぞく | v25-imo-oesamchon.jpg | 이모 · 외삼촌（ははかたのおば・おじ） | Give Thanks to Family | OakleyOriginals | CC BY 2.0（矢印を加筆） | [Flickr](https://www.flickr.com/photos/47264866@N00/5215359628) |
+| 第25巻 かぞく | v25-gomo-samchon.jpg | 고모 · 삼촌（ちちかたのおば・おじ） | Warm | OakleyOriginals | CC BY 2.0（矢印を加筆） | [Flickr](https://www.flickr.com/photos/47264866@N00/11557373285) |
+| 第25巻 かぞく | v25-sachon-oesachon.jpg | 사촌 · 외사촌（いとこ・ははかたのいとこ） | The Joy of Playing Together by Rasheedhrasheed.jpg | Rasheedhrasheed | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:The_Joy_of_Playing_Together_by_Rasheedhrasheed.jpg) |
 | 第25巻 かぞく | v25-chincheok.jpg | 친척（しんせき） | Family Photo 3 Generations.jpg | Calabriafamilywines | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Family_Photo_3_Generations.jpg) |
+| 第25巻 かぞく | v25-chinga.jpg | 친가（ちちかたのかぞく） | Whole Korean family around the table | -Jérôme- | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/76474448@N00/10089610655) |
+| 第25巻 かぞく | v25-oega.jpg | 외가（ははかたのかぞく） | Dutch family bbq.jpg | Adrem68 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Dutch_family_bbq.jpg) |
 ※ 写真はすべて原典のライセンスに従って利用しています。CC BY-SA の写真は同ライセンスの下で
 再配布されます。差し替え・削除のときは `cards.html` の `PHOTOS` とこの表を更新してください。

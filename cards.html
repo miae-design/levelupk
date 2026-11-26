@@ -783,21 +783,21 @@ var VOLUMES = [
     ko: "가족",
     en: "Family",
     words: [
-      { slug: "gajok",          ko: "가족",               ja: "かぞく",               en: "Family" },
-      { slug: "eomma",          ko: "엄마",               ja: "おかあさん",           en: "Mom" },
-      { slug: "appa",           ko: "아빠",               ja: "おとうさん",           en: "Dad" },
-      { slug: "halmeoni",       ko: "할머니",             ja: "おばあちゃん",         en: "Grandma" },
-      { slug: "harabeoji",      ko: "할아버지",           ja: "おじいちゃん",         en: "Grandpa" },
+      { slug: "eomma-appa",     ko: "엄마 · 아빠",         ja: "おかあさん・おとうさん", en: "Mom & Dad" },
+      { slug: "halmeoni-harabeoji", ko: "할머니 · 할아버지", ja: "おばあちゃん・おじいちゃん", en: "Grandma & Grandpa" },
+      { slug: "oehalmeoni-oeharabeoji", ko: "외할머니 · 외할아버지", ja: "ははかたのおばあちゃん・おじいちゃん", en: "Maternal Grandma & Grandpa" },
       { slug: "eonni",          ko: "언니",               ja: "おねえちゃん",         en: "Older Sister" },
       { slug: "oppa",           ko: "오빠",               ja: "おにいちゃん",         en: "Older Brother" },
       { slug: "nuna",           ko: "누나",               ja: "おねえちゃん",         en: "Older Sister (boy's)" },
       { slug: "hyeong",         ko: "형",                 ja: "おにいちゃん",         en: "Older Brother (boy's)" },
       { slug: "dongsaeng",      ko: "동생",               ja: "おとうと・いもうと",   en: "Younger Sibling" },
       { slug: "agi",            ko: "아기",               ja: "あかちゃん",           en: "Baby" },
-      { slug: "imo",            ko: "이모",               ja: "おばさん",             en: "Aunt" },
-      { slug: "samchon",        ko: "삼촌",               ja: "おじさん",             en: "Uncle" },
-      { slug: "sachon",         ko: "사촌",               ja: "いとこ",               en: "Cousin" },
-      { slug: "chincheok",      ko: "친척",               ja: "しんせき",             en: "Relatives" }
+      { slug: "imo-oesamchon",  ko: "이모 · 외삼촌",       ja: "ははかたのおば・おじ", en: "Maternal Aunt & Uncle" },
+      { slug: "gomo-samchon",   ko: "고모 · 삼촌",         ja: "ちちかたのおば・おじ", en: "Paternal Aunt & Uncle" },
+      { slug: "sachon-oesachon", ko: "사촌 · 외사촌",      ja: "いとこ・ははかたのいとこ", en: "Paternal & Maternal Cousins" },
+      { slug: "chincheok",      ko: "친척",               ja: "しんせき",             en: "Relatives" },
+      { slug: "chinga",         ko: "친가",               ja: "ちちかたのかぞく",     en: "Paternal Family" },
+      { slug: "oega",           ko: "외가",               ja: "ははかたのかぞく",     en: "Maternal Family" }
     ]
   }
 ];
@@ -1170,21 +1170,21 @@ var VOLUMES = [
   "24-jusawi": { f: "assets/photos/v24-jusawi.jpg", a: "JonRichfield", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:A_throw_of_two_dice_as_in_the_game_of_hazard_IMG_1705s.jpg" },
   "24-kadeu": { f: "assets/photos/v24-kadeu.jpg", a: "Wikinwg", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Whot-cards_Nigerian_playing_rules_example1.jpg" },
   "24-kikbodeu": { f: "assets/photos/v24-kikbodeu.jpg", a: "Nikolai Bulykin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B,_%D1%81%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%D1%87%D0%B8%D1%86%D0%B0_%D0%BD%D0%B0_%D0%A2%D0%BE%D0%BB%D0%B5_%D0%B1%D0%B8-%D0%A0%D0%BE%D0%B7%D1%8B%D0%B1%D0%B0%D0%BA%D0%B8%D0%B5%D0%B2%D0%B0.jpg" },
-  "25-gajok": { f: "assets/photos/v25-gajok.jpg", a: "Catherine Scott", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Happy_family_(1).jpg" },
-  "25-eomma": { f: "assets/photos/v25-eomma.jpg", a: "jencu", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Lots_of_love_(4886481334).jpg" },
-  "25-appa": { f: "assets/photos/v25-appa.jpg", a: "Onkelbo~commonswiki", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Father_and_son_27.jpg" },
-  "25-halmeoni": { f: "assets/photos/v25-halmeoni.jpg", a: "Split the Kipper", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Grandmas_90th_Birthday-36.jpg" },
-  "25-harabeoji": { f: "assets/photos/v25-harabeoji.jpg", a: "Bogdanov-62", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Grandfather_rus.jpg" },
+  "25-eomma-appa": { f: "assets/photos/v25-eomma-appa.jpg", a: "sheldonl", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Parents_and_their_baby.jpg" },
+  "25-halmeoni-harabeoji": { f: "assets/photos/v25-halmeoni-harabeoji.jpg", a: "Stannah International", l: "CC BY 2.0", u: "https://www.flickr.com/photos/164316313@N02/27999711698" },
+  "25-oehalmeoni-oeharabeoji": { f: "assets/photos/v25-oehalmeoni-oeharabeoji.jpg", a: "ICPCNews", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Elderly_Kazakh_couple_in_Astana_(20240914-1621432600-RP).jpg" },
   "25-eonni": { f: "assets/photos/v25-eonni.jpg", a: "Basile Morin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Two_little_Lao_girls_hugging.jpg", m: "矢印を加筆" },
   "25-oppa": { f: "assets/photos/v25-oppa.jpg", a: "Rod Waddington from Kergunyah, Australia", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Brother_and_Sister,_Yemen_(10569460956).jpg", m: "矢印を加筆" },
   "25-nuna": { f: "assets/photos/v25-nuna.jpg", a: "MacGraceSmez", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Brother-sister_love.jpg", m: "矢印を加筆" },
   "25-hyeong": { f: "assets/photos/v25-hyeong.jpg", a: "Luis Miguel Bugallo Sánchez", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Irm%C3%A1ns._S%C3%B3_os_irm%C3%A1ns_se_comportan_as%C3%AD_-_1.jpg", m: "矢印を加筆" },
   "25-dongsaeng": { f: "assets/photos/v25-dongsaeng.jpg", a: "Sariain", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Lucas_Murray.jpg", m: "矢印を加筆" },
   "25-agi": { f: "assets/photos/v25-agi.jpg", a: "Moinul548", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Smiling_baby_lying_on_towel.jpg" },
-  "25-imo": { f: "assets/photos/v25-imo.jpg", a: "Daisy Romwall from Morro Bay, United States", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:April_and_her_little_niece_Lorelei.jpg" },
-  "25-samchon": { f: "assets/photos/v25-samchon.jpg", a: "AliGharehdaghli", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Aligharehdaghli.jpg" },
-  "25-sachon": { f: "assets/photos/v25-sachon.jpg", a: "U.S. Navy photo", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:US_Navy_030412-A-9330B-093_A_group_of_Iraqi_children_pose_for_a_photo_while_their_parents_receive_humanitarian_daily_rations_(HDR%27s)_and_water_in_the_town_of_Ar_Rutba.jpg" },
-  "25-chincheok": { f: "assets/photos/v25-chincheok.jpg", a: "Calabriafamilywines", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Family_Photo_3_Generations.jpg" }
+  "25-imo-oesamchon": { f: "assets/photos/v25-imo-oesamchon.jpg", a: "OakleyOriginals", l: "CC BY 2.0", u: "https://www.flickr.com/photos/47264866@N00/5215359628", m: "矢印を加筆" },
+  "25-gomo-samchon": { f: "assets/photos/v25-gomo-samchon.jpg", a: "OakleyOriginals", l: "CC BY 2.0", u: "https://www.flickr.com/photos/47264866@N00/11557373285", m: "矢印を加筆" },
+  "25-sachon-oesachon": { f: "assets/photos/v25-sachon-oesachon.jpg", a: "Rasheedhrasheed", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:The_Joy_of_Playing_Together_by_Rasheedhrasheed.jpg" },
+  "25-chincheok": { f: "assets/photos/v25-chincheok.jpg", a: "Calabriafamilywines", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Family_Photo_3_Generations.jpg" },
+  "25-chinga": { f: "assets/photos/v25-chinga.jpg", a: "-Jérôme-", l: "CC BY 2.0", u: "https://www.flickr.com/photos/76474448@N00/10089610655" },
+  "25-oega": { f: "assets/photos/v25-oega.jpg", a: "Adrem68", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Dutch_family_bbq.jpg" }
   };
 
 (function () {
@@ -1194,7 +1194,7 @@ var VOLUMES = [
   /* 音声ファイルを追加したら、この数字を上げてください（ブラウザに残った古い404を避けるため） */
   var AUDIO_VER = "2";
   /* 写真を差し替えたら、この数字を上げてください（ブラウザに残った古い画像を避けるため） */
-  var PHOTO_VER = "17";
+  var PHOTO_VER = "18";
   var LANG_KEY = "levelupk_cards_lang";
   var probeCache = {};
   var lang = "ja";
