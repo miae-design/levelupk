@@ -1,10 +1,10 @@
 # ことばカード「じっさいの しゃしん」写真クレジット
 
 `cards.html` の各ことばカードに表示している写真（360点）の出典一覧です（第5巻「いろ」の15語は色見本）。
-352点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
+351点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
 4点（第25巻の 할머니·할아버지・이모·외삼촌・고모·삼촌・친가）は Flickr の CC BY 写真、
 1点（第24巻の 팽이）は Skitterphoto の CC0 写真、
-3点（第9巻の 백・천・만）は当教室で作った数字の画像（CC0・自作）です。
+4点（第9巻の 영・백・천・만）は当教室で作った数字の画像（CC0・自作）です。
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
 CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています（Wikimedia Commons 以外の出典はサイト名を表示）。
 第11〜25巻の225点は 2026-11-25 に追加しました（第5巻「いろ」の15語をのぞく全25巻375語が実写真）。
@@ -19,6 +19,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第22巻（やさい）の 오이・감자・고구마 は、2026-11-26 に、오이 は ズッキーニと まぎらわしかった写真から 細長く いぼのある きゅうりに、감자 は 赤い皮の品種から ふつうの 黄褐色の じゃがいもに、고구마 は 色の うすい オレンジの皮から 濃い むらさき色の皮の さつまいもに 差し替えました。
 第23巻（ようちえん・ぶんぐ）の 공책 は、2026-11-26 に、ノートの横に置かれていたペンを消して背景を作り直しました（ノートとそのステッカー、背景は元の写真のまま）。
 第17巻（うちゅう）は、2026-11-26 に、외계인 を 화성 に、망원경 を 금성 に ことばごと入れ替え、해 は 해 (태양) と書き方を変えました。화성 の写真はハッブル宇宙望遠鏡が2003年に撮った火星、금성 は マゼラン探査機のレーダー画像を組み合わせた金星の全球画像（どちらもパブリックドメイン）です。
+第9巻（すうじ）の 영·공 は、2026-11-26 に、数字の「0」の上下が切れていた Wikimedia Commons の写真（0 zero (12041421074).jpg）から、백・천・만 と同じ体裁で当教室が作った画像（白地に大きな「0」、800×600）に差し替えました。
 第25巻（かぞく）の 언니 は、2026-11-26 に、弟に見える子との写真から、女の子どうしの姉妹に見える写真（ラオスの女の子2人、Basile Morin・CC BY-SA 4.0）に差し替えました。누나 も同じ日に、男の子のほうが大きかった写真から、女の子のほうが大きく男の子が小さい写真（MacGraceSmez・CC BY-SA 4.0）に差し替えました。この2語と 오빠・형・동생 の あわせて5語すべてに、どちらが 언니・오빠・누나・형・동생 かが一目で分かるように、白フチ付きのコーラル色の矢印を、対象の子を隠さない位置に描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 第25巻（かぞく）は 2026-11-26 に、15語の構成を 엄마·아빠／할머니·할아버지／외할머니·외할아버지／언니／오빠／누나／형／동생／아기／이모·외삼촌／고모·삼촌／사촌·외사촌／친척／친가／외가 に変えました。このうち 8語（엄마·아빠、할머니·할아버지、외할머니·외할아버지、이모·외삼촌、고모·삼촌、사촌·외사촌、친가、외가）は写真も新しくしました。엄마·아빠 は 両親と赤ちゃんの写真、할머니・할아버지 と 외할머니・외할아버지 は 別の 老夫婦の 写真（たがいに まちがえないように、別の 老夫婦の 写真にしました）、이모·외삼촌 と 고모·삼촌 は 家族の 集まりの 写真に 白フチ付きの コーラル色の 矢印を 2本ずつ 描き足し、사촌·외사촌 は 同年代の 子どもたち、친가・외가 は 祖父母から 子どもまで 集まった 大家族の 写真です。
 
@@ -132,7 +133,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第8巻 むし | v8-sogeumjaengi.jpg | 소금쟁이（あめんぼ） | Water strider Gerris lacustris.jpg | Richard Bartz | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Water_strider_Gerris_lacustris.jpg) |
 | 第8巻 むし | v8-nabi.jpg | 나비（ちょう） | Peacock butterfly (Aglais io) 2.jpg | Charles J. Sharp | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg) |
 | 第8巻 むし | v8-gongbeolle.jpg | 공벌레（だんごむし） | Armadillidium vulgare 138264167.jpg | Daniel Das | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_138264167.jpg) |
-| 第9巻 すうじ | v9-yeong.jpg | 영·공（ぜろ・れい） | 0 zero (12041421074).jpg | D. Sharon Pruitt | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:0_zero_(12041421074).jpg) |
+| 第9巻 すうじ | v9-yeong.jpg | 영·공（ぜろ・れい） | 白地に「0」（800×600・生成） | Level Up K with MiAe Ssem | CC0（自作） | 自作（Level Up K with MiAe Ssem） |
 | 第9巻 すうじ | v9-hana.jpg | 일·하나（いち・ひとつ） | Sign number 1 on Tel Aviv street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_1_on_Tel_Aviv_street.jpg) |
 | 第9巻 すうじ | v9-dul.jpg | 이·둘（に・ふたつ） | Sign number 2 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_2_on_Jerusalem_Street.jpg) |
 | 第9巻 すうじ | v9-set.jpg | 삼·셋（さん・みっつ） | Sign number 3 on Jerusalem Street.jpg | Korenn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sign_number_3_on_Jerusalem_Street.jpg) |
