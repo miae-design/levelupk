@@ -17,6 +17,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第18巻（かぐ）の 책상 は、コンピューターや雑貨の少ない、机そのものが主役の写真に、옷장 は、扉を開けて服が見える写真に、2026-11-26 に差し替えました。同じ第18巻の最後の4語は、이불（ふとん）→사이드 테이블、베개（まくら）→자개장（らでんたんす、メトロポリタン美術館所蔵）、커튼（カーテン）→붙박이장（つくりつけクローゼット）、카펫（カーペット）→찬장（しょっきだな）に、ことばごと入れ替えました（2026-11-26）。찬장 は縦長の写真なので、左右の壁をのばして 800×600 に収めました。
 第22巻（やさい）の 오이・감자・고구마 は、2026-11-26 に、오이 は ズッキーニと まぎらわしかった写真から 細長く いぼのある きゅうりに、감자 は 赤い皮の品種から ふつうの 黄褐色の じゃがいもに、고구마 は 色の うすい オレンジの皮から 濃い むらさき色の皮の さつまいもに 差し替えました。
 第23巻（ようちえん・ぶんぐ）の 공책 は、2026-11-26 に、ノートの横に置かれていたペンを消して背景を作り直しました（ノートとそのステッカー、背景は元の写真のまま）。
+第25巻（かぞく）の 언니 は、2026-11-26 に、弟に見える子との写真から、女の子どうしの姉妹に見える写真（ラオスの女の子2人、Basile Morin・CC BY-SA 4.0）に差し替えました。누나 も同じ日に、男の子のほうが大きかった写真から、女の子のほうが大きく男の子が小さい写真（MacGraceSmez・CC BY-SA 4.0）に差し替えました。この2語と、오빠・형・동생 の5語すべてに、どちらが 언니・오빠・누나・형・동생 かが一目で分かるように、白フチ付きのコーラル色の矢印を、対象の子を隠さない位置に描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
@@ -373,11 +374,11 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第25巻 かぞく | v25-appa.jpg | 아빠（おとうさん） | Father and son 27.jpg | Onkelbo~commonswiki | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Father_and_son_27.jpg) |
 | 第25巻 かぞく | v25-halmeoni.jpg | 할머니（おばあちゃん） | Grandmas 90th Birthday-36.jpg | Split the Kipper | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grandmas_90th_Birthday-36.jpg) |
 | 第25巻 かぞく | v25-harabeoji.jpg | 할아버지（おじいちゃん） | Grandfather rus.jpg | Bogdanov-62 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grandfather_rus.jpg) |
-| 第25巻 かぞく | v25-eonni.jpg | 언니（おねえちゃん） | Jamie and Nora Rudolph.JPG | Jamie Rudolph | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Jamie_and_Nora_Rudolph.JPG) |
-| 第25巻 かぞく | v25-oppa.jpg | 오빠（おにいちゃん） | Brother and Sister, Yemen (10569460956).jpg | Rod Waddington from Kergunyah, Australia | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Brother_and_Sister,_Yemen_(10569460956).jpg) |
-| 第25巻 かぞく | v25-nuna.jpg | 누나（おねえちゃん） | Siblings brother and sister.jpg | Celebindiaworld | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Siblings_brother_and_sister.jpg) |
-| 第25巻 かぞく | v25-hyeong.jpg | 형（おにいちゃん） | Irmáns. Só os irmáns se comportan así - 1.jpg | Luis Miguel Bugallo Sánchez | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Irm%C3%A1ns._S%C3%B3_os_irm%C3%A1ns_se_comportan_as%C3%AD_-_1.jpg) |
-| 第25巻 かぞく | v25-dongsaeng.jpg | 동생（おとうと・いもうと） | Lucas Murray.jpg | Sariain | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Lucas_Murray.jpg) |
+| 第25巻 かぞく | v25-eonni.jpg | 언니（おねえちゃん） | Two little Lao girls hugging.jpg | Basile Morin | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Two_little_Lao_girls_hugging.jpg) |
+| 第25巻 かぞく | v25-oppa.jpg | 오빠（おにいちゃん） | Brother and Sister, Yemen (10569460956).jpg | Rod Waddington from Kergunyah, Australia | CC BY-SA 2.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Brother_and_Sister,_Yemen_(10569460956).jpg) |
+| 第25巻 かぞく | v25-nuna.jpg | 누나（おねえちゃん） | Brother-sister love.jpg | MacGraceSmez | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Brother-sister_love.jpg) |
+| 第25巻 かぞく | v25-hyeong.jpg | 형（おにいちゃん） | Irmáns. Só os irmáns se comportan así - 1.jpg | Luis Miguel Bugallo Sánchez | CC BY-SA 4.0（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Irm%C3%A1ns._S%C3%B3_os_irm%C3%A1ns_se_comportan_as%C3%AD_-_1.jpg) |
+| 第25巻 かぞく | v25-dongsaeng.jpg | 동생（おとうと・いもうと） | Lucas Murray.jpg | Sariain | Public domain（矢印を加筆） | [Commons](https://commons.wikimedia.org/wiki/File:Lucas_Murray.jpg) |
 | 第25巻 かぞく | v25-agi.jpg | 아기（あかちゃん） | Smiling baby lying on towel.jpg | Moinul548 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Smiling_baby_lying_on_towel.jpg) |
 | 第25巻 かぞく | v25-imo.jpg | 이모（おばさん） | April and her little niece Lorelei.jpg | Daisy Romwall from Morro Bay, United States | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:April_and_her_little_niece_Lorelei.jpg) |
 | 第25巻 かぞく | v25-samchon.jpg | 삼촌（おじさん） | Aligharehdaghli.jpg | AliGharehdaghli | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Aligharehdaghli.jpg) |
