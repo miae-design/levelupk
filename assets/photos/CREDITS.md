@@ -15,6 +15,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第24巻（おもちゃ）の 인형 は、2026-11-26 に中国風の人形から、韓服（チマ・チョゴリ）を着た韓国の人形（オークランド博物館所蔵）に、팽이 は、上から見た金属のこまから、回っているようすが分かるカラフルなこま（Skitterphoto の CC0 写真）に差し替えました。
 第19巻（かでん）の 텔레비전・에어컨・청소기・선풍기・드라이기・태블릿 の6点と、第20巻の 병원 は、2026-11-26 に、テレビは テレビ本体だけが主役になる白背景の写真、エアコンは 今どきの白い壁かけ形、そうじきは コードレスのスティック形、せんぷうきは 丸い羽根から台まで全体が入る写真、ドライヤーは ふつうの家庭用、タブレットは タブレットが画面いっぱいの写真、びょういんは 建物に「病院」の文字が大きく出ている写真に差し替えました。
 第18巻（かぐ）の 책상 は、コンピューターや雑貨の少ない、机そのものが主役の写真に、옷장 は、扉を開けて服が見える写真に、2026-11-26 に差し替えました。同じ第18巻の最後の4語は、이불（ふとん）→사이드 테이블、베개（まくら）→자개장（らでんたんす、メトロポリタン美術館所蔵）、커튼（カーテン）→붙박이장（つくりつけクローゼット）、카펫（カーペット）→찬장（しょっきだな）に、ことばごと入れ替えました（2026-11-26）。찬장 は縦長の写真なので、左右の壁をのばして 800×600 に収めました。
+第22巻（やさい）の 오이・감자・고구마 は、2026-11-26 に、오이 は ズッキーニと まぎらわしかった写真から 細長く いぼのある きゅうりに、감자 は 赤い皮の品種から ふつうの 黄褐色の じゃがいもに、고구마 は 色の うすい オレンジの皮から 濃い むらさき色の皮の さつまいもに 差し替えました。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
@@ -322,11 +323,11 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第21巻 しょくぎょう | v21-nongbu.jpg | 농부（のうか） | Fall Line Farms, cooperative, co-op, Richmond, VA. - Flickr - USDAgov.jpg | U.S. Department of Agriculture | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Fall_Line_Farms,_cooperative,_co-op,_Richmond,_VA._-_Flickr_-_USDAgov.jpg) |
 | 第21巻 しょくぎょう | v21-miyongsa.jpg | 미용사（びようし） | Barbershop In Iran - Fashion Stylist - Hairdressers - Make-up artists from Iran 03.jpg | Mostafameraji | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Barbershop_In_Iran_-_Fashion_Stylist_-_Hairdressers_-_Make-up_artists_from_Iran_03.jpg) |
 | 第22巻 やさい | v22-danggeun.jpg | 당근（にんじん） | Carrots at Ljubljana Central Market.JPG | domdomegg | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Carrots_at_Ljubljana_Central_Market.JPG) |
-| 第22巻 やさい | v22-oi.jpg | 오이（きゅうり） | Fresh and big cucumber 🥒.jpg | Muktee1494 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fresh_and_big_cucumber_%F0%9F%A5%92.jpg) |
+| 第22巻 やさい | v22-oi.jpg | 오이（きゅうり） | Japanese cucumbers.jpg | Eric Polk | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Japanese_cucumbers.jpg) |
 | 第22巻 やさい | v22-baechu.jpg | 배추（はくさい） | Napa Cabbage.jpg | SarKaLay စာကလေး | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Napa_Cabbage.jpg) |
 | 第22巻 やさい | v22-mu.jpg | 무（だいこん） | Daikon radish - Minowase.jpg | Eric Polk | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Daikon_radish_-_Minowase.jpg) |
-| 第22巻 やさい | v22-gamja.jpg | 감자（じゃがいも） | Solanum tuberosum Red Scarlett20170523 7825.jpg | Bff | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Solanum_tuberosum_Red_Scarlett20170523_7825.jpg) |
-| 第22巻 やさい | v22-goguma.jpg | 고구마（さつまいも） | Ipomoea batatas 006.JPG | Llez | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_006.JPG) |
+| 第22巻 やさい | v22-gamja.jpg | 감자（じゃがいも） | Au marché - pommes de terre.JPG | Dinkum | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Au_march%C3%A9_-_pommes_de_terre.JPG) |
+| 第22巻 やさい | v22-goguma.jpg | 고구마（さつまいも） | Solanales - Ipomoea batatas - 1.jpg | Emőke Dénes | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Solanales_-_Ipomoea_batatas_-_1.jpg) |
 | 第22巻 やさい | v22-yangpa.jpg | 양파（たまねぎ） | Mixed onions.jpg | Colin | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mixed_onions.jpg) |
 | 第22巻 やさい | v22-pa.jpg | 파（ねぎ） | 2010-10-16 Scallions in Taipei.jpg | tomscoffin | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2010-10-16_Scallions_in_Taipei.jpg) |
 | 第22巻 やさい | v22-maneul.jpg | 마늘（にんにく） | Opened garlic bulb with garlic clove.jpg | Dubravko Sorić SoraZG on Flickr | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Opened_garlic_bulb_with_garlic_clove.jpg) |
