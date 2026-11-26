@@ -8,6 +8,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第11〜25巻の225点は 2026-11-25 に追加しました（第5巻「いろ」の15語をのぞく全25巻375語が実写真）。
 第6巻（からだ）の 이・어깨・팔・다리 は、体の部分が一目で分かるように元の写真をトリミングし（이のみトリミングなし）、矢印（白フチ付き）を描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
+第2巻（しょくぶつ・しき）の 해・달・별 は 2026-11-26 に 第17巻（うちゅう）との 重複を さけ、무궁화（むくげ）・개나리（れんぎょう）・진달래（つつじ）の 写真に 差し替えました。
 第12巻（しょっき）の 숟가락・젓가락・밥그릇・국그릇・국자・쟁반・접시 と、第13巻（ふく・かばん・くつ）の 한복・원피스・책가방 は、2026-11-26 に韓国・韓国式の写真へ差し替えました（접시 は元写真からフォークとナイフを消して背景を作り直し）。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
@@ -36,9 +37,9 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第2巻 しょくぶつ・しき | v2-haebaragi.jpg | 해바라기（ひまわり） | Sunflowers helianthus annuus.jpg | Bruce Fritz, U.S. Department of Agriculture | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Sunflowers_helianthus_annuus.jpg) |
 | 第2巻 しょくぶつ・しき | v2-danpung.jpg | 단풍（もみじ） | Acer rubrum leaf on brown (Unsplash).jpg | Jeremy Cooper jcooper | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Acer_rubrum_leaf_on_brown_(Unsplash).jpg) |
 | 第2巻 しょくぶつ・しき | v2-nunsaram.jpg | 눈사람（ゆきだるま） | Harald 038.JPG | Ambroix | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Harald_038.JPG) |
-| 第2巻 しょくぶつ・しき | v2-hae.jpg | 해（たいよう） | 2015-07-10 20 15 09 Sun near sunset shining through low-leve… | Famartin | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2015-07-10_20_15_09_Sun_near_sunset_shining_through_low-level_dust_over_Collin_County,_Texas_viewed_from_an_airplane_flying_from_Washington_Dulles_International_Airport_to_Dallas-Fort_Worth_International_Airport.jpg) |
-| 第2巻 しょくぶつ・しき | v2-dal.jpg | 달（つき） | Full moon in Sagittarius.jpg | Joselodos | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Full_moon_in_Sagittarius.jpg) |
-| 第2巻 しょくぶつ・しき | v2-byeol.jpg | 별（ほし） | Sublime purple night sky (Unsplash).jpg | Vincentiu Solomon vincentiu | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Sublime_purple_night_sky_(Unsplash).jpg) |
+| 第2巻 しょくぶつ・しき | v2-mugunghwa.jpg | 무궁화（むくげ） | Hibiscus syriacus colore esterno viola e interno fucsia.jpg | Anna.Massini | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hibiscus_syriacus_colore_esterno_viola_e_interno_fucsia.jpg) ※トリミング |
+| 第2巻 しょくぶつ・しき | v2-gaenari.jpg | 개나리（れんぎょう） | Forsythia koreana 2.jpg | 용천(김성기) | CC BY 2.0 kr | [Commons](https://commons.wikimedia.org/wiki/File:Forsythia_koreana_2.jpg) |
+| 第2巻 しょくぶつ・しき | v2-jindallae.jpg | 진달래（つつじ） | Rhododendron mucronulatum (15618337959).jpg | Rolf Dietrich Brecher | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rhododendron_mucronulatum_(15618337959).jpg) ※トリミング |
 | 第2巻 しょくぶつ・しき | v2-gureum.jpg | 구름（くも） | Clouds in the sky in August 2014.JPG | Jakec | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Clouds_in_the_sky_in_August_2014.JPG) |
 | 第2巻 しょくぶつ・しき | v2-bi.jpg | 비（あめ） | Clear Umbrella Rain Liverpool (Unsplash).jpg | freddie marriage fredmarriage | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Clear_Umbrella_Rain_Liverpool_(Unsplash).jpg) |
 | 第2巻 しょくぶつ・しき | v2-mujigae.jpg | 무지개（にじ） | Rainbow over Green Lane - geograph.org.uk - 6405825.jpg | Robin Webster | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rainbow_over_Green_Lane_-_geograph.org.uk_-_6405825.jpg) |

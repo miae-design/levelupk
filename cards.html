@@ -176,7 +176,8 @@
      33ページの「よくできました」は ?w=jalhaesseoyo&v=巻番号 です。
    ★ 同じスラッグが別の巻にもある場合（例：bae＝3巻「배/ふね」・4巻「배/なし」・6巻「배/おなか」、nun＝6巻「눈/め」・7巻「눈/ゆき」、
      pul＝7巻「풀/くさ」・23巻「풀/のり」）は、巻を指定する cards.html?w=スラッグ&v=巻番号 で開きます。
-     意味が同じ重複（hae・dal・byeol＝2巻と17巻、ujubihaengsa＝17巻と21巻）は、v なしで先の巻が開きます。
+     意味が同じ重複（ujubihaengsa＝17巻と21巻）は、v なしで先の巻が開きます。
+     （hae・dal・byeol は 2026-11-26 から 17巻だけの ことばです）
    ========================================================= */
 var VOLUMES = [
   {
@@ -223,9 +224,11 @@ var VOLUMES = [
       { slug: "haebaragi",   ko: "해바라기", ja: "ひまわり",    en: "sunflower" },
       { slug: "danpung",     ko: "단풍",    ja: "もみじ",       en: "maple leaf" },
       { slug: "nunsaram",    ko: "눈사람",  ja: "ゆきだるま",   en: "snowman" },
-      { slug: "hae",         ko: "해",      ja: "たいよう",     en: "sun" },
-      { slug: "dal",         ko: "달",      ja: "つき",         en: "moon" },
-      { slug: "byeol",       ko: "별",      ja: "ほし",         en: "star" },
+      /* 2026-11-26: 해・달・별 は第17巻「우주」と 重なるので、
+         무궁화・개나리・진달래 に いれかえました（QR は ?w=…&v=2）。 */
+      { slug: "mugunghwa",   ko: "무궁화",  ja: "むくげ",       en: "rose of Sharon" },
+      { slug: "gaenari",     ko: "개나리",  ja: "れんぎょう",   en: "forsythia" },
+      { slug: "jindallae",   ko: "진달래",  ja: "つつじ",       en: "azalea" },
       { slug: "gureum",      ko: "구름",    ja: "くも",         en: "cloud" },
       { slug: "bi",          ko: "비",      ja: "あめ",         en: "rain" },
       { slug: "mujigae",     ko: "무지개",  ja: "にじ",         en: "rainbow" }
@@ -582,8 +585,8 @@ var VOLUMES = [
     ko: "우주",
     en: "Space",
     words: [
-      /* hae・dal・byeol は 2巻（식물・사계절）と 同じ ことば・同じ 意味です。
-         2巻の カードが そのまま 開きます（17巻の カードで 開くときは ?w=hae&v=17）。 */
+      /* 2026-11-26: 2巻（식물・사계절）の 해・달・별 は 무궁화・개나리・진달래 に
+         かわったので、hae・dal・byeol は この巻だけの ことばです。 */
       { slug: "hae",            ko: "해",                 ja: "たいよう",             en: "Sun" },
       { slug: "dal",            ko: "달",                 ja: "つき",                 en: "Moon" },
       { slug: "byeol",          ko: "별",                 ja: "ほし",                 en: "Star" },
@@ -825,9 +828,9 @@ var VOLUMES = [
   "2-haebaragi": { f: "assets/photos/v2-haebaragi.jpg", a: "Bruce Fritz, U.S. Department of Agriculture", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Sunflowers_helianthus_annuus.jpg" },
   "2-danpung": { f: "assets/photos/v2-danpung.jpg", a: "Jeremy Cooper jcooper", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Acer_rubrum_leaf_on_brown_(Unsplash).jpg" },
   "2-nunsaram": { f: "assets/photos/v2-nunsaram.jpg", a: "Ambroix", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Harald_038.JPG" },
-  "2-hae": { f: "assets/photos/v2-hae.jpg", a: "Famartin", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:2015-07-10_20_15_09_Sun_near_sunset_shining_through_low-level_dust_over_Collin_County,_Texas_viewed_from_an_airplane_flying_from_Washington_Dulles_International_Airport_to_Dallas-Fort_Worth_International_Airport.jpg" },
-  "2-dal": { f: "assets/photos/v2-dal.jpg", a: "Joselodos", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Full_moon_in_Sagittarius.jpg" },
-  "2-byeol": { f: "assets/photos/v2-byeol.jpg", a: "Vincentiu Solomon vincentiu", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Sublime_purple_night_sky_(Unsplash).jpg" },
+  "2-mugunghwa": { f: "assets/photos/v2-mugunghwa.jpg", a: "Anna.Massini", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Hibiscus_syriacus_colore_esterno_viola_e_interno_fucsia.jpg", m: "トリミング" },
+  "2-gaenari": { f: "assets/photos/v2-gaenari.jpg", a: "용천(김성기)", l: "CC BY 2.0 kr", u: "https://commons.wikimedia.org/wiki/File:Forsythia_koreana_2.jpg" },
+  "2-jindallae": { f: "assets/photos/v2-jindallae.jpg", a: "Rolf Dietrich Brecher", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Rhododendron_mucronulatum_(15618337959).jpg", m: "トリミング" },
   "2-gureum": { f: "assets/photos/v2-gureum.jpg", a: "Jakec", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Clouds_in_the_sky_in_August_2014.JPG" },
   "2-bi": { f: "assets/photos/v2-bi.jpg", a: "freddie marriage fredmarriage", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Clear_Umbrella_Rain_Liverpool_(Unsplash).jpg" },
   "2-mujigae": { f: "assets/photos/v2-mujigae.jpg", a: "Robin Webster", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Rainbow_over_Green_Lane_-_geograph.org.uk_-_6405825.jpg" },
@@ -1191,7 +1194,7 @@ var VOLUMES = [
   /* 音声ファイルを追加したら、この数字を上げてください（ブラウザに残った古い404を避けるため） */
   var AUDIO_VER = "2";
   /* 写真を差し替えたら、この数字を上げてください（ブラウザに残った古い画像を避けるため） */
-  var PHOTO_VER = "8";
+  var PHOTO_VER = "9";
   var LANG_KEY = "levelupk_cards_lang";
   var probeCache = {};
   var lang = "ja";
