@@ -1,16 +1,18 @@
 # ことばカード「じっさいの しゃしん」写真クレジット
 
 `cards.html` の各ことばカードに表示している写真（360点）の出典一覧です（第5巻「いろ」の15語は色見本）。
-357点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
+356点は Wikimedia Commons の自由利用ライセンス（CC0 / パブリックドメイン / CC BY / CC BY-SA）の写真、
+1点（第24巻の 팽이）は Skitterphoto の CC0 写真、
 3点（第9巻の 백・천・만）は当教室で作った数字の画像（CC0・自作）です。
 ファイルは `assets/photos/v{巻}-{スラッグ}.jpg`（800×600・JPEG）に置いています。
-CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています。
+CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimedia Commons（ライセンス）」と表示しています（Wikimedia Commons 以外の出典はサイト名を表示）。
 第11〜25巻の225点は 2026-11-25 に追加しました（第5巻「いろ」の15語をのぞく全25巻375語が実写真）。
 第6巻（からだ）の 이・어깨・팔・다리 は、体の部分が一目で分かるように元の写真をトリミングし（이のみトリミングなし）、矢印（白フチ付き）を描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
 第2巻（しょくぶつ・しき）の 해・달・별 は 2026-11-26 に 第17巻（うちゅう）との 重複を さけ、무궁화（むくげ）・개나리（れんぎょう）・진달래（つつじ）の 写真に 差し替えました。
 第12巻（しょっき）の 숟가락・젓가락・밥그릇・국그릇・국자・쟁반・접시 と、第13巻（ふく・かばん・くつ）の 한복 は、2026-11-26 に韓国式の写真へ差し替えました（접시 は元写真からフォークとナイフを消して背景を作り直し）。
 第13巻の 원피스 は、2026-11-26 に、ドレスそのものが主役になる大人のワンピース（ソウル・東大門デザインプラザの写真）に、책가방 は、日本のランドセルではなく、韓国の子どもが実際に使うようなナイロン製のスクールリュックに差し替えました。
+第24巻（おもちゃ）の 인형 は、2026-11-26 に中国風の人形から、韓服（チマ・チョゴリ）を着た韓国の人形（オークランド博物館所蔵）に、팽이 は、上から見た金属のこまから、回っているようすが分かるカラフルなこま（Skitterphoto の CC0 写真）に差し替えました。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
@@ -347,14 +349,14 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第23巻 ようちえん・ぶんぐ | v23-pilteong.jpg | 필통（ふでばこ） | School pencil cases.jpg | ABX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:School_pencil_cases.jpg) |
 | 第23巻 ようちえん・ぶんぐ | v23-saekjongi.jpg | 색종이（おりがみ） | Colored paper - Flickr - Dean Hochman.jpg | Dean Hochman | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Colored_paper_-_Flickr_-_Dean_Hochman.jpg) |
 | 第23巻 ようちえん・ぶんぐ | v23-mulgam.jpg | 물감（えのぐ） | Set of watercolor paints - Ariel Waldman.jpg | Ariel Waldman from Muncie | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Set_of_watercolor_paints_-_Ariel_Waldman.jpg) |
-| 第24巻 おもちゃ | v24-inhyeong.jpg | 인형（にんぎょう） | Chinese Girl Fabric Doll Produced by the Works Progress Administration of St. Louis County - DPLA - 6e0b0a059e1ed4459fa06752d5005cfc (page 1).jpg | W.P.A. of St. Louis County | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Chinese_Girl_Fabric_Doll_Produced_by_the_Works_Progress_Administration_of_St._Louis_County_-_DPLA_-_6e0b0a059e1ed4459fa06752d5005cfc_(page_1).jpg) |
+| 第24巻 おもちゃ | v24-inhyeong.jpg | 인형（にんぎょう） | Doll (AM 51185-1).jpg | Auckland Museum | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Doll_(AM_51185-1).jpg) |
 | 第24巻 おもちゃ | v24-gominhyeong.jpg | 곰인형（くまのぬいぐるみ） | 2023 Pluszowy miś.jpg | Jacek Halicki | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Pluszowy_mi%C5%9B.jpg) |
 | 第24巻 おもちゃ | v24-robot.jpg | 로봇（ロボット） | Ha Ha Toys, Planet Robot, Blue, Main Street Toys Exclusive, Double Dose.jpg | D J Shin | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ha_Ha_Toys,_Planet_Robot,_Blue,_Main_Street_Toys_Exclusive,_Double_Dose.jpg) |
 | 第24巻 おもちゃ | v24-beullok.jpg | 블록（ブロック） | Toy Blocks (50995087111).jpg | ajay_suresh | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toy_Blocks_(50995087111).jpg) |
 | 第24巻 おもちゃ | v24-peojeul.jpg | 퍼즐（パズル） | Puzzle (Unsplash).jpg | Hans-Peter Gauster sloppyperfectionist | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Puzzle_(Unsplash).jpg) |
 | 第24巻 おもちゃ | v24-pungseon.jpg | 풍선（ふうせん） | Balloon bright (6908691068).jpg | Piper from Colorado | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Balloon_bright_(6908691068).jpg) |
 | 第24巻 おもちゃ | v24-binutbangul.jpg | 비눗방울（しゃぼんだま） | Soap bubbles in Algerian grassland.jpg | Moh tch | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Soap_bubbles_in_Algerian_grassland.jpg) |
-| 第24巻 おもちゃ | v24-paengi.jpg | 팽이（こま） | Metal spinning top, Museum of Childhood, Edinburgh.JPG | Kim Traynor | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Metal_spinning_top,_Museum_of_Childhood,_Edinburgh.JPG) |
+| 第24巻 おもちゃ | v24-paengi.jpg | 팽이（こま） | Retro Spinning Top Toy | Inspired Images | CC0 | [Skitterphoto](https://skitterphoto.com/photos/10455/retro-spinning-top-toy) |
 | 第24巻 おもちゃ | v24-yeon.jpg | 연（たこ） | Portsmouth Kite Festival 2016.jpg | JollyGraham2011 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Portsmouth_Kite_Festival_2016.jpg) |
 | 第24巻 おもちゃ | v24-geune.jpg | 그네（ぶらんこ） | Playground swing 02.jpg | Kritzolina | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Playground_swing_02.jpg) |
 | 第24巻 おもちゃ | v24-mikkeureomteul.jpg | 미끄럼틀（すべりだい） | Tadoussac - Playground slide.jpg | Selbymay | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tadoussac_-_Playground_slide.jpg) |

@@ -1155,14 +1155,14 @@ var VOLUMES = [
   "23-pilteong": { f: "assets/photos/v23-pilteong.jpg", a: "ABX", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:School_pencil_cases.jpg" },
   "23-saekjongi": { f: "assets/photos/v23-saekjongi.jpg", a: "Dean Hochman", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Colored_paper_-_Flickr_-_Dean_Hochman.jpg" },
   "23-mulgam": { f: "assets/photos/v23-mulgam.jpg", a: "Ariel Waldman from Muncie", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Set_of_watercolor_paints_-_Ariel_Waldman.jpg" },
-  "24-inhyeong": { f: "assets/photos/v24-inhyeong.jpg", a: "W.P.A. of St. Louis County", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Chinese_Girl_Fabric_Doll_Produced_by_the_Works_Progress_Administration_of_St._Louis_County_-_DPLA_-_6e0b0a059e1ed4459fa06752d5005cfc_(page_1).jpg" },
+  "24-inhyeong": { f: "assets/photos/v24-inhyeong.jpg", a: "Auckland Museum", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Doll_(AM_51185-1).jpg" },
   "24-gominhyeong": { f: "assets/photos/v24-gominhyeong.jpg", a: "Jacek Halicki", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:2023_Pluszowy_mi%C5%9B.jpg" },
   "24-robot": { f: "assets/photos/v24-robot.jpg", a: "D J Shin", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Ha_Ha_Toys,_Planet_Robot,_Blue,_Main_Street_Toys_Exclusive,_Double_Dose.jpg" },
   "24-beullok": { f: "assets/photos/v24-beullok.jpg", a: "ajay_suresh", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Toy_Blocks_(50995087111).jpg" },
   "24-peojeul": { f: "assets/photos/v24-peojeul.jpg", a: "Hans-Peter Gauster sloppyperfectionist", l: "CC0", u: "https://commons.wikimedia.org/wiki/File:Puzzle_(Unsplash).jpg" },
   "24-pungseon": { f: "assets/photos/v24-pungseon.jpg", a: "Piper from Colorado", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Balloon_bright_(6908691068).jpg" },
   "24-binutbangul": { f: "assets/photos/v24-binutbangul.jpg", a: "Moh tch", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Soap_bubbles_in_Algerian_grassland.jpg" },
-  "24-paengi": { f: "assets/photos/v24-paengi.jpg", a: "Kim Traynor", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Metal_spinning_top,_Museum_of_Childhood,_Edinburgh.JPG" },
+  "24-paengi": { f: "assets/photos/v24-paengi.jpg", a: "Inspired Images", l: "CC0", s: "Skitterphoto", u: "https://skitterphoto.com/photos/10455/retro-spinning-top-toy" },
   "24-yeon": { f: "assets/photos/v24-yeon.jpg", a: "JollyGraham2011", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Portsmouth_Kite_Festival_2016.jpg" },
   "24-geune": { f: "assets/photos/v24-geune.jpg", a: "Kritzolina", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Playground_swing_02.jpg" },
   "24-mikkeureomteul": { f: "assets/photos/v24-mikkeureomteul.jpg", a: "Selbymay", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:Tadoussac_-_Playground_slide.jpg" },
@@ -1194,7 +1194,7 @@ var VOLUMES = [
   /* 音声ファイルを追加したら、この数字を上げてください（ブラウザに残った古い404を避けるため） */
   var AUDIO_VER = "2";
   /* 写真を差し替えたら、この数字を上げてください（ブラウザに残った古い画像を避けるため） */
-  var PHOTO_VER = "10";
+  var PHOTO_VER = "11";
   var LANG_KEY = "levelupk_cards_lang";
   var probeCache = {};
   var lang = "ja";
@@ -1418,8 +1418,9 @@ var VOLUMES = [
     if (p.made) return "写真：Level Up K with MiAe Ssem（" + esc(p.l) + "）";
     var who = p.a ? esc(p.a) + " ／ " : "";
     var note = p.m ? "・" + esc(p.m) : "";
+    var src = p.s ? esc(p.s) : "Wikimedia Commons";
     return "写真：<a href=\"" + esc(p.u) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" +
-      who + "Wikimedia Commons</a>（" + esc(p.l) + note + "）";
+      who + src + "</a>（" + esc(p.l) + note + "）";
   }
 
   function photoItem(p, word) {
