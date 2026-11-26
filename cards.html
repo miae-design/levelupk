@@ -587,7 +587,7 @@ var VOLUMES = [
     words: [
       /* 2026-11-26: 2巻（식물・사계절）の 해・달・별 は 무궁화・개나리・진달래 に
          かわったので、hae・dal・byeol は この巻だけの ことばです。 */
-      { slug: "hae",            ko: "해",                 ja: "たいよう",             en: "Sun" },
+      { slug: "hae",            ko: "해 (태양)",           ja: "たいよう",             en: "Sun" },
       { slug: "dal",            ko: "달",                 ja: "つき",                 en: "Moon" },
       { slug: "byeol",          ko: "별",                 ja: "ほし",                 en: "Star" },
       { slug: "jigu",           ko: "지구",               ja: "ちきゅう",             en: "Earth" },
@@ -597,12 +597,12 @@ var VOLUMES = [
       { slug: "hyeseong",       ko: "혜성",               ja: "すいせい",             en: "Comet" },
       { slug: "eunhasu",        ko: "은하수",             ja: "あまのがわ",           en: "Milky Way" },
       { slug: "byeoljari",      ko: "별자리",             ja: "せいざ",               en: "Constellation" },
-      { slug: "mangwongyeong",  ko: "망원경",             ja: "ぼうえんきょう",       en: "Telescope" },
+      { slug: "geumseong",      ko: "금성",               ja: "きんせい",             en: "Venus" },
       { slug: "ingongwiseong",  ko: "인공위성",           ja: "じんこうえいせい",     en: "Satellite" },
       /* 21巻（직업）にも ujubihaengsa が あります（同じ ことば・同じ 意味）。
          21巻の カードは ?w=ujubihaengsa&v=21 で 開きます。 */
       { slug: "ujubihaengsa",   ko: "우주비행사",         ja: "うちゅうひこうし",     en: "Astronaut" },
-      { slug: "oegyein",        ko: "외계인",             ja: "うちゅうじん",         en: "Alien" },
+      { slug: "hwaseong",       ko: "화성",               ja: "かせい",               en: "Mars" },
       { slug: "taeyanggye",     ko: "태양계",             ja: "たいようけい",         en: "Solar System" }
     ]
   },
@@ -1060,10 +1060,10 @@ var VOLUMES = [
   "17-hyeseong": { f: "assets/photos/v17-hyeseong.jpg", a: "Raysastrophotograhy", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Comet_Neowise_C-2020_F3.jpg" },
   "17-eunhasu": { f: "assets/photos/v17-eunhasu.jpg", a: "Santa Monica Mountains National Recreation Area", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Night_Sky_-_Boney_Mountain_%26_Milky_Way_(11074300594).jpg" },
   "17-byeoljari": { f: "assets/photos/v17-byeoljari.jpg", a: "Zdeněk Bardon/ESO", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Orion_constellation_(orion-ch17-bardon-cc).jpg" },
-  "17-mangwongyeong": { f: "assets/photos/v17-mangwongyeong.jpg", a: "Photograph by Mike Peel (www.mikepeel.net).", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Telescope_at_The_Kymin.jpg" },
+  "17-geumseong": { f: "assets/photos/v17-geumseong.jpg", a: "NASA/JPL", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:PIA00271_Venus_%28Computer_Simulated_Global_View_of_the_Northern_Hemisphere%29.jpg" },
   "17-ingongwiseong": { f: "assets/photos/v17-ingongwiseong.jpg", a: "NASA/JPL AIRS Project", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:Artist%27s_rendering_of_NASA%27s_Aqua_Satellite_Orbiting_Earth.jpg" },
   "17-ujubihaengsa": { f: "assets/photos/v17-ujubihaengsa.jpg", a: "NASA Johnson Space Center", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Astronaut_Sultan_Alneyadi_tries_on_his_spacesuit_ahead_of_a_spacewalk_(iss069e005102).jpg" },
-  "17-oegyein": { f: "assets/photos/v17-oegyein.jpg", a: "Kimble Young", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Gray_Aliens_with_Saucer_UFO_Museum,_Roswell.jpg" },
+  "17-hwaseong": { f: "assets/photos/v17-hwaseong.jpg", a: "NASA, ESA, and The Hubble Heritage Team (STScI/AURA)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Mars_23_aug_2003_hubble.jpg" },
   "17-taeyanggye": { f: "assets/photos/v17-taeyanggye.jpg", a: "NASA", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:The_Solar_System_Montage_-_GPN-2000-000454.jpg" },
   "18-chaeksang": { f: "assets/photos/v18-chaeksang.jpg", a: "nubobo", l: "CC BY 2.0", u: "https://commons.wikimedia.org/wiki/File:%E5%AD%A6%E7%BF%92%E6%9C%BA_(17114728806).jpg" },
   "18-uija": { f: "assets/photos/v18-uija.jpg", a: "Missouri Historical Society (DPLA)", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Dining_Chair_From_the_Henry_Brant_House_in_Boonville,_Missouri_-_DPLA_-_3820fc311f116952c6673ee4a8c85383_(page_2).jpg" },
@@ -1194,7 +1194,7 @@ var VOLUMES = [
   /* 音声ファイルを追加したら、この数字を上げてください（ブラウザに残った古い404を避けるため） */
   var AUDIO_VER = "2";
   /* 写真を差し替えたら、この数字を上げてください（ブラウザに残った古い画像を避けるため） */
-  var PHOTO_VER = "18";
+  var PHOTO_VER = "19";
   var LANG_KEY = "levelupk_cards_lang";
   var probeCache = {};
   var lang = "ja";
