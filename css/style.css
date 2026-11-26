@@ -463,6 +463,13 @@ button, input { font-family: inherit; }
 }
 .btn--navy:hover { background: #143c72; }
 
+.btn--green {
+  background: var(--green);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(47, 125, 74, .28);
+}
+.btn--green:hover { background: #276840; }
+
 .btn--ghost {
   background: #fff;
   color: var(--navy);
@@ -2050,10 +2057,273 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
 }
 
 /* =========================================================
+   Sebome fees: CTA on the class page
+   ========================================================= */
+.fee-cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #F1F8F2, #FFFCF6 78%);
+  border: 1px solid #DCEAD7;
+  border-left: 5px solid var(--green);
+  border-radius: 16px;
+}
+.fee-cta__text { flex: 1 1 260px; min-width: 0; }
+.fee-cta__kicker {
+  margin: 0 0 2px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  color: #2F6B47;
+}
+.fee-cta h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.45;
+}
+.fee-cta p {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #4A5A70;
+}
+.fee-cta .btn { flex: 0 0 auto; }
+
+/* =========================================================
+   Sebome fees view
+   ========================================================= */
+.fee-section { margin-top: 0; }
+
+.fee-table-wrap {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.fee-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.fee-col--class { width: 32%; }
+.fee-col--time { width: 12%; }
+.fee-col--price { width: 19%; }
+.fee-col--off { width: 18%; }
+.fee-col--pair { width: 19%; }
+.fee-table thead th {
+  padding: 11px 12px;
+  background: #F2F8F1;
+  border-bottom: 1px solid #DCEAD7;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .04em;
+  color: #2F6B47;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.fee-table thead th:first-child { text-align: left; }
+.fee-table thead th span {
+  display: block;
+  margin-top: 2px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #6B7A8C;
+}
+.fee-table tbody th,
+.fee-table tbody td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #F0EBE0;
+  text-align: center;
+  vertical-align: middle;
+}
+.fee-table tbody tr:nth-child(even) { background: #FFFCF6; }
+.fee-table tbody tr:last-child th,
+.fee-table tbody tr:last-child td { border-bottom: 0; }
+.fee-table tbody th { text-align: left; }
+.fee-table__name {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.45;
+}
+.fee-table__kr {
+  display: block;
+  margin-top: 1px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #7A8798;
+}
+.fee-table__time { font-size: 13.5px; font-weight: 800; color: #41546E; }
+.fee-table__price {
+  font-size: 1.08rem;
+  font-weight: 900;
+  color: #B8431F;
+  letter-spacing: .01em;
+  white-space: nowrap;
+}
+.fee-table__price--off { color: #1F5C39; }
+.fee-table__price--pair { color: var(--navy); }
+.fee-table__label { display: none; }
+
+.fee-note {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.fee-note--tax {
+  color: var(--navy);
+  font-weight: 700;
+}
+.fee-note--panel {
+  margin: 12px 0 0;
+  padding: 10px 13px;
+  border-radius: 10px;
+  background: #F1F7EF;
+  border: 1px solid #D9E9D7;
+  color: #2C5B3D;
+  font-size: 12.5px;
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+.fee-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+  margin-top: 16px;
+}
+.fee-panel { display: flex; flex-direction: column; }
+.fee-panel--wide { grid-column: 1 / -1; }
+.panel > .fee-panel__lead {
+  margin: -2px 0 10px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.fee-panel .btn { margin-top: auto; align-self: flex-start; }
+.fee-panel .chips { margin-top: 14px; }
+.fee-panel > p + .btn { margin-top: 16px; }
+
+.fee-rules { display: grid; gap: 12px; }
+.fee-rules__group {
+  padding: 12px 14px;
+  background: #FBF9F4;
+  border: 1px solid #EDE7DA;
+  border-radius: 14px;
+}
+.fee-rules__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--navy);
+}
+.fee-rules__badge {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+}
+.fee-rules__badge--plus { background: var(--navy); }
+.fee-rules__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.fee-rules__list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 11px;
+  background: #fff;
+  border: 1px solid #EFE8D9;
+  border-radius: 10px;
+}
+.fee-rules__list li > span:first-child {
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #3F4F64;
+}
+.fee-rule__off {
+  flex: 0 0 auto;
+  font-size: 15px;
+  font-weight: 900;
+  color: #B8431F;
+  white-space: nowrap;
+}
+.fee-rules__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #58B073, #2F7D4A);
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 800;
+}
+.fee-rules__total strong { font-size: 1.35rem; font-weight: 900; letter-spacing: .01em; }
+
+.fee-scope {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin: 0;
+  padding: 12px 15px;
+  border-radius: 12px;
+  background: #F1F7EF;
+  border: 1px dashed #B9D8B6;
+  color: #2C5B3D;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.7;
+}
+.fee-scope__badge {
+  flex: none;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #2F7D4A;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.fee-scope span:last-child { flex: 1 1 240px; }
+html[lang="ko"] .fee-scope,
+html[lang="ko"] .fee-note--panel { word-break: keep-all; overflow-wrap: break-word; }
+
+.fee-foot { margin-top: 18px; padding-top: 4px; }
+
+/* =========================================================
    Responsive
    ========================================================= */
 @media (max-width: 900px) {
   .classes { grid-template-columns: 1fr; }
+  .fee-panels { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {
@@ -2088,6 +2358,56 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
     align-items: start;
   }
   .price-row__note { grid-column: 1; }
+
+  /* fees: table becomes stacked cards */
+  .fee-table-wrap {
+    border: 0;
+    background: transparent;
+    overflow: visible;
+    margin-top: 12px;
+  }
+  .fee-table { display: block; min-width: 0; }
+  .fee-table thead { display: none; }
+  .fee-table tbody { display: grid; gap: 12px; }
+  .fee-table tbody tr {
+    display: block;
+    padding: 2px 16px 10px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(18, 35, 58, .05);
+  }
+  .fee-table tbody tr:nth-child(even) { background: #fff; }
+  .fee-table tbody th,
+  .fee-table tbody td {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 0;
+    border-top: 1px dashed #EFE8D9;
+    text-align: right;
+  }
+  .fee-table tbody th {
+    display: block;
+    padding: 12px 0 4px;
+    border-top: 0;
+    text-align: left;
+  }
+  .fee-table__name { font-size: 15.5px; }
+  .fee-table__kr { margin-top: 1px; font-size: 12px; }
+  .fee-table__label {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--muted);
+  }
+  .fee-table__price { font-size: 1.15rem; }
+  .fee-table__time { font-size: 14px; }
+  .fee-panel .btn { align-self: stretch; }
+  .fee-foot { gap: 12px; }
+  .fee-foot .btn { flex: 1 1 100%; }
   .price-card--kids .price-row { grid-template-columns: 1fr; }
   .price-opt { flex: 1 1 auto; justify-content: center; }
   .now-item__tag { margin-left: 0; }
@@ -2134,6 +2454,8 @@ html[lang="ko"] .bio-card p { word-break: keep-all; overflow-wrap: anywhere; }
 }
 
 @media (max-width: 700px) {
+  .fee-cta { padding: 16px; }
+  .fee-cta .btn { flex: 1 1 100%; }
   .dhero { padding: 20px 18px 22px; border-radius: 24px; margin-top: 14px; }
   .dhero--compact { padding-bottom: 44px; }
   .dhero__content { gap: 14px; align-items: flex-start; }

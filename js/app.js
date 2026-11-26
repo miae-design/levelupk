@@ -31,7 +31,7 @@
   var LANG_KEY = "levelupk_lang";
   var SPLASH_KEY = "levelupk_splash_seen";
   var AUDIO_KEY = "levelupk_audio_ok";
-  var VIEWS = ["home", "books", "audio", "sebome", "online", "profile"];
+  var VIEWS = ["home", "books", "audio", "sebome", "sebome-fees", "online", "profile"];
 
   var lang = "ja";
   var currentTrack = -1;

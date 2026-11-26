@@ -185,6 +185,7 @@ ko: { ... }   ← 한국어
 | 4개 카드 제목·태그 | `home.card1` ~ `home.card4` |
 | 교실 안내(날짜·장소·정원) | `sebome.i1Value` ~ `sebome.i5Value` |
 | 클래스 3개 설명 | `sebome.c1Text` ~ `sebome.c3Text` |
+| 수강료 안내(반별 월 수강료·할인·2인 페어) | `fees.*` |
 | 강사 프로필 | `profile.bio1` ~ `profile.bio6` |
 | 결제 안내 문구 | `pay.*` |
 | 연락처 | `profile.*` / `index.html` 의 이메일 부분 |
