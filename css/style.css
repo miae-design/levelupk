@@ -2368,6 +2368,7 @@ html[lang="ko"] .fee-note--panel { word-break: keep-all; overflow-wrap: break-wo
   font-weight: 900;
   line-height: 1.45;
   color: var(--navy);
+  text-wrap: balance;
 }
 .offer__lead {
   margin: 7px 0 0;
