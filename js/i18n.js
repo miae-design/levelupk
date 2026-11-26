@@ -167,7 +167,18 @@ window.I18N = {
       oneTitle: "1:1 個人レッスン",
       oneText: "※ 1:1個人レッスンもご希望に合わせてご相談いただけます。教室のクラスとは別に、オンライン・対面の個人レッスンもご用意しています。",
       oneDiscountNote: "※ 1:1個人レッスンにも、上記の割引制度が同じように適用されます（最大 −3,000円）。",
-      oneCta: "個人・オンラインの料金を見る"
+      oneCta: "個人・オンラインの料金を見る",
+      offerKicker: "2027年4月 開講記念",
+      offerTitle: "4月ご入学限定 3つのオープン特典",
+      offerLead: "2027年4月の開講時にご入学いただく方へ、入会金・教材費・体験レッスンの3つが無料になります。",
+      offer1Title: "入会金",
+      offer1Sub: "通常 3,000円（税込）→ 0円",
+      offer2Title: "教材費",
+      offer2Sub: "全クラス",
+      offer3Title: "体験レッスン",
+      offer3Sub: "3月開催",
+      offerFree: "無料",
+      offerNote: "※ 入会金（通常3,000円・税込）・教材費の無料特典は、2027年4月開講時に申し込み・ご入学いただく方限定です。体験レッスンは3月に開催し、日程はお申し込み後に公式LINEでご案内します。表示価格はすべて税込です。"
     },
     online: {
       kicker: "オンライン",
@@ -421,7 +432,18 @@ window.I18N = {
       oneTitle: "1:1 Private Lesson",
       oneText: "※ 1:1 private lessons are also available — please ask about what suits you. Separate from the classes, we offer private lessons online and in person.",
       oneDiscountNote: "※ The discount system above applies to 1:1 private lessons in the same way (up to ¥3,000 off).",
-      oneCta: "See private & online fees"
+      oneCta: "See private & online fees",
+      offerKicker: "Celebrating our April 2027 opening",
+      offerTitle: "Three Opening Benefits for April Enrollment",
+      offerLead: "For everyone who enrolls for our April 2027 opening, the enrollment fee, materials fee and trial lesson are all free.",
+      offer1Title: "Enrollment fee",
+      offer1Sub: "Usually ¥3,000 (tax incl.) → ¥0",
+      offer2Title: "Materials fee",
+      offer2Sub: "All classes",
+      offer3Title: "Trial lesson",
+      offer3Sub: "Held in March",
+      offerFree: "Free",
+      offerNote: "※ The free enrollment fee (usually ¥3,000, tax included) and free materials fee apply to those who apply and enroll for our April 2027 opening. Trial lessons are held in March, and dates are announced on our official LINE after you apply. All prices include tax."
     },
     online: {
       kicker: "Online",
@@ -675,7 +697,18 @@ window.I18N = {
       oneTitle: "1:1 개인 레슨",
       oneText: "※ 1:1 개인 레슨도 원하시는 대로 상담해 드립니다. 교실 반과는 별도로 온라인·대면 개인 레슨도 준비하고 있습니다.",
       oneDiscountNote: "※ 1:1 개인 레슨에도 위 할인 제도가 똑같이 적용됩니다(최대 −3,000엔).",
-      oneCta: "개인·온라인 요금 보기"
+      oneCta: "개인·온라인 요금 보기",
+      offerKicker: "2027년 4월 개강 기념",
+      offerTitle: "4월 입학 한정 3가지 오픈 특전",
+      offerLead: "2027년 4월 개강 때 입학하시는 분께 입회금·교재비·체험 레슨 세 가지를 무료로 드립니다.",
+      offer1Title: "입회금",
+      offer1Sub: "정상 3,000엔(세금 포함) → 0엔",
+      offer2Title: "교재비",
+      offer2Sub: "모든 반",
+      offer3Title: "체험 레슨",
+      offer3Sub: "3월 개최",
+      offerFree: "무료",
+      offerNote: "※ 입회금(정상 3,000엔·세금 포함)·교재비 무료 특전은 2027년 4월 개강 때 신청·입학하시는 분께 한합니다. 체험 레슨은 3월에 열리며, 일정은 신청 후 공식 LINE으로 안내해 드립니다. 표시 가격은 모두 세금 포함입니다."
     },
     online: {
       kicker: "온라인",

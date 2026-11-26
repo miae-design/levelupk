@@ -2318,6 +2318,155 @@ html[lang="ko"] .fee-note--panel { word-break: keep-all; overflow-wrap: break-wo
 
 .fee-foot { margin-top: 18px; padding-top: 4px; }
 
+/* ---------- 4月ご入学限定 3つのオープン特典 ---------- */
+.offer {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 16px;
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px solid #D9E9D7;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(115% 115% at 100% 0%, #E7F3E1 0%, rgba(231, 243, 225, 0) 60%),
+    linear-gradient(180deg, #FFFDF8 0%, #FFFFFF 55%);
+  box-shadow: var(--shadow);
+}
+.offer::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: linear-gradient(180deg, #7CC98F 0%, #2F7D4A 100%);
+}
+.offer__head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 14px;
+  align-items: start;
+}
+.offer__icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  background: #E4F1E8;
+  color: var(--green);
+}
+.offer__text { min-width: 0; }
+.offer__kicker {
+  margin: 0 0 3px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  color: var(--green);
+}
+.offer__head h3 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2.1vw, 1.32rem);
+  font-weight: 900;
+  line-height: 1.45;
+  color: var(--navy);
+}
+.offer__lead {
+  margin: 7px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--body);
+}
+.offer__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.offer-card {
+  position: relative;
+  padding: 15px 16px 14px;
+  border: 1px solid #E2EDDD;
+  border-radius: 16px;
+  background: #FBFDF8;
+}
+.offer-card__no {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1.5px solid #C6E1C1;
+  background: #fff;
+  color: var(--green);
+  font-size: 11.5px;
+  font-weight: 900;
+  line-height: 1;
+}
+.offer-card__label {
+  margin: 0;
+  padding-right: 30px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  color: #2F6B47;
+}
+.offer-card__sub {
+  margin: 4px 0 0;
+  font-size: 11.8px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.offer-card__value {
+  margin: 5px 0 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: .02em;
+  color: #B8431F;
+}
+.offer__note {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+html[lang="ko"] .offer__lead,
+html[lang="ko"] .offer__note,
+html[lang="ko"] .offer-card__sub { word-break: keep-all; overflow-wrap: break-word; }
+
+@media (max-width: 760px) {
+  .offer { padding: 18px 18px 18px 20px; }
+  .offer__icon { width: 40px; height: 40px; border-radius: 13px; }
+  .offer__icon svg { width: 21px; height: 21px; }
+  .offer__head { gap: 3px 12px; }
+  .offer__list { grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+  .offer-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 10px;
+    padding: 13px 14px 13px 15px;
+  }
+  .offer-card__no {
+    position: static;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .offer-card__label { grid-column: 2; padding-right: 0; }
+  .offer-card__sub { grid-column: 2; margin-top: 2px; }
+  .offer-card__value {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    margin: 0;
+    font-size: 1.35rem;
+  }
+}
+
 /* =========================================================
    Responsive
    ========================================================= */
