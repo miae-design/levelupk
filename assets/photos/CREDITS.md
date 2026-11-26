@@ -10,6 +10,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
 第2巻（しょくぶつ・しき）の 해・달・별 は 2026-11-26 に 第17巻（うちゅう）との 重複を さけ、무궁화（むくげ）・개나리（れんぎょう）・진달래（つつじ）の 写真に 差し替えました。
 第12巻（しょっき）の 숟가락・젓가락・밥그릇・국그릇・국자・쟁반・접시 と、第13巻（ふく・かばん・くつ）の 한복・원피스・책가방 は、2026-11-26 に韓国・韓国式の写真へ差し替えました（접시 は元写真からフォークとナイフを消して背景を作り直し）。
+第13巻の 원피스 は、ドレスそのものが主役になる大人のワンピース（ソウル・東大門デザインプラザの写真、2026-11-26 再差し替え）に、책가방 は、日本のランドセルではなく韓国の子どもが実際に使うようなナイロン製のスクールリュック（2026-11-26 再差し替え）にしました。
 
 | 巻 | ファイル | ことば | 元のファイル | 作者 | ライセンス | 出典 |
 |---|---|---|---|---|---|---|
@@ -185,7 +186,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第13巻 ふく・かばん・くつ | v13-tisyeocheu.jpg | 티셔츠（Tシャツ） | Young North Indian man with beard in white t-shirt.jpg | Singhjayreena | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Young_North_Indian_man_with_beard_in_white_t-shirt.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-baji.jpg | 바지（ズボン） | Jeans auf Leine 1403-0172.jpg | Mozzihh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Jeans_auf_Leine_1403-0172.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-chima.jpg | 치마（スカート） | 20250509 Batik pleated skirt in the Sichuan University Museum.jpg | Yumeto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:20250509_Batik_pleated_skirt_in_the_Sichuan_University_Museum.jpg) |
-| 第13巻 ふく・かばん・くつ | v13-wonpiseu.jpg | 원피스（ワンピース） | Birthday Dress.jpg | Katy2002 | CC BY-SA 4.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Birthday_Dress.jpg) |
+| 第13巻 ふく・かばん・くつ | v13-wonpiseu.jpg | 원피스（ワンピース） | Woman in fashionable dress (Unsplash).jpg | Tycho Atsma（tychoa） | CC0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Woman_in_fashionable_dress_(Unsplash).jpg) |
 | 第13巻 ふく・かばん・くつ | v13-oetu.jpg | 외투（コート） | Polo Ralph Lauren winter coat jacket.jpg | Menswear Market | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Polo_Ralph_Lauren_winter_coat_jacket.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-jamot.jpg | 잠옷（パジャマ） | A boy in pajamas outdoors in Northern Maracay, Venezuela.jpg | Bobjgalindo | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:A_boy_in_pajamas_outdoors_in_Northern_Maracay,_Venezuela.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-moja.jpg | 모자（ぼうし） | Straw Harvest Hat, International Hat, ca. 1960s (2).jpg | Belshay | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Straw_Harvest_Hat,_International_Hat,_ca._1960s_(2).jpg) |
@@ -195,7 +196,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第13巻 ふく・かばん・くつ | v13-gomusin.jpg | 고무신（コムシン） | Korean shoes-01.jpg | by HapaK at Flickr | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Korean_shoes-01.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-kkotsin.jpg | 꽃신（コッシン） | Flower shoes.JPG | Taman Renyah | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Flower_shoes.JPG) |
 | 第13巻 ふく・かばん・くつ | v13-gabang.jpg | 가방（かばん） | Handbags (ST660 5 03) - Kostuum Accessoire - MoMu Antwerp.jpg | Monica Ho | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Handbags_(ST660_5_03)_-_Kostuum_Accessoire_-_MoMu_Antwerp.jpg) |
-| 第13巻 ふく・かばん・くつ | v13-chaekgabang.jpg | 책가방（リュック） | 放課後 ランドセルの背面 (28160570532).jpg | MIKI Yoshihito | CC BY 2.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:放課後_ランドセルの背面_(28160570532).jpg) |
+| 第13巻 ふく・かばん・くつ | v13-chaekgabang.jpg | 책가방（リュック） | Boy-in-brown-hoodie-carrying-red-backpack-while-walking-on-207697.jpg | ambermb | CC0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Boy-in-brown-hoodie-carrying-red-backpack-while-walking-on-207697.jpg) |
 | 第14巻 スポーツ | v14-chukgu.jpg | 축구（サッカー） | Soccer ball (20174935849).jpg | J Dimas | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Soccer_ball_(20174935849).jpg) |
 | 第14巻 スポーツ | v14-yagu.jpg | 야구（やきゅう） | Grafton High School, Wisconsin, baseball team. Batter at the plate..JPG | Runner1928 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Grafton_High_School,_Wisconsin,_baseball_team._Batter_at_the_plate..JPG) |
 | 第14巻 スポーツ | v14-nonggu.jpg | 농구（バスケットボール） | View of basketball hoop from below.jpg | Everyday English | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:View_of_basketball_hoop_from_below.jpg) |
