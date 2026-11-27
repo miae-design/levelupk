@@ -547,72 +547,6 @@ body.cards-page[data-special="jalhaesseoyo"] .wcard__word {
 }
 .wnav__hint:empty { display: none; }
 
-/* ---------- ほかの巻 ---------- */
-.vswitch {
-  margin-top: 20px;
-  padding: 16px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, .72);
-  border: 1px solid var(--line);
-  text-align: center;
-}
-.vswitch__label {
-  margin: 0 0 10px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .2em;
-  color: var(--muted);
-}
-.vswitch__list {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.vswitch__btn {
-  appearance: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 9px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(20, 40, 70, .12);
-  background: #fff;
-  color: #4E5F75;
-  font-size: 12.5px;
-  font-weight: 800;
-  cursor: pointer;
-  transition: background .18s ease, color .18s ease, border-color .18s ease;
-}
-.vswitch__btn b {
-  display: inline-grid;
-  place-items: center;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #F1ECE1;
-  color: #7A8798;
-  font-size: 10.5px;
-  font-weight: 900;
-}
-.vswitch__btn i {
-  font-family: var(--hangul);
-  font-style: normal;
-  font-weight: 700;
-  color: #8C99AA;
-  padding-left: 7px;
-  border-left: 1px solid #E7E2D6;
-}
-.vswitch__btn:hover { background: #F7F4EC; color: var(--navy); }
-.vswitch__btn.is-active {
-  background: var(--vol);
-  border-color: var(--vol);
-  color: #fff;
-  box-shadow: 0 8px 18px rgba(18, 35, 58, .16);
-}
-.vswitch__btn.is-active b { background: rgba(255, 255, 255, .24); color: #fff; }
-.vswitch__btn.is-active i { color: rgba(255, 255, 255, .86); border-left-color: rgba(255, 255, 255, .3); }
-
 /* ---------- 写真（1枚・2枚・色見本） ---------- */
 .wphoto__media {
   max-width: 560px;
@@ -678,7 +612,7 @@ body.cards-page[data-special="jalhaesseoyo"] .wcard__word {
 
 /* ---------- Print ---------- */
 @media print {
-  .site-header, .site-footer, .wnav, .vswitch, .langtoggle, .waudio { display: none !important; }
+  .site-header, .site-footer, .wnav, .langtoggle, .waudio { display: none !important; }
   body.cards-page { background: #fff; }
   .wcard, .chero { box-shadow: none; }
   .wphoto { break-inside: avoid; }

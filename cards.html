@@ -141,12 +141,6 @@
       </button>
     </nav>
 
-    <!-- ============ Volume switch ============ -->
-    <nav class="vswitch" id="vswitch" aria-label="ほかの巻をひらく">
-      <p class="vswitch__label">ほかの まき</p>
-      <div class="vswitch__list"></div>
-    </nav>
-
   </div>
 </main>
 
@@ -1514,14 +1508,6 @@ var VOLUMES = [
     document.querySelector(".wtrans__sub-label").textContent = lang === "ja" ? "English" : "日本語";
   }
 
-  function syncVolumeSwitch() {
-    Array.prototype.forEach.call(document.querySelectorAll(".vswitch__btn"), function (btn) {
-      var on = parseInt(btn.getAttribute("data-vol-id"), 10) === volume.id;
-      btn.classList.toggle("is-active", on);
-      if (on) { btn.setAttribute("aria-current", "true"); } else { btn.removeAttribute("aria-current"); }
-    });
-  }
-
   function render(opts) {
     if (specialKind) { renderSpecial(opts); return; }
     var word = volume.words[index];
@@ -1552,8 +1538,6 @@ var VOLUMES = [
       navHint.textContent = "";
     }
 
-    syncVolumeSwitch();
-
     document.title = word.ko + "（" + word.ja + "・" + word.en + "）｜ことばカード｜Level Up K";
     setUrl(word.slug);
 
@@ -1580,11 +1564,6 @@ var VOLUMES = [
     if (next < 0 || next >= volume.words.length) return;
     index = next;
     render({ scroll: false });
-  }
-
-  function jumpToVolume(volId) {
-    var vol = firstOf(volId);
-    show({ volume: vol, index: 0 }, { scroll: true });
   }
 
   /* ---------- 標題紙QR（?w=title&v=N）と「よくできました」QR（?w=jalhaesseoyo&v=N） ---------- */
@@ -1630,7 +1609,6 @@ var VOLUMES = [
     prevBtn.disabled = true;
     nextBtn.disabled = true;
     navHint.textContent = info.hint;
-    syncVolumeSwitch();
     document.title = info.word + "（" + info.badgeJa + "）｜ことばカード｜Level Up K";
     setUrlSpecial(specialKind, volume.id);
     resetPlayer();
@@ -1654,20 +1632,6 @@ var VOLUMES = [
     if (location.search === next) return;
     try { history.replaceState(null, "", location.pathname + next); } catch (e) {}
   }
-
-  /* ---------- 巻の切り替えボタン ---------- */
-  (function buildVolumeSwitch() {
-    var list = document.querySelector(".vswitch__list");
-    VOLUMES.forEach(function (vol) {
-      var btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "vswitch__btn";
-      btn.setAttribute("data-vol-id", String(vol.id));
-      btn.innerHTML = "<b>" + vol.id + "</b><span>" + vol.ja + "</span><i lang=\"ko\">" + vol.ko + "</i>";
-      btn.addEventListener("click", function () { jumpToVolume(vol.id); });
-      list.appendChild(btn);
-    });
-  })();
 
   /* ---------- イベント ---------- */
   Array.prototype.forEach.call(document.querySelectorAll(".langtoggle__btn"), function (btn) {
