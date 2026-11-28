@@ -11,7 +11,7 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 第6巻（からだ）の 이・어깨・팔・다리 は、体の部分が一目で分かるように元の写真をトリミングし（이のみトリミングなし）、矢印（白フチ付き）を描き足しています（CC BY-SAの写真は改変したことをライセンス欄に明記）。
 第5巻「いろ」の15語は写真ではなく、カードいっぱいに色を塗った色見本で表示しています（出典表示なし）。
 第2巻（しょくぶつ・しき）の 해・달・별 は 2026-11-26 に 第17巻（うちゅう）との 重複を さけ、무궁화（むくげ）・개나리（れんぎょう）・진달래（つつじ）の 写真に 差し替えました。
-第12巻（しょっき）の 숟가락・젓가락・밥그릇・국그릇・국자・쟁반・접시 と、第13巻（ふく・かばん・くつ）の 한복 は、2026-11-26 に韓国式の写真へ差し替えました（접시 は元写真からフォークとナイフを消して背景を作り直し）。
+第12巻（キッチンウェア）の 숟가락・젓가락・밥그릇・국그릇・국자・쟁반・접시 と、第13巻（ふく・かばん・くつ）の 한복 は、2026-11-26 に韓国式の写真へ差し替えました（접시 は元写真からフォークとナイフを消して背景を作り直し）。
 第13巻の 원피스 は、2026-11-26 に、ドレスそのものが主役になる大人のワンピース（ソウル・東大門デザインプラザの写真）に、책가방 は、日本のランドセルではなく、韓国の子どもが実際に使うようなナイロン製のスクールリュックに差し替えました。
 第24巻（おもちゃ）の 인형 は、2026-11-26 に中国風の人形から、韓服（チマ・チョゴリ）を着た韓国の人形（オークランド博物館所蔵）に、팽이 は、上から見た金属のこまから、回っているようすが分かるカラフルなこま（Skitterphoto の CC0 写真）に差し替えました。
 第19巻（かでん）の 텔레비전・에어컨・청소기・선풍기・드라이기・태블릿 の6点と、第20巻の 병원 は、2026-11-26 に、テレビは テレビ本体だけが主役になる白背景の写真、エアコンは 今どきの白い壁かけ形、そうじきは コードレスのスティック形、せんぷうきは 丸い羽根から台まで全体が入る写真、ドライヤーは ふつうの家庭用、タブレットは タブレットが画面いっぱいの写真、びょういんは 建物に「病院」の文字が大きく出ている写真に差し替えました。
@@ -178,21 +178,21 @@ CC BY / CC BY-SA の写真は、カードの下に「写真：作者 ／ Wikimed
 | 第11巻 かんこくりょうり | v11-hotteok.jpg | 호떡（ホットク） | Gluten free hotteok.jpg | Teemeah | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Gluten_free_hotteok.jpg) |
 | 第11巻 かんこくりょうり | v11-bungeoppang.jpg | 붕어빵（プンオパン） | Boong o bbang.jpg | Penny Richards | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Boong_o_bbang.jpg) |
 | 第11巻 かんこくりょうり | v11-songpyeon.jpg | 송편（ソンピョン） | Songpyeon.jpg | wizdata | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Songpyeon.jpg) |
-| 第12巻 しょっき | v12-sutgarak.jpg | 숟가락（スプーン（スッカラ）） | Sujeo (spoon and chopsticks).jpg | 国立国語院（국립국어원） | CC BY-SA 2.0 kr（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Sujeo_(spoon_and_chopsticks).jpg) |
-| 第12巻 しょっき | v12-jeotgarak.jpg | 젓가락（おはし（チョッカラ）） | Sujeo (spoon and chopsticks).jpg | 国立国語院（국립국어원） | CC BY-SA 2.0 kr（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Sujeo_(spoon_and_chopsticks).jpg) |
-| 第12巻 しょっき | v12-pokeu.jpg | 포크（フォーク） | Fork isolated on white background 03.jpg | Jonatan Svensson Glad | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fork_isolated_on_white_background_03.jpg) |
-| 第12巻 しょっき | v12-bapgeureut.jpg | 밥그릇（ごはんちゃわん） | Various North Korean foods.jpg | Stefan Krasowski | CC BY 2.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Various_North_Korean_foods.jpg) |
-| 第12巻 しょっき | v12-gukgeureut.jpg | 국그릇（スープわん） | Pansanggi Dishes Uncapped (4631197362).jpg | John Pavelka from Austin, TX, USA | CC BY 2.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Pansanggi_Dishes_Uncapped_(4631197362).jpg) |
-| 第12巻 しょっき | v12-jeopsi.jpg | 접시（おさら） | Empty table setting plate fork knife (42585288225).jpg | Stock Catalog | CC BY 2.0（フォークとナイフを消して背景を作り直し・トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Empty_table_setting_plate_fork_knife_(42585288225).jpg) |
-| 第12巻 しょっき | v12-keop.jpg | 컵（コップ） | Glass of strawberry juice 20180815.jpg | Santeri Viinamäki | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Glass_of_strawberry_juice_20180815.jpg) |
-| 第12巻 しょっき | v12-mulbyeong.jpg | 물병（みずさし） | -2019-09-19 A blue Denby pottery water jug, Cromer (1).JPG | Kolforn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:-2019-09-19_A_blue_Denby_pottery_water_jug,_Cromer_(1).JPG) |
-| 第12巻 しょっき | v12-ppaldae.jpg | 빨대（ストロー） | Eight drinking straws (4273846588).jpg | Horia Varlan from Bucharest, Romania | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eight_drinking_straws_(4273846588).jpg) |
-| 第12巻 しょっき | v12-jujeonja.jpg | 주전자（やかん） | Yellow kettle with boiling water on stovetop.jpeg | User:Ragesoss | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Yellow_kettle_with_boiling_water_on_stovetop.jpeg) |
-| 第12巻 しょっき | v12-naembi.jpg | 냄비（なべ） | Pot with no background.png | Lightsnap | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pot_with_no_background.png) |
-| 第12巻 しょっき | v12-peuraipaen.jpg | 프라이팬（フライパン） | Frying Pan 2 2019-03-21.jpg | FASTILY | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Frying_Pan_2_2019-03-21.jpg) |
-| 第12巻 しょっき | v12-doma.jpg | 도마（まないた） | Wooden cutting board 2017.jpg | Fructibus | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Wooden_cutting_board_2017.jpg) |
-| 第12巻 しょっき | v12-gukja.jpg | 국자（おたま） | Ladel aluminium 18j07.JPG | Snowmanradio | Public domain（トリミング・回転） | [Commons](https://commons.wikimedia.org/wiki/File:Ladel_aluminium_18j07.JPG) |
-| 第12巻 しょっき | v12-jaengban.jpg | 쟁반（おぼん） | Ogival tray with decoration of floral scroll MET DP704079.jpg | The Metropolitan Museum of Art | CC0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:나전_칠_넝쿨_무늬_꽃_모양_반_조선-螺鈿漆唐草文菱花形盤_朝鮮-Ogival_tray_with_decoration_of_floral_scroll_MET_DP704079.jpg) |
+| 第12巻 キッチンウェア | v12-sutgarak.jpg | 숟가락（スプーン（スッカラ）） | Sujeo (spoon and chopsticks).jpg | 国立国語院（국립국어원） | CC BY-SA 2.0 kr（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Sujeo_(spoon_and_chopsticks).jpg) |
+| 第12巻 キッチンウェア | v12-jeotgarak.jpg | 젓가락（おはし（チョッカラ）） | Sujeo (spoon and chopsticks).jpg | 国立国語院（국립국어원） | CC BY-SA 2.0 kr（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Sujeo_(spoon_and_chopsticks).jpg) |
+| 第12巻 キッチンウェア | v12-pokeu.jpg | 포크（フォーク） | Fork isolated on white background 03.jpg | Jonatan Svensson Glad | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fork_isolated_on_white_background_03.jpg) |
+| 第12巻 キッチンウェア | v12-bapgeureut.jpg | 밥그릇（ごはんちゃわん） | Various North Korean foods.jpg | Stefan Krasowski | CC BY 2.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Various_North_Korean_foods.jpg) |
+| 第12巻 キッチンウェア | v12-gukgeureut.jpg | 국그릇（スープわん） | Pansanggi Dishes Uncapped (4631197362).jpg | John Pavelka from Austin, TX, USA | CC BY 2.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Pansanggi_Dishes_Uncapped_(4631197362).jpg) |
+| 第12巻 キッチンウェア | v12-jeopsi.jpg | 접시（おさら） | Empty table setting plate fork knife (42585288225).jpg | Stock Catalog | CC BY 2.0（フォークとナイフを消して背景を作り直し・トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Empty_table_setting_plate_fork_knife_(42585288225).jpg) |
+| 第12巻 キッチンウェア | v12-keop.jpg | 컵（コップ） | Glass of strawberry juice 20180815.jpg | Santeri Viinamäki | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Glass_of_strawberry_juice_20180815.jpg) |
+| 第12巻 キッチンウェア | v12-mulbyeong.jpg | 물병（みずさし） | -2019-09-19 A blue Denby pottery water jug, Cromer (1).JPG | Kolforn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:-2019-09-19_A_blue_Denby_pottery_water_jug,_Cromer_(1).JPG) |
+| 第12巻 キッチンウェア | v12-ppaldae.jpg | 빨대（ストロー） | Eight drinking straws (4273846588).jpg | Horia Varlan from Bucharest, Romania | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Eight_drinking_straws_(4273846588).jpg) |
+| 第12巻 キッチンウェア | v12-jujeonja.jpg | 주전자（やかん） | Yellow kettle with boiling water on stovetop.jpeg | User:Ragesoss | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Yellow_kettle_with_boiling_water_on_stovetop.jpeg) |
+| 第12巻 キッチンウェア | v12-naembi.jpg | 냄비（なべ） | Pot with no background.png | Lightsnap | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pot_with_no_background.png) |
+| 第12巻 キッチンウェア | v12-peuraipaen.jpg | 프라이팬（フライパン） | Frying Pan 2 2019-03-21.jpg | FASTILY | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Frying_Pan_2_2019-03-21.jpg) |
+| 第12巻 キッチンウェア | v12-doma.jpg | 도마（まないた） | Wooden cutting board 2017.jpg | Fructibus | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Wooden_cutting_board_2017.jpg) |
+| 第12巻 キッチンウェア | v12-gukja.jpg | 국자（おたま） | Ladel aluminium 18j07.JPG | Snowmanradio | Public domain（トリミング・回転） | [Commons](https://commons.wikimedia.org/wiki/File:Ladel_aluminium_18j07.JPG) |
+| 第12巻 キッチンウェア | v12-jaengban.jpg | 쟁반（おぼん） | Ogival tray with decoration of floral scroll MET DP704079.jpg | The Metropolitan Museum of Art | CC0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:나전_칠_넝쿨_무늬_꽃_모양_반_조선-螺鈿漆唐草文菱花形盤_朝鮮-Ogival_tray_with_decoration_of_floral_scroll_MET_DP704079.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-hanbok.jpg | 한복（ハンボク） | Girls in Traditional Folk Hanbok Dress.jpg | Harsh7284 | CC BY-SA 4.0（トリミング） | [Commons](https://commons.wikimedia.org/wiki/File:Girls_in_Traditional_Folk_Hanbok_Dress.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-tisyeocheu.jpg | 티셔츠（Tシャツ） | Young North Indian man with beard in white t-shirt.jpg | Singhjayreena | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Young_North_Indian_man_with_beard_in_white_t-shirt.jpg) |
 | 第13巻 ふく・かばん・くつ | v13-baji.jpg | 바지（ズボン） | Jeans auf Leine 1403-0172.jpg | Mozzihh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Jeans_auf_Leine_1403-0172.jpg) |
