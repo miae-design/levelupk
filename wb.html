@@ -68,9 +68,9 @@
 
 <section class="hero">
   <div class="wrap">
-    <p class="kicker">こたえの音声 ／ 정답 음성</p>
-    <h1>ワークブック 春学期（1〜9課）<span>こたえと ポイントの 音声</span></h1>
-    <p class="lead">本の こたえページの QRコードから、その課の こたえの 音声が 聞けます。</p>
+    <p class="kicker" id="hero-kicker">こたえの音声 ／ 정답 음성</p>
+    <h1 id="hero-title">ワークブック 春学期（1〜9課）<span id="hero-sub">こたえと ポイントの 音声</span></h1>
+    <p class="lead" id="hero-lead">本の こたえページの QRコードから、その課の こたえの 音声が 聞けます。</p>
   </div>
 </section>
 
@@ -91,13 +91,13 @@
     </section>
 
     <section class="card">
-      <h3>つかいかた</h3>
-      <ul class="tips">
+      <h3 id="tips-title">つかいかた</h3>
+      <ul class="tips" id="tips-list">
         <li>こたえを 見る まえに、まず 自分で 書いてみましょう。</li>
         <li>音声は、こたえの 文を 先生の 声で 読んだものです。</li>
         <li>「じゅんび中」と 出る ときは、音声が まだ 入っていません。少し まってください。</li>
       </ul>
-      <p class="note">※ この ページは 本の QRコードから 来た 人だけが 見られる ページです（検索には 出ません）。</p>
+      <p class="note" id="tips-note">※ この ページは 本の QRコードから 来た 人だけが 見られる ページです（検索には 出ません）。</p>
     </section>
 
   </div>
@@ -110,30 +110,156 @@
 <script>
 (function(){
   "use strict";
-  // 課ごとの ばんごう・タイトル（本と 同じ じゅんばん）
-  var LESSONS = [
-    {n:1, jp:"ハングルってどんな文字？", kr:"한글, 처음 만나요"},
-    {n:2, jp:"ㅁ・ㄴ・ㅇ・ㄹ となかよしに", kr:"ㅁㄴㅇㄹ과 ㅑㅕㅛㅠ"},
-    {n:3, jp:"ㅂ・ㄷ・ㄱ・ㅅ・ㅈ にちょうせん", kr:"ㅂㄷㄱㅅㅈ과 ㅐ・ㅔ"},
-    {n:4, jp:"息を強く出す音", kr:"거센소리 ㅍㅌㅋㅊㅎ"},
-    {n:5, jp:"つまる音と、2つの母音", kr:"된소리와 이중모음, 내 이름"},
-    {n:6, jp:"パッチム① ㅇ・ㄴ・ㅁ", kr:"받침 ① ㅇㄴㅁ과 교실 물건"},
-    {n:7, jp:"パッチム② ㄱ・ㄷ・ㅂ・ㄹ", kr:"받침 ② ㄱㄷㅂㄹ과 있어요/없어요"},
-    {n:8, jp:"じこしょうかいと、好きなもの", kr:"자기소개와 좋아하는 것"},
-    {n:9, jp:"春学期のまとめ — はっぴょう会", kr:"1분기 마무리 — 발표회"},
-    {n:0, jp:"春学期 ふくしゅう ① ②", kr:"복습 · 미니テスト"}
-  ];
+
+  // ---- ことば（UI） ------------------------------------------------------
+  var T = {
+    ja: {
+      htmlLang: "ja",
+      docTitle: function(tag, t){ return tag + " こたえの音声｜セボメ韓国語教室"; },
+      heroKicker: "こたえの音声 ／ 정답 음성",
+      heroTitle: "ワークブック 春学期（1〜9課）",
+      heroSub: "こたえと ポイントの 音声",
+      heroLead: "本の こたえページの QRコードから、その課の こたえの 音声が 聞けます。",
+      tipsTitle: "つかいかた",
+      tips: [
+        "こたえを 見る まえに、まず 自分で 書いてみましょう。",
+        "音声は、こたえの 文を 先生の 声で 読んだものです。",
+        "「じゅんび中」と 出る ときは、音声が まだ 入っていません。少し まってください。"
+      ],
+      tipsNote: "※ この ページは 本の QRコードから 来た 人だけが 見られる ページです（検索には 出ません）。",
+      navAria: "課を えらぶ",
+      review: "ふくしゅう",
+      loading: "音声を よみこんでいます…",
+      ready: "音声を さいせいできます。▶ を おしてください。",
+      notReady: "この 課の 音声は <strong>じゅんび中</strong> です。先生が 入れると 聞けるように なります。"
+    },
+    en: {
+      htmlLang: "en",
+      docTitle: function(tag, t){ return tag + " Audio Answer Key｜Sebome Korean Class"; },
+      heroKicker: "AUDIO ANSWER KEY",
+      heroTitle: "Spring Workbook (Lessons 1–9)",
+      heroSub: "Answer-key audio",
+      heroLead: "Scan the QR code on an answer page to hear the answers for that lesson.",
+      tipsTitle: "How to use",
+      tips: [
+        "Try writing your own answer before you listen.",
+        "Each track reads the answer sentences aloud in your teacher's voice.",
+        "If you see “not ready yet”, the audio has not been uploaded. Please check back soon."
+      ],
+      tipsNote: "※ This page is for students who scanned the QR code in the book. It is not listed in search engines.",
+      navAria: "Choose a lesson",
+      review: "Review",
+      loading: "Loading audio…",
+      ready: "Audio is ready. Press ▶ to play.",
+      notReady: "Audio for this lesson is <strong>not ready yet</strong>. Your teacher will add it soon."
+    }
+  };
+
+  // ---- コース ------------------------------------------------------------
+  // jp01 / jp03 / jp05 / jp07 / jp09 … 日本語版5コース
+  // en01 … en05 … 英語版5コース（教材の目次が届くまでは Lesson 1〜9）
+  var EN_DEFAULT = ["Lesson 1","Lesson 2","Lesson 3","Lesson 4","Lesson 5",
+                    "Lesson 6","Lesson 7","Lesson 8","Lesson 9"];
+
+  var COURSES = {
+    jp01: {lang:"ja", name:"ようじクラス", tag:"レッスン", lessons:[
+      {jp:"あいさつを しよう", kr:"안녕하세요!"},
+      {jp:"なまえを いおう", kr:"내 이름은 ○○예요"},
+      {jp:"かぞくを いおう", kr:"우리 가족"},
+      {jp:"かずを かぞえよう", kr:"하나 둘 셋"},
+      {jp:"いろを さがそう", kr:"무슨 색이에요?"},
+      {jp:"ありがとうを つたえよう", kr:"고마워요, 사랑해요"},
+      {jp:"どうぶつに なろう", kr:"멍멍이 야옹이"},
+      {jp:"からだを うたおう", kr:"눈 코 입"},
+      {jp:"ぜんぶ やってみよう", kr:"1분기 총정리"}
+    ]},
+    jp03: {lang:"ja", name:"しょうがく1・2・3ねんせい", tag:"レッスン", lessons:[
+      {jp:"ハングルと であおう", kr:"한글과 만나요"},
+      {jp:"ヤ！ ヨ！ ヨ！ ユ！", kr:"ㅑ・ㅕ・ㅛ・ㅠ"},
+      {jp:"イウン・ニウン・ミウム", kr:"ㅇ・ㄴ・ㅁ"},
+      {jp:"ライオンと ラーメン", kr:"ㄹ（라・리）"},
+      {jp:"うみと さいふ", kr:"ㅂ・ㅍ"},
+      {jp:"かばんと どんぐり", kr:"ㄱ・ㄷ"},
+      {jp:"そら・はな・うさぎ", kr:"ㅅ・ㅈ・ㅊ"},
+      {jp:"パッチムが できた", kr:"받침"},
+      {jp:"はるがっきの まとめ", kr:"1분기 정리"}
+    ]},
+    jp05: {lang:"ja", name:"小学4〜6年生", tag:"LESSON", lessons:[
+      {jp:"ハングルってどんな文字？", kr:"한글, 처음 만나요"},
+      {jp:"ㅁ・ㄴ・ㅇ・ㄹ となかよしに", kr:"ㅁㄴㅇㄹ과 ㅑㅕㅛㅠ"},
+      {jp:"ㅂ・ㄷ・ㄱ・ㅅ・ㅈ にちょうせん", kr:"ㅂㄷㄱㅅㅈ과 ㅐ・ㅔ"},
+      {jp:"息を強く出す音", kr:"거센소리 ㅍㅌㅋㅊㅎ"},
+      {jp:"つまる音と、2つの母音", kr:"된소리와 이중모음, 내 이름"},
+      {jp:"パッチム① ㅇ・ㄴ・ㅁ", kr:"받침 ① ㅇㄴㅁ과 교실 물건"},
+      {jp:"パッチム② ㄱ・ㄷ・ㅂ・ㄹ", kr:"받침 ② ㄱㄷㅂㄹ과 있어요/없어요"},
+      {jp:"じこしょうかいと、好きなもの", kr:"자기소개와 좋아하는 것"},
+      {jp:"春学期のまとめ — はっぴょう会", kr:"1분기 마무리 — 발표회"}
+    ]},
+    jp07: {lang:"ja", name:"中高生", tag:"LESSON", lessons:[
+      {jp:"ハングル 第1歩", kr:"한글 첫걸음 ① — 모음 10개와 첫인사"},
+      {jp:"ハングル 第2歩", kr:"한글 ② — 자음 19개와 복합 모음"},
+      {jp:"ハングル 第3歩", kr:"한글 ③ — 받침과 대표음"},
+      {jp:"ハングル 第4歩", kr:"한글 ④ — 음의 규칙 4가지와 내 이름"},
+      {jp:"私は学生です", kr:"저는 학생입니다 — 이름·국적·직업"},
+      {jp:"日本人ですか？", kr:"이에요／예요와 은／는·이／가"},
+      {jp:"本はどこにありますか？", kr:"책이 어디에 있어요? — 위치와 존재"},
+      {jp:"朝は何をしますか？", kr:"아침에 뭐 해요? — 하루의 흐름"},
+      {jp:"春学期のまとめ — 1分間の自己紹介", kr:"1분기 마무리 — 1분 자기소개"}
+    ]},
+    jp09: {lang:"ja", name:"大人クラス", tag:"SESSION", lessons:[
+      {jp:"ハングル第一歩①", kr:"한글 첫걸음 ① — 모음 10개와 첫인사"},
+      {jp:"ハングル②", kr:"한글 ② — 자음 19개와 복합 모음"},
+      {jp:"ハングル③", kr:"한글 ③ — 받침과 음의 변화"},
+      {jp:"私はイ・ミエです", kr:"저는 이미애입니다 — 이름·국적·직업"},
+      {jp:"これは何ですか", kr:"이게 뭐예요? — 사물과 장소"},
+      {jp:"いくらですか", kr:"얼마예요? — 숫자와 가격"},
+      {jp:"カフェで", kr:"카페에서 — 주문하기"},
+      {jp:"朝は何をしますか", kr:"아침에 뭐 하세요? — 하루 일과"},
+      {jp:"春学期まとめ — 旅行会話の入口", kr:"1분기 마무리 — 여행 회화 맛보기"}
+    ]},
+    en01: {lang:"en", name:"Course 1", tag:"LESSON", lessons:EN_DEFAULT.map(function(t){return {jp:t, kr:""};})},
+    en02: {lang:"en", name:"Course 2", tag:"LESSON", lessons:EN_DEFAULT.map(function(t){return {jp:t, kr:""};})},
+    en03: {lang:"en", name:"Course 3", tag:"LESSON", lessons:EN_DEFAULT.map(function(t){return {jp:t, kr:""};})},
+    en04: {lang:"en", name:"Course 4", tag:"LESSON", lessons:EN_DEFAULT.map(function(t){return {jp:t, kr:""};})},
+    en05: {lang:"en", name:"Course 5", tag:"LESSON", lessons:EN_DEFAULT.map(function(t){return {jp:t, kr:""};})}
+  };
+
   // 音声ファイルの ばしょ（あとから mp3 を 入れるだけで 鳴ります）
-  //   audio/wb/jp05_01.mp3 … audio/wb/jp05_09.mp3, audio/wb/jp05_00.mp3（ふくしゅう）
+  //   audio/wb/{codes}_{01..09}.mp3, audio/wb/{codes}_00.mp3（ふくしゅう）
   var AUDIO_DIR = "audio/wb/";
-  var AUDIO_CODE = "jp05";
 
   function param(name){
     var m = new RegExp("[?&]" + name + "=([^&]*)").exec(location.search);
     return m ? decodeURIComponent(m[1]) : null;
   }
   function pad2(v){ return (v < 10 ? "0" : "") + v; }
-  function audioPath(n){ return AUDIO_DIR + AUDIO_CODE + "_" + pad2(n) + ".mp3"; }
+
+  var code = (param("c") || "jp05").toLowerCase();
+  if (!COURSES.hasOwnProperty(code)) code = "jp05";
+  var COURSE = COURSES[code];
+  var tx = T[COURSE.lang] || T.ja;
+
+  // 課の リスト（0 は ふくしゅう）
+  var LESSONS = COURSE.lessons.map(function(x, i){
+    return {n:i + 1, jp:x.jp, kr:x.kr || ""};
+  });
+  LESSONS.push({n:0, jp:tx.review, kr:(COURSE.lang === "ja" ? "복습 · 미니テスト" : "")});
+
+  function audioPath(n){ return AUDIO_DIR + code + "_" + pad2(n) + ".mp3"; }
+  function tagOf(n){ return (n === 0) ? tx.review : (COURSE.tag + " " + n); }
+
+  // ことばの きりかえ
+  document.documentElement.lang = tx.htmlLang;
+  document.getElementById("hero-kicker").textContent = tx.heroKicker;
+  document.getElementById("hero-title").firstChild.nodeValue = tx.heroTitle;
+  document.getElementById("hero-sub").textContent = tx.heroSub;
+  document.getElementById("hero-lead").textContent = tx.heroLead;
+  document.getElementById("tips-title").textContent = tx.tipsTitle;
+  var tl = document.getElementById("tips-list");
+  tl.innerHTML = "";
+  tx.tips.forEach(function(s){ var li = document.createElement("li"); li.textContent = s; tl.appendChild(li); });
+  document.getElementById("tips-note").textContent = tx.tipsNote;
+  document.getElementById("nav").setAttribute("aria-label", tx.navAria);
 
   var cur = parseInt(param("l") || "1", 10);
   if (isNaN(cur) || !LESSONS.some(function(x){ return x.n === cur; })) cur = 1;
@@ -147,26 +273,26 @@
 
   function render(n){
     var L = LESSONS.filter(function(x){ return x.n === n; })[0] || LESSONS[0];
-    elTag.textContent = (L.n === 0) ? "ふくしゅう" : ("LESSON " + L.n);
+    elTag.textContent = tagOf(L.n);
     elTitle.textContent = L.jp;
     elKr.textContent = L.kr;
-    document.title = (L.n === 0 ? "ふくしゅう" : "LESSON " + L.n) + " こたえの音声｜セボメ韓国語教室";
+    elKr.style.display = L.kr ? "" : "none";
+    document.title = tx.docTitle(tagOf(L.n), L.jp);
 
     elWrap.innerHTML = "";
-    var src = audioPath(L.n);
     var audio = document.createElement("audio");
     audio.controls = true;
     audio.preload = "metadata";
-    audio.src = src;
+    audio.src = audioPath(L.n);
     audio.addEventListener("error", function(){
-      elStatus.innerHTML = "この 課の 音声は <strong>じゅんび中</strong> です。先生が 入れると 聞けるように なります。";
+      elStatus.innerHTML = tx.notReady;
       audio.remove();
     });
     audio.addEventListener("loadedmetadata", function(){
-      elStatus.textContent = "音声を さいせいできます。▶ を おしてください。";
+      elStatus.textContent = tx.ready;
     });
     elWrap.appendChild(audio);
-    elStatus.textContent = "音声を よみこんでいます…";
+    elStatus.textContent = tx.loading;
 
     // ナビ
     elNav.innerHTML = "";
@@ -174,11 +300,11 @@
       var b = document.createElement("button");
       b.type = "button";
       b.className = "btn";
-      b.textContent = (x.n === 0) ? "ふくしゅう" : ("L" + x.n);
+      b.textContent = (x.n === 0) ? tx.review : ("L" + x.n);
       b.setAttribute("aria-current", x.n === L.n ? "true" : "false");
       b.addEventListener("click", function(){
         var q = (x.n === 0) ? "0" : String(x.n);
-        history.replaceState(null, "", "?c=" + AUDIO_CODE + "&l=" + q);
+        history.replaceState(null, "", "?c=" + code + "&l=" + q);
         render(x.n);
       });
       elNav.appendChild(b);
